@@ -66,6 +66,10 @@ export type Block =
   | { kind: 'artifact'; label: string; caption: string; height: number }
   | {
       kind: 'decisions'
+      /**
+       * Figma clips this row to a fixed height that cuts the cards off. Leave
+       * unset so the row grows to fit its content.
+       */
       height?: number
       items: { badge: string; title: string; body: string; selected?: boolean }[]
     }
@@ -244,13 +248,17 @@ function ArtifactSlot({ block }: { block: Extract<Block, { kind: 'artifact' }> }
 function Decisions({ block }: { block: Extract<Block, { kind: 'decisions' }> }) {
   return (
     <div
-      className="relative flex w-full shrink-0 items-start gap-[24px] overflow-clip"
-      style={{ height: block.height ?? 56 }}
+      className={`relative flex w-full shrink-0 gap-[24px] overflow-clip ${
+        block.height ? 'items-start' : 'items-stretch'
+      }`}
+      style={block.height ? { height: block.height } : undefined}
     >
       {block.items.map((item) => (
         <div
           key={item.badge}
-          className={`relative flex h-full min-w-px flex-[1_0_0] flex-col items-start gap-[12px] rounded-[20px] bg-white p-[28px] ${
+          className={`relative flex min-w-px flex-[1_0_0] flex-col items-start gap-[12px] rounded-[20px] bg-white p-[28px] ${
+            block.height ? 'h-full' : 'self-stretch'
+          } ${
             item.selected
               ? 'shadow-[inset_0_0_0_2px_#f97316]'
               : 'shadow-[inset_0_0_0_1px_#ececec]'
@@ -276,7 +284,11 @@ function Decisions({ block }: { block: Extract<Block, { kind: 'decisions' }> }) 
               </p>
             )}
           </div>
-          <p className="relative min-h-px w-full flex-[1_0_0] font-semibold leading-[1.45] text-[18px] text-[#0d0d0d]">
+          <p
+            className={`relative w-full font-semibold leading-[1.45] text-[18px] text-[#0d0d0d] ${
+              block.height ? 'min-h-px flex-[1_0_0]' : 'shrink-0'
+            }`}
+          >
             {item.title}
           </p>
           <p className="relative w-full shrink-0 font-normal leading-[1.45] text-[15px] text-[#6b6b6b]">

@@ -132,7 +132,6 @@ const sora: CaseStudy = {
       blocks: [
         {
           kind: 'decisions',
-          height: 56,
           items: [
             {
               badge: 'A',
