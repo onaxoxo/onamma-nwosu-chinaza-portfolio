@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-geist: "Geist", "Geist Fallback", sans-serif;
+
+  --color-ink: #0d0d0d;
+  --color-muted: #626262;
+  --color-accent: #f97316;
+  --color-page: #f9f9f9;
+  --color-hairline: #e5e5e5;
+  --color-rule: #e0e0e0;
+  --color-chip: #f2f2f2;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--color-page);
+  font-family: var(--font-geist);
+}
+
+/* The design is a fixed 1440px desktop canvas. */
+#root {
+  min-width: 1440px;
+}
