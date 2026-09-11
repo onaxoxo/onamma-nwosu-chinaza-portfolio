@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import dot6 from '../../assets/sora/dot-6.svg'
+import Carousel from './Carousel'
+import type { CarouselGeometry, CarouselScreen } from './Carousel'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
@@ -71,6 +73,8 @@ export type Block =
        * unset so the row grows to fit its content.
        */
       height?: number
+      /** Row height in Figma once it hugs its content; keeps the row from running short when the browser wraps less. */
+      minHeight?: number
       items: { badge: string; title: string; body: string; selected?: boolean }[]
     }
   | { kind: 'resultCards'; items: { title: string; paragraphs: string[] }[] }
@@ -78,6 +82,20 @@ export type Block =
   | { kind: 'nodeImage'; src: string; alt: string; background?: string }
   | { kind: 'note'; label: string; body: string }
   | { kind: 'placeholder'; label: string; body: string }
+  /** The grey artifact slot, now holding an exported diagram centred inside it. */
+  | { kind: 'artifactImage'; src: string; alt: string; height: number; image: { width: number; height: number } }
+  /** The dashed process-artifact frame with a screen mockup placed inside it. */
+  | {
+      kind: 'processArtifact'
+      src: string
+      alt: string
+      height: number
+      image: { width: number; height: number; top: number }
+    }
+  /** A full-width project cover sitting inside a section, as in the Figma 'Hero cover' frame. */
+  | { kind: 'cover'; src: string; alt: string; height: number; fit?: 'cover'; style?: { height: string; top: string; width: string; left?: string } }
+  /** A second Showcase / Carousel, used for wireframes inside the exploration sections. */
+  | { kind: 'carousel'; screens: CarouselScreen[]; geometry: CarouselGeometry }
 
 /** Absolute placement inside a fixed-height section, straight from the Figma frame. */
 export type Placement = {
@@ -97,6 +115,8 @@ export type CaseSection = {
   blocks: Block[]
   /** Extra bottom padding, matching the Figma frame. */
   pb?: number
+  /** Number of blocks rendered before the section head (the 02 sections put the project cover above it). */
+  blocksBeforeHead?: number
   /**
    * Sections that are absolutely composed in Figma rather than auto-layout.
    * When set, `placed` is used instead of `blocks`.
@@ -251,7 +271,7 @@ function Decisions({ block }: { block: Extract<Block, { kind: 'decisions' }> }) 
       className={`relative flex w-full shrink-0 gap-[24px] overflow-clip ${
         block.height ? 'items-start' : 'items-stretch'
       }`}
-      style={block.height ? { height: block.height } : undefined}
+      style={block.height ? { height: block.height } : { minHeight: block.minHeight }}
     >
       {block.items.map((item) => (
         <div
@@ -362,6 +382,62 @@ function NodeImage({ block }: { block: Extract<Block, { kind: 'nodeImage' }> }) 
   )
 }
 
+function ArtifactImage({ block }: { block: Extract<Block, { kind: 'artifactImage' }> }) {
+  return (
+    <div
+      className="relative flex w-full shrink-0 items-center justify-center overflow-clip rounded-[20px] bg-[#f2f2f2] shadow-[inset_0_0_0_1px_#e6e6e6]"
+      style={{ height: block.height }}
+    >
+      <img
+        alt={block.alt}
+        className="relative shrink-0 max-w-none"
+        style={{ width: block.image.width, height: block.image.height }}
+        src={block.src}
+      />
+    </div>
+  )
+}
+
+function ProcessArtifact({ block }: { block: Extract<Block, { kind: 'processArtifact' }> }) {
+  return (
+    <div
+      className="relative w-full shrink-0 overflow-clip rounded-[20px] border border-dashed border-[#d8d8d8] bg-[#f4f4f4]"
+      style={{ height: block.height }}
+    >
+      <img
+        alt={block.alt}
+        className="absolute left-1/2 max-w-none -translate-x-1/2"
+        style={{ top: block.image.top, width: block.image.width, height: block.image.height }}
+        src={block.src}
+      />
+    </div>
+  )
+}
+
+function Cover({ block }: { block: Extract<Block, { kind: 'cover' }> }) {
+  return (
+    <div className="relative w-full shrink-0 rounded-[24px]" style={{ height: block.height }}>
+      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[24px]">
+        <img
+          alt={block.alt}
+          className={
+            block.fit === 'cover'
+              ? 'absolute inset-0 size-full max-w-none object-cover'
+              : 'absolute max-w-none'
+          }
+          style={
+            block.fit === 'cover'
+              ? undefined
+              : (block.style ?? { height: '100%', top: '0', width: '100%', left: '0' })
+          }
+          src={block.src}
+        />
+      </div>
+      <div className="pointer-events-none absolute inset-0 rounded-[24px] border border-dashed border-[#dcdcdc]" />
+    </div>
+  )
+}
+
 export function BlockRenderer({ block }: { block: Block }) {
   switch (block.kind) {
     case 'paragraphs':
@@ -384,6 +460,14 @@ export function BlockRenderer({ block }: { block: Block }) {
       return <Note block={block} />
     case 'placeholder':
       return <Placeholder block={block} />
+    case 'artifactImage':
+      return <ArtifactImage block={block} />
+    case 'processArtifact':
+      return <ProcessArtifact block={block} />
+    case 'cover':
+      return <Cover block={block} />
+    case 'carousel':
+      return <Carousel screens={block.screens} geometry={block.geometry} />
   }
 }
 
@@ -427,8 +511,11 @@ export function CaseSectionView({ section }: { section: CaseSection }) {
       className="relative flex w-full shrink-0 flex-col items-start gap-[32px] overflow-clip px-[120px] pt-[100px]"
       style={section.pb ? { paddingBottom: section.pb } : undefined}
     >
+      {section.blocks.slice(0, section.blocksBeforeHead ?? 0).map((block, index) => (
+        <BlockRenderer key={index} block={block} />
+      ))}
       <SectionHead label={section.label} title={section.title} />
-      {section.blocks.map((block, index) => (
+      {section.blocks.slice(section.blocksBeforeHead ?? 0).map((block, index) => (
         <BlockRenderer key={index} block={block} />
       ))}
     </div>

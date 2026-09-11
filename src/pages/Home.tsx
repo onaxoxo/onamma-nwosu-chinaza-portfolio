@@ -9,6 +9,9 @@ import portrait from '../assets/landing/portrait.png'
 import avatar1 from '../assets/landing/avatar-1.png'
 import dotGreen from '../assets/landing/dot-green.svg'
 import dotOrange from '../assets/landing/dot-orange.svg'
+import stripCard1 from '../assets/landing/strip/card-1.png'
+import stripCard2 from '../assets/landing/strip/card-2.png'
+import stripCard3 from '../assets/landing/strip/card-3.png'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
@@ -67,6 +70,13 @@ const reviews = [
     name: 'Michael Odaefe',
     role: 'Founder  · CverAI',
   },
+]
+
+/** Cards from the hero strip (Figma 189:5912), exported already clipped to the 1440px canvas. */
+const stripCards = [
+  { src: stripCard1, alt: 'Budget Buddy dashboard', left: 0, width: 437 },
+  { src: stripCard2, alt: 'Budget Buddy dashboard and summary screens', left: 459, width: 544 },
+  { src: stripCard3, alt: 'Marbella Skin landing page', left: 1025, width: 415 },
 ]
 
 const stats = [
@@ -159,6 +169,25 @@ export default function Home() {
             </div>
           </motion.a>
         </motion.div>
+
+        {/* Project card strip. The Figma strip starts 107px off-canvas, so the first and last cards are clipped by the page edge. */}
+        <div
+          className="pointer-events-none absolute top-[944px] left-0 h-[430px] w-[1440px] overflow-clip"
+          data-node-id="189:5912"
+        >
+          {stripCards.map((card, index) => (
+            <motion.img
+              key={card.src}
+              alt={card.alt}
+              className="absolute top-0 h-[430px] max-w-none"
+              style={{ left: card.left, width: card.width }}
+              src={card.src}
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.55 + index * 0.1, ease: easeOut }}
+            />
+          ))}
+        </div>
       </div>
 
       {/* --------------------------- Sections --------------------------- */}

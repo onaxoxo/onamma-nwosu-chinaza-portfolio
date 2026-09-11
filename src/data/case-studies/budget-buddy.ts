@@ -1,6 +1,18 @@
 import type { CaseStudy } from '../../components/casestudy/CaseStudyPage'
 import heroCover from '../../assets/budget/hero-cover.png'
 import screenDashboard from '../../assets/budget/screen-dashboard.png'
+import flowDiagram from '../../assets/budget/flow.png'
+import wfOnboarding from '../../assets/budget/wf-onboarding.png'
+
+/** Showcase / Carousel geometry for the wireframe slides (a 275 x 596 phone on a white 940 x 650 slide). */
+const wireframeCarousel = {
+  slideWidth: 940,
+  slideHeight: 650,
+  gap: 40,
+  slideBackground: '#ffffff',
+  slideRadius: 16,
+  image: { width: 275, height: 596.183, radius: 0 },
+}
 
 const budgetBuddy: CaseStudy = {
   slug: 'budget-buddy',
@@ -112,10 +124,11 @@ const budgetBuddy: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR USER FLOW',
-          caption: 'Space reserved for the user flow: money in through to spending staying visible',
-          height: 420,
+          kind: 'artifactImage',
+          src: flowDiagram,
+          alt: 'Budget Buddy user flow: onboarding, sign up and verification, then home, summary, add expense, wallet and profile branches',
+          height: 498,
+          image: { width: 979.573, height: 459.77 },
         },
       ],
     },
@@ -125,6 +138,7 @@ const budgetBuddy: CaseStudy = {
       blocks: [
         {
           kind: 'decisions',
+          minHeight: 223,
           items: [
             {
               badge: 'A',
@@ -163,12 +177,18 @@ const budgetBuddy: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR WIREFRAMES',
-          caption: 'Space reserved for wireframes or structure studies',
-          height: 520,
+          kind: 'carousel',
+          geometry: wireframeCarousel,
+          screens: [
+            {
+              label: 'Onboarding',
+              caption: 'Home shows what is left to spend this month, before anything else.',
+              image: wfOnboarding,
+            },
+          ],
         },
       ],
+      pb: 61,
     },
   ],
 

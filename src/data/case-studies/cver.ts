@@ -1,5 +1,5 @@
 import type { CaseStudy } from '../../components/casestudy/CaseStudyPage'
-import heroCover from '../../assets/cver/hero-cover.png'
+import problemCover from '../../assets/cver/problem-cover.jpg'
 import screenLanding from '../../assets/cver/screen-landing.png'
 
 const cver: CaseStudy = {
@@ -10,15 +10,20 @@ const cver: CaseStudy = {
     'Built for skilled immigrants who refuse to start over. Job matching, local connections and a verified directory that puts them in front of recruiters instead of into an application void.',
   tags: ['Product Design', 'Web Platform', 'Landing Page'],
   linkLabel: 'View live site',
-  heroCover,
-  heroCoverHeight: 983,
-  heroCoverStyle: { height: '235.1%', top: '-0.01%', width: '98.32%', left: '0.83%' },
 
   sections: [
     {
       label: '02 · THE PROBLEM',
       title: 'Experience that the market cannot read.',
+      blocksBeforeHead: 1,
       blocks: [
+        {
+          kind: 'cover',
+          src: problemCover,
+          alt: 'CVERAI landing page',
+          height: 849,
+          style: { height: '170.38%', top: '0', width: '100%', left: '0.01%' },
+        },
         {
           kind: 'paragraphs',
           items: [
@@ -130,6 +135,7 @@ const cver: CaseStudy = {
       blocks: [
         {
           kind: 'decisions',
+          minHeight: 210,
           items: [
             {
               badge: 'A',
@@ -166,12 +172,6 @@ const cver: CaseStudy = {
               body: 'I cannot point to a specific thing I proposed and had cut. I was one voice in a team of five and I do not remember one, so I am not going to invent it to make the story neater.',
             },
           ],
-        },
-        {
-          kind: 'artifact',
-          label: 'SPACE FOR ARTWORK',
-          caption: 'Space reserved for the before and after of the redesigned screens',
-          height: 520,
         },
       ],
     },

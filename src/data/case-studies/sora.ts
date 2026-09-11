@@ -4,6 +4,18 @@ import screenDashboard from '../../assets/sora/screen-dashboard.png'
 import screenRenewals from '../../assets/sora/screen-renewals.png'
 import screenSpending from '../../assets/sora/screen-spending.png'
 import screenAlternatives from '../../assets/sora/screen-alternatives.png'
+import flowDiagram from '../../assets/sora/flow.png'
+import wfDashboard from '../../assets/sora/wf-dashboard.png'
+
+/** Showcase / Carousel geometry for the wireframe slides (a 796 x 566 board on a white 940 x 650 slide). */
+const wireframeCarousel = {
+  slideWidth: 940,
+  slideHeight: 650,
+  gap: 40,
+  slideBackground: '#ffffff',
+  slideRadius: 16,
+  image: { width: 796, height: 566.079, radius: 0 },
+}
 
 const sora: CaseStudy = {
   slug: 'sora',
@@ -118,11 +130,11 @@ const sora: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR USER FLOW',
-          caption:
-            'Space reserved for the user flow: adding a subscription through to deciding whether to keep it',
-          height: 420,
+          kind: 'artifactImage',
+          src: flowDiagram,
+          alt: 'SORA user flow: from the splash screen through overview, subscriptions, renewals, spending, alternatives and settings',
+          height: 503,
+          image: { width: 1088.708, height: 437.154 },
         },
       ],
     },
@@ -132,6 +144,7 @@ const sora: CaseStudy = {
       blocks: [
         {
           kind: 'decisions',
+          minHeight: 215,
           items: [
             {
               badge: 'A',
@@ -175,12 +188,14 @@ const sora: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR WIREFRAMES',
-          caption: 'Space reserved for wireframes or structure studies',
-          height: 520,
+          kind: 'carousel',
+          geometry: wireframeCarousel,
+          screens: [
+            { label: 'Home screen', caption: 'Home Screen - Sora', image: wfDashboard },
+          ],
         },
       ],
+      pb: 48,
     },
   ],
 

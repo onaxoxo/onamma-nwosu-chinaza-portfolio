@@ -4,6 +4,18 @@ import decisionEditor from '../../assets/ocicat/decision-editor.png'
 import screenDashboard from '../../assets/ocicat/screen-dashboard.png'
 import screenTemplate from '../../assets/ocicat/screen-template.png'
 import screenEditor from '../../assets/ocicat/screen-editor.png'
+import flowDiagram from '../../assets/ocicat/flow.png'
+import wfDashboard from '../../assets/ocicat/wf-dashboard.png'
+
+/** Showcase / Carousel geometry for the wireframe slides (a 796 x 566 board on a white 940 x 650 slide). */
+const wireframeCarousel = {
+  slideWidth: 940,
+  slideHeight: 650,
+  gap: 40,
+  slideBackground: '#ffffff',
+  slideRadius: 16,
+  image: { width: 796, height: 566.079, radius: 0 },
+}
 
 const ocicat: CaseStudy = {
   slug: 'ocicat-ai-studio',
@@ -70,7 +82,7 @@ const ocicat: CaseStudy = {
     {
       label: '04 · THE DECISION',
       title: 'A magic prompt box, or a real editor?',
-      height: 1171,
+      height: 1127,
       blocks: [],
       placed: [
         {
@@ -119,10 +131,11 @@ const ocicat: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR USER FLOW',
-          caption: 'Space reserved for the user flow: an idea through to an exported video',
-          height: 420,
+          kind: 'artifactImage',
+          src: flowDiagram,
+          alt: 'Ocicat AI Studio user flow: landing page, sign up and dashboard, then the dashboard, create video, templates, editor, projects and account branches',
+          height: 479,
+          image: { width: 1080, height: 404.678 },
         },
       ],
     },
@@ -167,10 +180,11 @@ const ocicat: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR ARTWORK',
-          caption: 'Space reserved for the editor structure or storyboard exploration',
-          height: 520,
+          kind: 'carousel',
+          geometry: wireframeCarousel,
+          screens: [
+            { label: 'Home screen', caption: 'Home screen - Ocicat AI', image: wfDashboard },
+          ],
         },
       ],
     },

@@ -3,6 +3,20 @@ import screen1 from '../../assets/vendify/screen-1.png'
 import screen2 from '../../assets/vendify/screen-2.png'
 import screen3 from '../../assets/vendify/screen-3.png'
 import screen4 from '../../assets/vendify/screen-4.png'
+import problemCover from '../../assets/vendify/problem-cover.jpg'
+import flowDiagram from '../../assets/vendify/flow.png'
+import chatScreen from '../../assets/vendify/chat-screen.png'
+import wfHome from '../../assets/vendify/wf-home.png'
+
+/** Showcase / Carousel geometry for the wireframe slides (a 278 x 602 phone on a white 940 x 650 slide). */
+const wireframeCarousel = {
+  slideWidth: 940,
+  slideHeight: 650,
+  gap: 40,
+  slideBackground: '#ffffff',
+  slideRadius: 16,
+  image: { width: 277.683, height: 602, radius: 0 },
+}
 
 const vendify: CaseStudy = {
   slug: 'vendify',
@@ -17,7 +31,15 @@ const vendify: CaseStudy = {
     {
       label: '02 · THE PROBLEM',
       title: 'The journey is spread across four apps.',
+      blocksBeforeHead: 1,
       blocks: [
+        {
+          kind: 'cover',
+          src: problemCover,
+          alt: 'Vendify app screens',
+          height: 849,
+          fit: 'cover',
+        },
         {
           kind: 'paragraphs',
           items: [
@@ -93,15 +115,6 @@ const vendify: CaseStudy = {
               tradeoff:
                 'Trade-off: the layout gives up some polish to stay honest about what vendors will actually upload.',
             },
-            {
-              label: 'THE OLD VERSION',
-              title: 'v1 was the starting point, not the brief',
-              body: 'The published version was bulky, and it was not always clear what the user was meant to do next.',
-              solution:
-                '→ Treated the old structure as a starting point and re-cut screens, hierarchy and interactions where they were failing.',
-              tradeoff:
-                'Trade-off: this is a redesign, so nothing here was validated against real users.',
-            },
           ],
         },
       ],
@@ -121,11 +134,11 @@ const vendify: CaseStudy = {
           ],
         },
         {
-          kind: 'artifact',
-          label: 'SPACE FOR USER FLOW',
-          caption:
-            'Space reserved for the user flow: discovering a vendor through to starting a conversation',
-          height: 420,
+          kind: 'artifactImage',
+          src: flowDiagram,
+          alt: 'Vendify user flow: splash, onboarding and sign up, then home, discover, product, cart, checkout and account branches',
+          height: 468,
+          image: { width: 1031.048, height: 414.002 },
         },
       ],
     },
@@ -135,6 +148,7 @@ const vendify: CaseStudy = {
       blocks: [
         {
           kind: 'decisions',
+          minHeight: 205,
           items: [
             {
               badge: 'A',
@@ -150,9 +164,11 @@ const vendify: CaseStudy = {
           ],
         },
         {
-          kind: 'placeholder',
-          label: '[ NOT YET DESIGNED ]',
-          body: 'The in-app chat screen. The decision above is argued, but the screen has not been designed, so there is nothing to show here yet.',
+          kind: 'processArtifact',
+          src: chatScreen,
+          alt: 'The in-app chat between a customer and the NovaWear vendor, with the product being discussed pinned at the top',
+          height: 948,
+          image: { width: 390, height: 852, top: 48 },
         },
       ],
     },
@@ -161,29 +177,12 @@ const vendify: CaseStudy = {
       title: 'What opening the old file actually showed.',
       blocks: [
         {
-          kind: 'cards',
-          items: [
-            {
-              title: 'I expected a visual problem',
-              body: 'The screens were bulky and it was rarely clear what the user was meant to do next. The flow was the real problem, so the redesign became structural rather than cosmetic.',
-            },
-            {
-              title: 'Trust, with nothing to lean on',
-              body: 'There is no transaction history behind a new marketplace. The profile, the offering, the location and direct contact had to do the work that reviews normally do.',
-            },
-            {
-              title: 'Design for the vendors you get',
-              body: 'Not every vendor arrives with a curated storefront. The layout had to stay usable when a profile is thin, instead of only working in the best case.',
-            },
-          ],
-        },
-        {
-          kind: 'artifact',
-          label: 'SPACE FOR WIREFRAMES',
-          caption: 'Space reserved for wireframes or structure studies',
-          height: 520,
+          kind: 'carousel',
+          geometry: wireframeCarousel,
+          screens: [{ label: 'Home screen', caption: 'Home Screen - Vendify', image: wfHome }],
         },
       ],
+      pb: 37,
     },
   ],
 
