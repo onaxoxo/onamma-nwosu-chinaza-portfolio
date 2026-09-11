@@ -7,6 +7,9 @@ import problemCover from '../../assets/vendify/problem-cover.jpg'
 import flowDiagram from '../../assets/vendify/flow.png'
 import chatScreen from '../../assets/vendify/chat-screen.png'
 import wfHome from '../../assets/vendify/wf-home.png'
+import wfDiscover from '../../assets/vendify/wf-discover.png'
+import wfVendorProfile from '../../assets/vendify/wf-vendor-profile.png'
+import wfProduct from '../../assets/vendify/wf-product.png'
 
 /** Showcase / Carousel geometry for the wireframe slides (a 278 x 602 phone on a white 940 x 650 slide). */
 const wireframeCarousel = {
@@ -179,7 +182,12 @@ const vendify: CaseStudy = {
         {
           kind: 'carousel',
           geometry: wireframeCarousel,
-          screens: [{ label: 'Home screen', caption: 'Home Screen - Vendify', image: wfHome }],
+          screens: [
+            { label: 'Home screen', caption: 'Home Screen - Vendify', image: wfHome },
+            { label: 'Discover', caption: 'Discover - Vendify', image: wfDiscover },
+            { label: 'Vendor profile', caption: 'Vendor Profile - Vendify', image: wfVendorProfile },
+            { label: 'Product details', caption: 'Product Details - Vendify', image: wfProduct },
+          ],
         },
       ],
       pb: 37,

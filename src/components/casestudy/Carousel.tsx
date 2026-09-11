@@ -3,7 +3,13 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
-export type CarouselScreen = { label: string; caption: string; image: string }
+export type CarouselScreen = {
+  label: string
+  caption: string
+  image: string
+  /** Overrides the shared image size when one slide's artwork is a different size. */
+  size?: { width: number; height: number }
+}
 
 /** Carousel geometry, taken straight from the Figma "Showcase / Carousel" frame. */
 export type CarouselGeometry = {
@@ -78,8 +84,8 @@ export default function Carousel({
                   alt={screen.label}
                   className="pointer-events-none absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
                   style={{
-                    width: geometry.image.width,
-                    height: geometry.image.height,
+                    width: screen.size?.width ?? geometry.image.width,
+                    height: screen.size?.height ?? geometry.image.height,
                     borderRadius: geometry.image.radius,
                   }}
                   src={screen.image}

@@ -5,16 +5,18 @@ import screenRenewals from '../../assets/sora/screen-renewals.png'
 import screenSpending from '../../assets/sora/screen-spending.png'
 import screenAlternatives from '../../assets/sora/screen-alternatives.png'
 import flowDiagram from '../../assets/sora/flow.png'
-import wfDashboard from '../../assets/sora/wf-dashboard.png'
+import wfOverview from '../../assets/sora/wf-overview.png'
+import wfSubscriptions from '../../assets/sora/wf-subscriptions.png'
+import wfAlternatives from '../../assets/sora/wf-alternatives.png'
+import wfSpending from '../../assets/sora/wf-spending.png'
 
-/** Showcase / Carousel geometry for the wireframe slides (a 796 x 566 board on a white 940 x 650 slide). */
+/** Showcase / Carousel geometry for the wireframe slides: each 957-wide SaaS board is the slide itself. */
 const wireframeCarousel = {
-  slideWidth: 940,
+  slideWidth: 957,
   slideHeight: 650,
-  gap: 40,
+  gap: 177,
   slideBackground: '#ffffff',
-  slideRadius: 16,
-  image: { width: 796, height: 566.079, radius: 0 },
+  image: { width: 956.962, height: 650, radius: 0 },
 }
 
 const sora: CaseStudy = {
@@ -191,7 +193,25 @@ const sora: CaseStudy = {
           kind: 'carousel',
           geometry: wireframeCarousel,
           screens: [
-            { label: 'Home screen', caption: 'Home Screen - Sora', image: wfDashboard },
+            { label: 'Overview', caption: 'Home Screen - Sora', image: wfOverview },
+            {
+              label: 'Subscriptions',
+              caption: 'Subscriptions - Sora',
+              image: wfSubscriptions,
+              size: { width: 956.962, height: 641.772 },
+            },
+            {
+              label: 'Alternatives',
+              caption: 'Alternatives - Sora',
+              image: wfAlternatives,
+              size: { width: 956.962, height: 621.519 },
+            },
+            {
+              label: 'Spending & insights',
+              caption: 'Spending & Insights - Sora',
+              image: wfSpending,
+              size: { width: 956.962, height: 621.519 },
+            },
           ],
         },
       ],

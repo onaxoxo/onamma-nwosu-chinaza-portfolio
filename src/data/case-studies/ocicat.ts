@@ -6,6 +6,8 @@ import screenTemplate from '../../assets/ocicat/screen-template.png'
 import screenEditor from '../../assets/ocicat/screen-editor.png'
 import flowDiagram from '../../assets/ocicat/flow.png'
 import wfDashboard from '../../assets/ocicat/wf-dashboard.png'
+import wfTemplates from '../../assets/ocicat/wf-templates.png'
+import wfEditor from '../../assets/ocicat/wf-editor.png'
 
 /** Showcase / Carousel geometry for the wireframe slides (a 796 x 566 board on a white 940 x 650 slide). */
 const wireframeCarousel = {
@@ -184,6 +186,8 @@ const ocicat: CaseStudy = {
           geometry: wireframeCarousel,
           screens: [
             { label: 'Home screen', caption: 'Home screen - Ocicat AI', image: wfDashboard },
+            { label: 'Template library', caption: 'Template library - Ocicat AI', image: wfTemplates },
+            { label: 'Editor', caption: 'Editor - Ocicat AI', image: wfEditor },
           ],
         },
       ],

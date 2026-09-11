@@ -1,6 +1,8 @@
 import type { CaseStudy } from '../../components/casestudy/CaseStudyPage'
 import problemCover from '../../assets/cver/problem-cover.jpg'
 import screenLanding from '../../assets/cver/screen-landing.png'
+import screenPricing from '../../assets/cver/screen-pricing.png'
+import screenTestimonials from '../../assets/cver/screen-testimonials.png'
 
 const cver: CaseStudy = {
   slug: 'cver',
@@ -180,7 +182,7 @@ const cver: CaseStudy = {
   carousel: {
     slideWidth: 940,
     slideHeight: 650,
-    gap: 40,
+    gap: 20,
     slideBackground: '#fafafa',
     slideRadius: 16,
     offsetX: -20,
@@ -194,6 +196,16 @@ const cver: CaseStudy = {
       label: 'Landing',
       caption: 'Job matches, ranked, with the reason each role fits shown up front.',
       image: screenLanding,
+    },
+    {
+      label: 'Pricing',
+      caption: 'Pricing, with the recommended plan given the stronger hierarchy.',
+      image: screenPricing,
+    },
+    {
+      label: 'Testimonials',
+      caption: 'What members are saying: social proof from people who already made the move.',
+      image: screenTestimonials,
     },
   ],
 

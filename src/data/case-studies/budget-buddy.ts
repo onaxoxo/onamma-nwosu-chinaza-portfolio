@@ -3,6 +3,12 @@ import heroCover from '../../assets/budget/hero-cover.png'
 import screenDashboard from '../../assets/budget/screen-dashboard.png'
 import flowDiagram from '../../assets/budget/flow.png'
 import wfOnboarding from '../../assets/budget/wf-onboarding.png'
+import wfHome from '../../assets/budget/wf-home.png'
+import wfSummary from '../../assets/budget/wf-summary.png'
+import wfWallet from '../../assets/budget/wf-wallet.png'
+import screenDouble from '../../assets/budget/screen-double.png'
+import screenWallet from '../../assets/budget/screen-wallet.png'
+import screenAddMoney from '../../assets/budget/screen-addmoney.png'
 
 /** Showcase / Carousel geometry for the wireframe slides (a 275 x 596 phone on a white 940 x 650 slide). */
 const wireframeCarousel = {
@@ -185,6 +191,9 @@ const budgetBuddy: CaseStudy = {
               caption: 'Home shows what is left to spend this month, before anything else.',
               image: wfOnboarding,
             },
+            { label: 'Home', caption: 'Home - Budget Buddy', image: wfHome },
+            { label: 'Summary', caption: 'Summary - Budget Buddy', image: wfSummary },
+            { label: 'Wallet', caption: 'Wallet - Budget Buddy', image: wfWallet },
           ],
         },
       ],
@@ -207,6 +216,21 @@ const budgetBuddy: CaseStudy = {
       label: 'Dashboard',
       caption: 'Home shows what is left to spend this month, before anything else.',
       image: screenDashboard,
+    },
+    {
+      label: 'Dashboard and summary',
+      caption: 'The dashboard and the monthly summary side by side.',
+      image: screenDouble,
+    },
+    {
+      label: 'Wallet',
+      caption: 'The wallet: balance, linked bank account and recent transactions.',
+      image: screenWallet,
+    },
+    {
+      label: 'Add money',
+      caption: 'Adding money to the wallet.',
+      image: screenAddMoney,
     },
   ],
 
