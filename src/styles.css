@@ -23,7 +23,17 @@ body {
   font-family: var(--font-geist);
 }
 
-/* The design is a fixed 1440px desktop canvas. */
+/*
+ * The design is a fixed 1440px desktop canvas. Instead of letting narrower
+ * windows scroll sideways, the whole canvas is zoomed to the viewport width
+ * (see useCanvasZoom in main.tsx), so the page only ever scrolls vertically.
+ */
+html,
+body {
+  overflow-x: hidden;
+}
+
 #root {
-  min-width: 1440px;
+  width: 1440px;
+  zoom: var(--canvas-zoom, 1);
 }
