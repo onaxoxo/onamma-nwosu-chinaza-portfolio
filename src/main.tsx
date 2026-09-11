@@ -3,10 +3,17 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import './styles.css'
+import { MOBILE_BREAKPOINT } from './hooks/useIsMobile'
 
-/** Zoom the 1440px canvas to the viewport width so the page never scrolls horizontally. */
+/**
+ * Zoom the 1440px desktop canvas to the viewport width so the page never scrolls
+ * horizontally. Below the mobile breakpoint the mobile layout takes over and no zoom applies.
+ */
 function applyCanvasZoom() {
-  document.documentElement.style.setProperty('--canvas-zoom', String(document.documentElement.clientWidth / 1440))
+  const width = document.documentElement.clientWidth
+  const zoom = width < MOBILE_BREAKPOINT ? 1 : width / 1440
+  document.documentElement.style.setProperty('--canvas-zoom', String(zoom))
+  document.documentElement.classList.toggle('mobile', width < MOBILE_BREAKPOINT)
 }
 applyCanvasZoom()
 window.addEventListener('resize', applyCanvasZoom)

@@ -28,12 +28,17 @@ body {
  * windows scroll sideways, the whole canvas is zoomed to the viewport width
  * (see useCanvasZoom in main.tsx), so the page only ever scrolls vertically.
  */
-html,
-body {
+html {
   overflow-x: hidden;
 }
 
 #root {
   width: 1440px;
   zoom: var(--canvas-zoom, 1);
+}
+
+/* Mobile layout: fluid width, no zoom. */
+html.mobile #root {
+  width: 100%;
+  zoom: 1;
 }

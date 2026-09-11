@@ -2,6 +2,9 @@ import { useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import CaseStudyPage from './components/casestudy/CaseStudyPage'
+import MobileHome from './mobile/MobileHome'
+import MobileCaseStudy from './mobile/MobileCaseStudy'
+import { useIsMobile } from './hooks/useIsMobile'
 import sora from './data/case-studies/sora'
 import ocicat from './data/case-studies/ocicat'
 import cver from './data/case-studies/cver'
@@ -19,16 +22,20 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const isMobile = useIsMobile()
+
   return (
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={isMobile ? <MobileHome /> : <Home />} />
         {caseStudies.map((study) => (
           <Route
             key={study.slug}
             path={`/case-study/${study.slug}`}
-            element={<CaseStudyPage study={study} />}
+            element={
+              isMobile ? <MobileCaseStudy study={study} /> : <CaseStudyPage study={study} />
+            }
           />
         ))}
       </Routes>

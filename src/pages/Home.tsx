@@ -5,8 +5,8 @@ import Footer from '../components/Footer'
 import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import { landingProjects } from '../data/projects'
+import { processSteps, reviews, stats, tools } from '../data/landing'
 import portrait from '../assets/landing/portrait.png'
-import avatar1 from '../assets/landing/avatar-1.png'
 import dotGreen from '../assets/landing/dot-green.svg'
 import dotOrange from '../assets/landing/dot-orange.svg'
 import stripCard1 from '../assets/landing/strip/card-1.png'
@@ -15,74 +15,11 @@ import stripCard3 from '../assets/landing/strip/card-3.png'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
-const processSteps = [
-  {
-    number: '01',
-    title: 'Discover',
-    body: 'Interviews, competitor teardowns and whatever data exists. I want the messy version of the problem before anyone starts talking about screens.',
-  },
-  {
-    number: '02',
-    title: 'Define',
-    body: 'Turn the mess into a decision: who this is for, what it has to do, and what we are deliberately not building this round.',
-  },
-  {
-    number: '03',
-    title: 'Design',
-    body: 'Flows, wireframes, then interface. Tested against real content and real edge cases, not the happy path only.',
-  },
-  {
-    number: '04',
-    title: 'Ship',
-    body: 'Specs, tokens and a build-ready handoff. I stay in it through development, because that is where designs quietly get broken.',
-  },
-]
-
-const tools = [
-  'Figma',
-  'Framer',
-  'Webflow',
-  'Prototyping',
-  'Design systems',
-  'Wireframing',
-]
-
-const reviews = [
-  {
-    quote:
-      '“She asked the questions nobody else on the project was asking. What came back was not just prettier — it was a version of the product that actually made sense to use.”',
-    initials: 'AB',
-    avatar: avatar1,
-    name: 'John Frank',
-    role: 'Founder · Makeda',
-  },
-  {
-    quote:
-      '“Handover was the easiest part of the build. Every state was there, the spacing was consistent, and I did not have to go back and ask what happens on error.”',
-    initials: 'CD',
-    name: 'Anu kaka',
-    role: 'Founder · Zoe Verse',
-  },
-  {
-    quote:
-      '“Fast, clear and genuinely easy to work with. She pushed back on a couple of my ideas and she was right to — the end result was much stronger for it.”',
-    initials: 'EF',
-    name: 'Michael Odaefe',
-    role: 'Founder  · CverAI',
-  },
-]
-
 /** Cards from the hero strip (Figma 189:5912), exported already clipped to the 1440px canvas. */
 const stripCards = [
   { src: stripCard1, alt: 'Budget Buddy dashboard', left: 0, width: 437 },
   { src: stripCard2, alt: 'Budget Buddy dashboard and summary screens', left: 459, width: 544 },
   { src: stripCard3, alt: 'Marbella Skin landing page', left: 1025, width: 415 },
-]
-
-const stats = [
-  { value: '2 yrs', label: 'UI/UX experience' },
-  { value: '04', label: 'Industries' },
-  { value: 'Framer + Webflow + Claude', label: 'My build stack' },
 ]
 
 export default function Home() {
