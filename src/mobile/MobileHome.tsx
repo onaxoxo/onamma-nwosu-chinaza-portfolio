@@ -127,12 +127,12 @@ export default function MobileHome() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.55, ease: easeOut }}
       >
-        <Marquee gap={12} speed={40}>
+        <Marquee gap={12} speed={70}>
           {stripCards.map((card) => (
             <img
               key={card.src}
               alt={card.alt}
-              className="h-[230px] w-[291px] max-w-none shrink-0"
+              className="h-[230px] w-[291px] max-w-none shrink-0 rounded-[22px]"
               src={card.src}
             />
           ))}

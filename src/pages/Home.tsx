@@ -127,12 +127,12 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.55, ease: easeOut }}
         >
-          <Marquee gap={22} speed={55}>
+          <Marquee gap={22} speed={90}>
             {stripCards.map((card) => (
               <img
                 key={card.src}
                 alt={card.alt}
-                className="h-[430px] w-[544px] max-w-none shrink-0"
+                className="h-[430px] w-[544px] max-w-none shrink-0 rounded-[42px]"
                 src={card.src}
               />
             ))}
