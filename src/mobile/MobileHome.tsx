@@ -11,6 +11,13 @@ import dotOrange from '../assets/landing/dot-orange.svg'
 import stripCard1 from '../assets/landing/strip/card-1.png'
 import stripCard2 from '../assets/landing/strip/card-2.png'
 import stripCard3 from '../assets/landing/strip/card-3.png'
+import stripCard4 from '../assets/landing/strip/card-4.png'
+import stripCard5 from '../assets/landing/strip/card-5.png'
+import stripCard6 from '../assets/landing/strip/card-6.png'
+import stripCard7 from '../assets/landing/strip/card-7.png'
+import stripCard8 from '../assets/landing/strip/card-8.png'
+import Marquee from '../components/Marquee'
+import StackedCards from '../components/StackedCards'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
@@ -18,6 +25,11 @@ const stripCards = [
   { src: stripCard1, alt: 'Budget Buddy dashboard' },
   { src: stripCard2, alt: 'Budget Buddy dashboard and summary screens' },
   { src: stripCard3, alt: 'Marbella Skin landing page' },
+  { src: stripCard4, alt: 'Ocicat AI Studio landing page' },
+  { src: stripCard5, alt: 'CVER landing page' },
+  { src: stripCard6, alt: 'Vendify home screen' },
+  { src: stripCard7, alt: 'Vendify welcome screen' },
+  { src: stripCard8, alt: 'Vendify chat list' },
 ]
 
 function Eyebrow({ children }: { children: string }) {
@@ -109,21 +121,22 @@ export default function MobileHome() {
         </motion.div>
       </section>
 
-      {/* Project strip: swipe sideways inside the row, the page itself never scrolls horizontally. */}
+      {/* Project strip, looping endlessly. */}
       <motion.div
-        className="flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.55, ease: easeOut }}
       >
-        {stripCards.map((card) => (
-          <img
-            key={card.src}
-            alt={card.alt}
-            className="h-[230px] w-auto shrink-0 snap-center rounded-[24px]"
-            src={card.src}
-          />
-        ))}
+        <Marquee gap={12} speed={40}>
+          {stripCards.map((card) => (
+            <img
+              key={card.src}
+              alt={card.alt}
+              className="h-[230px] w-[291px] max-w-none shrink-0"
+              src={card.src}
+            />
+          ))}
+        </Marquee>
       </motion.div>
 
       {/* Live projects */}
@@ -134,7 +147,7 @@ export default function MobileHome() {
             <SectionTitle>Live projects</SectionTitle>
           </div>
         </Reveal>
-        <div className="flex flex-col gap-4">
+        <StackedCards top={84} step={10} gap={16} minScale={0.95}>
           {landingProjects.map((project, index) => (
             <motion.div
               key={project.nodeId}
@@ -185,7 +198,7 @@ export default function MobileHome() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </StackedCards>
       </section>
 
       {/* About */}

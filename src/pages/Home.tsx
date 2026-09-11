@@ -12,14 +12,26 @@ import dotOrange from '../assets/landing/dot-orange.svg'
 import stripCard1 from '../assets/landing/strip/card-1.png'
 import stripCard2 from '../assets/landing/strip/card-2.png'
 import stripCard3 from '../assets/landing/strip/card-3.png'
+import stripCard4 from '../assets/landing/strip/card-4.png'
+import stripCard5 from '../assets/landing/strip/card-5.png'
+import stripCard6 from '../assets/landing/strip/card-6.png'
+import stripCard7 from '../assets/landing/strip/card-7.png'
+import stripCard8 from '../assets/landing/strip/card-8.png'
+import Marquee from '../components/Marquee'
+import StackedCards from '../components/StackedCards'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
-/** Cards from the hero strip (Figma 189:5912), exported already clipped to the 1440px canvas. */
+/** The eight cards from the Figma hero strip (189:5912), looped as a marquee. */
 const stripCards = [
-  { src: stripCard1, alt: 'Budget Buddy dashboard', left: 0, width: 437 },
-  { src: stripCard2, alt: 'Budget Buddy dashboard and summary screens', left: 459, width: 544 },
-  { src: stripCard3, alt: 'Marbella Skin landing page', left: 1025, width: 415 },
+  { src: stripCard1, alt: 'Budget Buddy dashboard' },
+  { src: stripCard2, alt: 'Budget Buddy dashboard and summary screens' },
+  { src: stripCard3, alt: 'Marbella Skin landing page' },
+  { src: stripCard4, alt: 'Ocicat AI Studio landing page' },
+  { src: stripCard5, alt: 'CVER landing page' },
+  { src: stripCard6, alt: 'Vendify home screen' },
+  { src: stripCard7, alt: 'Vendify welcome screen' },
+  { src: stripCard8, alt: 'Vendify chat list' },
 ]
 
 export default function Home() {
@@ -107,24 +119,25 @@ export default function Home() {
           </motion.a>
         </motion.div>
 
-        {/* Project card strip. The Figma strip starts 107px off-canvas, so the first and last cards are clipped by the page edge. */}
-        <div
-          className="pointer-events-none absolute top-[944px] left-0 h-[430px] w-[1440px] overflow-clip"
+        {/* Project card strip (Figma 189:5912), looping endlessly. */}
+        <motion.div
+          className="pointer-events-none absolute top-[944px] left-0 w-[1440px]"
           data-node-id="189:5912"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.55, ease: easeOut }}
         >
-          {stripCards.map((card, index) => (
-            <motion.img
-              key={card.src}
-              alt={card.alt}
-              className="absolute top-0 h-[430px] max-w-none"
-              style={{ left: card.left, width: card.width }}
-              src={card.src}
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.55 + index * 0.1, ease: easeOut }}
-            />
-          ))}
-        </div>
+          <Marquee gap={22} speed={55}>
+            {stripCards.map((card) => (
+              <img
+                key={card.src}
+                alt={card.alt}
+                className="h-[430px] w-[544px] max-w-none shrink-0"
+                src={card.src}
+              />
+            ))}
+          </Marquee>
+        </motion.div>
       </div>
 
       {/* --------------------------- Sections --------------------------- */}
@@ -156,13 +169,12 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div
-            className="relative flex w-full shrink-0 flex-col items-start gap-[28px] overflow-clip"
-            data-node-id="176:1455"
-          >
-            {landingProjects.map((project) => (
-              <ProjectCard key={project.nodeId} project={project} />
-            ))}
+          <div className="relative w-full shrink-0" data-node-id="176:1455">
+            <StackedCards top={120} step={20} gap={28}>
+              {landingProjects.map((project) => (
+                <ProjectCard key={project.nodeId} project={project} />
+              ))}
+            </StackedCards>
           </div>
         </div>
 
