@@ -421,7 +421,7 @@ export default function Home() {
               </p>
               <div className="relative flex shrink-0 items-start gap-[17px] overflow-clip pt-[18px]">
                 <motion.a
-                  href="mailto:onanwosu18373@gmail.com"
+                  href="mailto:onammanwosu19@gmail.com"
                   className="relative flex shrink-0 items-center gap-[2px] overflow-clip rounded-[34px] bg-[#f97316] px-[35px] py-[15px] font-semibold leading-[normal] whitespace-nowrap text-white"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
@@ -446,7 +446,7 @@ export default function Home() {
                 <p className="relative shrink-0 font-normal text-[rgba(255,255,255,0.55)]">
                   or email me directly &mdash;
                 </p>
-                <p className="relative shrink-0 font-medium text-white">onanwosu18373@gmail.com</p>
+                <p className="relative shrink-0 font-medium text-white">onammanwosu19@gmail.com</p>
               </div>
             </div>
           </Reveal>

@@ -2,6 +2,7 @@ import thumbSora from '../assets/landing/thumb-sora.png'
 import thumbOcicat from '../assets/landing/thumb-ocicat.png'
 import thumbVendify from '../assets/landing/thumb-vendify.png'
 import thumbBudget from '../assets/landing/thumb-budget.png'
+import thumbCver from '../assets/landing/thumb-cver.png'
 
 export type LandingProject = {
   nodeId: string
@@ -58,6 +59,8 @@ export const landingProjects: LandingProject[] = [
     tags: ['Product Design', 'Web Platform', 'Landing Page'],
     linkLabel: 'View live site',
     to: '/case-study/cver',
+    thumbnail: thumbCver,
+    thumbnailFit: 'top',
   },
   {
     nodeId: '176:1515',

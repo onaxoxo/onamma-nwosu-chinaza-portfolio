@@ -349,7 +349,7 @@ export default function MobileHome() {
               whether design is the fix.
             </p>
             <div className="mt-2 flex w-full flex-col gap-3">
-              <a href="mailto:onanwosu18373@gmail.com" className={primaryButton}>
+              <a href="mailto:onammanwosu19@gmail.com" className={primaryButton}>
                 Contact Me &#8599;
               </a>
               <a
@@ -361,7 +361,7 @@ export default function MobileHome() {
             </div>
             <p className="pt-2 text-[14px] text-[rgba(255,255,255,0.55)]">
               or email me directly &mdash;{' '}
-              <span className="font-medium text-white">onanwosu18373@gmail.com</span>
+              <span className="font-medium text-white">onammanwosu19@gmail.com</span>
             </p>
           </div>
         </Reveal>

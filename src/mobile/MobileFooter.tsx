@@ -42,11 +42,12 @@ export default function MobileFooter() {
         </div>
         <div className="flex flex-col gap-3">
           <p className="font-semibold text-[16px] text-[#0d0d0d]">Get in touch</p>
-          <a href="mailto:onanwosu18373@gmail.com" className="text-[15px] break-all text-[#626262]">
-            onanwosu18373@gmail.com
+          <a href="mailto:onammanwosu19@gmail.com" className="text-[15px] break-all text-[#626262]">
+            onammanwosu19@gmail.com
           </a>
-          <p className="text-[15px] text-[#626262]">0805 846 4733</p>
-          <p className="text-[15px] text-[#626262]">Lagos, Nigeria</p>
+          <p className="text-[15px] text-[#626262]">+2349035020776</p>
+          <p className="text-[15px] text-[#626262]">+2348144826566</p>
+          <p className="text-[15px] text-[#626262]">Abuja, Nigeria</p>
         </div>
       </div>
 

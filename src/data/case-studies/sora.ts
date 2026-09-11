@@ -40,7 +40,7 @@ const sora: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'She knows she is spending money on subscriptions. What she does not have is one place showing what they cost her in a month or a year.',
+              text: 'The user knows she is spending money on subscriptions. What she does not have is one place showing what they cost her in a month or a year.',
               size: 20,
               color: '#0d0d0d',
             },

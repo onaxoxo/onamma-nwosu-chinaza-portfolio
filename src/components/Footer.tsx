@@ -7,7 +7,12 @@ const projectLinks = [
   { label: 'CVER', to: '/case-study/cver' },
   { label: 'Marbella Skin', to: '/case-study/vendify' },
 ]
-const contactLines = ['onanwosu18373@gmail.com', '0805 846 4733', 'Lagos, Nigeria']
+const contactLines = [
+  'onammanwosu19@gmail.com',
+  '+2349035020776',
+  '+2348144826566',
+  'Abuja, Nigeria',
+]
 
 function Column({ title, children }: { title: string; children: React.ReactNode }) {
   return (

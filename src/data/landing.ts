@@ -60,5 +60,5 @@ export const reviews = [
 export const stats = [
   { value: '2 yrs', label: 'UI/UX experience' },
   { value: '04', label: 'Industries' },
-  { value: 'Framer + Webflow + Claude', label: 'My build stack' },
+  { value: 'Framer + Claude', label: 'My build stack' },
 ]

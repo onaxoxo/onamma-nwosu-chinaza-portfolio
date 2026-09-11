@@ -82,14 +82,14 @@ export default function MobileNav() {
             </nav>
             <div className="mt-12 flex flex-col gap-3">
               <a
-                href="mailto:onanwosu18373@gmail.com"
+                href="mailto:onammanwosu19@gmail.com"
                 onClick={() => setOpen(false)}
                 className="flex items-center justify-center rounded-full bg-[#f97316] py-4 font-semibold text-[17px] text-white"
               >
                 Contact Me &#8599;
               </a>
               <p className="text-center text-[14px] text-[rgba(255,255,255,0.55)]">
-                onanwosu18373@gmail.com
+                onammanwosu19@gmail.com
               </p>
             </div>
           </motion.div>
