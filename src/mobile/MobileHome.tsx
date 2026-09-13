@@ -66,7 +66,13 @@ export default function MobileHome() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1, ease: easeOut }}
         >
-          <img alt="" className="block size-3" src={dotGreen} />
+          <motion.img
+            alt=""
+            className="block size-3"
+            src={dotGreen}
+            animate={{ opacity: [1, 0.25, 1], scale: [1, 0.85, 1] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+          />
           <p className="font-medium text-[15px] text-black">Available to work</p>
         </motion.div>
 

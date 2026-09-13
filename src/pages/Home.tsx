@@ -50,7 +50,13 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.1, ease: easeOut }}
         >
           <div className="relative size-[15px] shrink-0">
-            <img alt="" className="absolute inset-0 block size-full max-w-none" src={dotGreen} />
+            <motion.img
+              alt=""
+              className="absolute inset-0 block size-full max-w-none"
+              src={dotGreen}
+              animate={{ opacity: [1, 0.25, 1], scale: [1, 0.85, 1] }}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            />
           </div>
           <p className="relative shrink-0 font-medium leading-[normal] whitespace-nowrap text-[20px] text-black">
             Available to work
