@@ -3,6 +3,9 @@ import x from '../assets/social/x.svg'
 import linkedin from '../assets/social/linkedin.svg'
 import behance from '../assets/social/behance.svg'
 
+/** The CV lives in /public so it opens in the browser's PDF viewer, where it can be saved. */
+export const cvUrl = '/Onamma-Nwosu-CV.pdf'
+
 /** Every "Contact Me" button opens WhatsApp. */
 export const contactUrl = 'https://wa.me/+2349035020776'
 

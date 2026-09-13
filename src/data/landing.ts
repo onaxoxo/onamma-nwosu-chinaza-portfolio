@@ -35,7 +35,7 @@ export const tools = [
 export const reviews = [
   {
     quote:
-      '“She asked the questions nobody else on the project was asking. What came back was not just prettier — it was a version of the product that actually made sense to use.”',
+      '“She asked the questions nobody else on the project was asking. What came back was not just prettier. It was a version of the product that actually made sense to use.”',
     initials: 'AB',
     avatar: avatar1,
     name: 'John Frank',
@@ -50,7 +50,7 @@ export const reviews = [
   },
   {
     quote:
-      '“Fast, clear and genuinely easy to work with. She pushed back on a couple of my ideas and she was right to — the end result was much stronger for it.”',
+      '“Fast, clear and genuinely easy to work with. She pushed back on a couple of my ideas and she was right to. The end result was much stronger for it.”',
     initials: 'EF',
     name: 'Michael Odaefe',
     role: 'Founder  · CverAI',
@@ -60,5 +60,5 @@ export const reviews = [
 export const stats = [
   { value: '2 yrs', label: 'UI/UX experience' },
   { value: '04', label: 'Industries' },
-  { value: 'Framer + Claude', label: 'My build stack' },
+  { value: 'Figma + Framer + Claude', label: 'My build stack' },
 ]

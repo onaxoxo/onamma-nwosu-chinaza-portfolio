@@ -5,7 +5,7 @@ import MobileFooter from './MobileFooter'
 import Reveal from '../components/Reveal'
 import { landingProjects } from '../data/projects'
 import { processSteps, reviews, stats, tools } from '../data/landing'
-import { contactUrl } from '../data/links'
+import { contactUrl, cvUrl } from '../data/links'
 import portrait from '../assets/landing/portrait.png'
 import dotGreen from '../assets/landing/dot-green.svg'
 import dotOrange from '../assets/landing/dot-orange.svg'
@@ -237,13 +237,13 @@ export default function MobileHome() {
             </p>
             <p className="text-[16px] leading-[26px] text-[#0d0d0d]">
               I am Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I have
-              shipped work across AI, fintech, e-commerce and career tech &mdash; taking products
-              from a messy first brief to an interface people can actually use.
+              shipped work across AI, fintech, e-commerce and career tech, taking products from a
+              messy first brief to an interface people can actually use.
             </p>
             <p className="text-[16px] leading-[26px] text-[#626262]">
-              I design and I build. I ship with Framer, Webflow &amp; Claude, which means my work
-              does not stop at a static mockup &mdash; it goes out as a live, responsive product in
-              days rather than weeks. That is the difference between a team debating an idea and a
+              I design and I build. I ship with Figma, Framer and Claude AI, which means my work
+              does not stop at a static mockup. It goes out as a live, responsive product in days
+              rather than weeks. That is the difference between a team debating an idea and a
               team watching real users try it.
             </p>
             <div className="mt-2 grid grid-cols-2 gap-4">
@@ -256,7 +256,7 @@ export default function MobileHome() {
                 </div>
               ))}
             </div>
-            <a href="#" className={`${outlineButton} mt-2 self-start`}>
+            <a href={cvUrl} target="_blank" rel="noreferrer" className={`${outlineButton} mt-2 self-start`}>
               Download CV <span>&darr;</span>
             </a>
           </div>
@@ -384,7 +384,7 @@ export default function MobileHome() {
               </a>
             </div>
             <p className="pt-2 text-[14px] text-[rgba(255,255,255,0.55)]">
-              or email me directly &mdash;{' '}
+              or email me directly at{' '}
               <span className="font-medium text-white">onammanwosu19@gmail.com</span>
             </p>
           </div>

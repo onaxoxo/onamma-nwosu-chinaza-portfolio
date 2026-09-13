@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import arrowNe from '../assets/landing/arrow-ne.svg'
 import downloadIcon from '../assets/landing/download.svg'
-import { contactUrl } from '../data/links'
+import { contactUrl, cvUrl } from '../data/links'
 
 /** Arrow glyph used inside the orange "Contact Me" pill. */
 export function ContactArrow() {
@@ -40,7 +40,9 @@ export function ContactMeButton({ className = '' }: { className?: string }) {
 export function DownloadCvButton() {
   return (
     <motion.a
-      href="#"
+      href={cvUrl}
+      target="_blank"
+      rel="noreferrer"
       className="absolute top-[29px] left-[1146px] flex h-[69px] w-[224px] items-center justify-center rounded-[34px] shadow-[inset_0_0_0_1.5px_rgba(13,13,13,0.8)] px-[35px] py-[15px]"
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.98 }}

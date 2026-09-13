@@ -28,6 +28,7 @@ const budgetBuddy: CaseStudy = {
     'A personal finance app for students that tracks spending, manages budgets and helps them save, with a built-in wallet for moving funds securely.',
   tags: ['Mobile Design', 'Fintech', 'Visual Design'],
   linkLabel: 'View case study',
+  liveUrl: 'https://www.behance.net/gallery/248083805/Budget-Buddy-Smart-Student-Budgeting-with-Wallet',
   heroCover,
   heroCoverHeight: 819,
   heroCoverFit: 'cover',

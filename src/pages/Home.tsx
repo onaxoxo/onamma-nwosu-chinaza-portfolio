@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import { landingProjects } from '../data/projects'
 import { processSteps, reviews, stats, tools } from '../data/landing'
-import { contactUrl } from '../data/links'
+import { contactUrl, cvUrl } from '../data/links'
 import portrait from '../assets/landing/portrait.png'
 import dotGreen from '../assets/landing/dot-green.svg'
 import dotOrange from '../assets/landing/dot-orange.svg'
@@ -214,11 +214,11 @@ export default function Home() {
                 </p>
                 <p className="relative w-[620px] shrink-0 font-normal leading-[32px] text-[20px] text-[#0d0d0d]">
                   I am Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I have
-                  shipped work across AI, fintech, e-commerce and career tech &mdash; taking
-                  products from a messy first brief to an interface people can actually use.
+                  shipped work across AI, fintech, e-commerce and career tech, taking products
+                  from a messy first brief to an interface people can actually use.
                 </p>
                 <p className="relative w-[620px] shrink-0 font-normal leading-[32px] text-[20px] text-[#626262]">
-                  {'I design and I build. I ship with Framer, Web flow & Claude, which means my work does not stop at a static mockup it goes out as a live, responsive product in days rather than weeks. That is the difference between a team debating an idea and a team watching real users try it.'}
+                  {'I design and I build. I ship with Figma, Framer and Claude AI, which means my work does not stop at a static mockup. It goes out as a live, responsive product in days rather than weeks. That is the difference between a team debating an idea and a team watching real users try it.'}
                 </p>
                 <div className="relative flex shrink-0 items-center overflow-clip pt-[14px]">
                   {stats.map((stat, index) => (
@@ -242,7 +242,9 @@ export default function Home() {
                   ))}
                 </div>
                 <motion.a
-                  href="#"
+                  href={cvUrl}
+                  target="_blank"
+                  rel="noreferrer"
                   className="relative flex shrink-0 items-center gap-[12px] overflow-clip rounded-[34px] shadow-[inset_0_0_0_1.5px_rgba(13,13,13,0.8)] px-[35px] py-[18px] font-semibold leading-[normal] whitespace-nowrap text-[20px] text-[#0d0d0d]"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
@@ -345,8 +347,8 @@ export default function Home() {
                 What it is like to work with me
               </p>
               <p className="relative w-[700px] shrink-0 font-normal leading-[32px] text-[20px] text-[#626262]">
-                Placeholder quotes &mdash; swap in real words from a client, teammate or lecturer
-                before this page goes live.
+                Placeholder quotes. Swap in real words from a client, teammate or lecturer before
+                this page goes live.
               </p>
             </div>
           </Reveal>
@@ -458,7 +460,7 @@ export default function Home() {
               </div>
               <div className="relative flex shrink-0 items-center gap-[10px] overflow-clip pt-[22px] leading-[normal] whitespace-nowrap text-[18px]">
                 <p className="relative shrink-0 font-normal text-[rgba(255,255,255,0.55)]">
-                  or email me directly &mdash;
+                  or email me directly at
                 </p>
                 <p className="relative shrink-0 font-medium text-white">onammanwosu19@gmail.com</p>
               </div>
