@@ -14,6 +14,8 @@ export type LandingProject = {
   tags: string[]
   linkLabel: string
   to: string
+  /** External URL for "View live site" links; the card otherwise opens the case study. */
+  liveUrl?: string
   thumbnail?: string
   /** Some thumbnails are cropped inside their frame rather than object-cover. */
   thumbnailFit?: 'cover' | 'top'
@@ -45,6 +47,7 @@ export const landingProjects: LandingProject[] = [
     tags: ['UI/UX', 'Web App', 'AI Product'],
     linkLabel: 'View live site',
     to: '/case-study/ocicat-ai-studio',
+    liveUrl: 'https://ocicataistudio.framer.website/',
     thumbnail: thumbOcicat,
     thumbnailFit: 'top',
   },
@@ -59,6 +62,7 @@ export const landingProjects: LandingProject[] = [
     tags: ['Product Design', 'Web Platform', 'Landing Page'],
     linkLabel: 'View live site',
     to: '/case-study/cver',
+    liveUrl: 'https://cverai.com/',
     thumbnail: thumbCver,
     thumbnailFit: 'top',
   },

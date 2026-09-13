@@ -425,7 +425,12 @@ export default function MobileCaseStudy({ study }: { study: CaseStudy }) {
             </span>
           ))}
         </div>
-        <a href="#" className="flex items-center gap-1.5 font-medium text-[15px] text-[#f97316]">
+        <a
+          href={study.liveUrl ?? '#'}
+          target={study.liveUrl ? '_blank' : undefined}
+          rel={study.liveUrl ? 'noreferrer' : undefined}
+          className="flex items-center gap-1.5 font-medium text-[15px] text-[#f97316]"
+        >
           {study.linkLabel} <span>&#8599;</span>
         </a>
         {study.heroCover && (

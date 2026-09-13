@@ -6,6 +6,7 @@ import ProjectCard from '../components/ProjectCard'
 import Reveal from '../components/Reveal'
 import { landingProjects } from '../data/projects'
 import { processSteps, reviews, stats, tools } from '../data/landing'
+import { contactUrl } from '../data/links'
 import portrait from '../assets/landing/portrait.png'
 import dotGreen from '../assets/landing/dot-green.svg'
 import dotOrange from '../assets/landing/dot-orange.svg'
@@ -433,7 +434,8 @@ export default function Home() {
               </p>
               <div className="relative flex shrink-0 items-start gap-[17px] overflow-clip pt-[18px]">
                 <motion.a
-                  href="mailto:onammanwosu19@gmail.com"
+                  href={contactUrl}
+                  target="_blank" rel="noreferrer"
                   className="relative flex shrink-0 items-center gap-[2px] overflow-clip rounded-[34px] bg-[#f97316] px-[35px] py-[15px] font-semibold leading-[normal] whitespace-nowrap text-white"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}

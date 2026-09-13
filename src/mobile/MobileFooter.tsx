@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { socials } from '../data/links'
 
 const projectLinks = [
   { label: 'SORA', to: '/case-study/sora' },
@@ -19,13 +20,15 @@ export default function MobileFooter() {
           Available for full-time and freelance work.
         </p>
         <div className="flex gap-2 pt-1">
-          {['IG', 'X', 'LI', 'BE'].map((social) => (
+          {socials.map((social) => (
             <a
-              key={social}
-              href="#"
-              className="flex size-10 items-center justify-center rounded-full font-medium text-[13px] text-[#0d0d0d] shadow-[inset_0_0_0_1px_#e0e0e0]"
+              key={social.label}
+              href={social.href}
+              target="_blank" rel="noreferrer"
+              aria-label={social.label}
+              className="block size-10 overflow-clip rounded-full"
             >
-              {social}
+              <img alt="" className="block size-full" src={social.icon} />
             </a>
           ))}
         </div>

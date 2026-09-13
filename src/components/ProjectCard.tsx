@@ -67,15 +67,35 @@ export default function ProjectCard({ project }: { project: LandingProject }) {
             <Tag key={tag} label={tag} />
           ))}
         </div>
-        <Link
-          to={project.to}
-          className="group relative flex shrink-0 items-center gap-[8px] overflow-clip pt-[10px] font-semibold leading-[normal] whitespace-nowrap text-[18px] text-[#f97316]"
-        >
-          <p className="relative shrink-0">{project.linkLabel}</p>
-          <p className="relative shrink-0 transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]">
-            &#8599;
-          </p>
-        </Link>
+        <div className="relative flex shrink-0 items-center gap-[28px] overflow-clip pt-[10px] font-semibold leading-[normal] whitespace-nowrap text-[18px]">
+          {project.liveUrl ? (
+            <a
+              href={project.liveUrl}
+              target="_blank" rel="noreferrer"
+              className="group relative flex shrink-0 items-center gap-[8px] text-[#f97316]"
+            >
+              <p className="relative shrink-0">{project.linkLabel}</p>
+              <p className="relative shrink-0 transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]">
+                &#8599;
+              </p>
+            </a>
+          ) : (
+            <Link to={project.to} className="group relative flex shrink-0 items-center gap-[8px] text-[#f97316]">
+              <p className="relative shrink-0">{project.linkLabel}</p>
+              <p className="relative shrink-0 transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]">
+                &#8599;
+              </p>
+            </Link>
+          )}
+          {project.liveUrl && (
+            <Link
+              to={project.to}
+              className="relative shrink-0 text-[#626262] transition-colors duration-200 hover:text-[#0d0d0d]"
+            >
+              View case study
+            </Link>
+          )}
+        </div>
       </div>
     </motion.div>
   )

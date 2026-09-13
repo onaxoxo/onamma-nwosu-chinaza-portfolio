@@ -17,6 +17,8 @@ export type CaseStudy = {
   intro: string
   tags: string[]
   linkLabel: string
+  /** Where the hero link goes; without it the link is inert. */
+  liveUrl?: string
   heroCover?: string
   /** Hero cover crop, matching how the image sits inside the Figma frame. */
   heroCoverStyle?: { height: string; top: string; width: string; left?: string }
@@ -75,7 +77,9 @@ export default function CaseStudyPage({ study }: { study: CaseStudy }) {
             ))}
             <div className="relative h-px min-w-px flex-[1_0_0]" />
             <a
-              href="#"
+              href={study.liveUrl ?? '#'}
+              target={study.liveUrl ? '_blank' : undefined}
+              rel={study.liveUrl ? 'noreferrer' : undefined}
               className="group relative flex shrink-0 items-center gap-[6px] overflow-clip font-medium leading-[normal] whitespace-nowrap text-[15px] text-[#f97316]"
             >
               <p className="relative shrink-0">{study.linkLabel}</p>

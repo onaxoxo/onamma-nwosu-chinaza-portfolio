@@ -27,6 +27,7 @@ const ocicat: CaseStudy = {
     'An all-in-one studio that turns a written idea into a finished video, with script, visuals, auto captions and export handled in a single flow.',
   tags: ['UI/UX', 'Web App', 'AI Product'],
   linkLabel: 'View live site',
+  liveUrl: 'https://ocicataistudio.framer.website/',
   heroCover,
   heroCoverHeight: 849,
   heroCoverStyle: { height: '167.61%', top: '0.05%', width: '100%', left: '0.03%' },

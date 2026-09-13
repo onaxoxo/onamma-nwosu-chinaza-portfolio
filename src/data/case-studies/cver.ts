@@ -12,6 +12,7 @@ const cver: CaseStudy = {
     'Built for skilled immigrants who refuse to start over. Job matching, local connections and a verified directory that puts them in front of recruiters instead of into an application void.',
   tags: ['Product Design', 'Web Platform', 'Landing Page'],
   linkLabel: 'View live site',
+  liveUrl: 'https://cverai.com/',
 
   sections: [
     {

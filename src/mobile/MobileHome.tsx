@@ -5,6 +5,7 @@ import MobileFooter from './MobileFooter'
 import Reveal from '../components/Reveal'
 import { landingProjects } from '../data/projects'
 import { processSteps, reviews, stats, tools } from '../data/landing'
+import { contactUrl } from '../data/links'
 import portrait from '../assets/landing/portrait.png'
 import dotGreen from '../assets/landing/dot-green.svg'
 import dotOrange from '../assets/landing/dot-orange.svg'
@@ -112,7 +113,7 @@ export default function MobileHome() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45, ease: easeOut }}
         >
-          <a href="#contact" className={primaryButton}>
+          <a href={contactUrl} target="_blank" rel="noreferrer" className={primaryButton}>
             Contact Me &#8599;
           </a>
           <a href="#projects" className={darkButton}>
@@ -189,12 +190,22 @@ export default function MobileHome() {
                     </span>
                   ))}
                 </div>
-                <Link
-                  to={project.to}
-                  className="flex items-center gap-1.5 pt-2 font-semibold text-[16px] text-[#f97316]"
-                >
-                  {project.linkLabel} <span>&#8599;</span>
-                </Link>
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pt-2 font-semibold text-[16px]">
+                  {project.liveUrl ? (
+                    <a href={project.liveUrl} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 text-[#f97316]">
+                      {project.linkLabel} <span>&#8599;</span>
+                    </a>
+                  ) : (
+                    <Link to={project.to} className="flex items-center gap-1.5 text-[#f97316]">
+                      {project.linkLabel} <span>&#8599;</span>
+                    </Link>
+                  )}
+                  {project.liveUrl && (
+                    <Link to={project.to} className="text-[#626262]">
+                      View case study
+                    </Link>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
@@ -362,7 +373,7 @@ export default function MobileHome() {
               whether design is the fix.
             </p>
             <div className="mt-2 flex w-full flex-col gap-3">
-              <a href="mailto:onammanwosu19@gmail.com" className={primaryButton}>
+              <a href={contactUrl} target="_blank" rel="noreferrer" className={primaryButton}>
                 Contact Me &#8599;
               </a>
               <a

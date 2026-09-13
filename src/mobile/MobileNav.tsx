@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { contactUrl } from '../data/links'
 
 const easeOut = [0.22, 1, 0.36, 1] as const
 
@@ -82,7 +83,8 @@ export default function MobileNav() {
             </nav>
             <div className="mt-12 flex flex-col gap-3">
               <a
-                href="mailto:onammanwosu19@gmail.com"
+                href={contactUrl}
+                target="_blank" rel="noreferrer"
                 onClick={() => setOpen(false)}
                 className="flex items-center justify-center rounded-full bg-[#f97316] py-4 font-semibold text-[17px] text-white"
               >

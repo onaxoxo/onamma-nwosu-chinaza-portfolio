@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { socials } from '../data/links'
 
 const navigateLinks = ['Home', 'Live projects', 'About', 'Process', 'Reviews', 'Contact']
 const projectLinks = [
@@ -43,15 +44,15 @@ export default function Footer() {
             Available for full-time and freelance work.
           </p>
           <div className="relative flex shrink-0 items-start gap-[10px] overflow-clip pt-[6px]">
-            {['IG', 'X', 'LI', 'BE'].map((social) => (
+            {socials.map((social) => (
               <a
-                key={social}
-                href="#"
-                className="relative flex size-[44px] shrink-0 items-center justify-center overflow-clip rounded-[34px] shadow-[inset_0_0_0_1px_#e0e0e0] transition-colors duration-200 hover:bg-[#f2f2f2]"
+                key={social.label}
+                href={social.href}
+                target="_blank" rel="noreferrer"
+                aria-label={social.label}
+                className="relative block size-[44px] shrink-0 overflow-clip rounded-full transition-transform duration-200 hover:scale-105"
               >
-                <p className="relative shrink-0 font-medium leading-[normal] whitespace-nowrap text-[14px] text-[#0d0d0d]">
-                  {social}
-                </p>
+                <img alt="" className="block size-full" src={social.icon} />
               </a>
             ))}
           </div>
