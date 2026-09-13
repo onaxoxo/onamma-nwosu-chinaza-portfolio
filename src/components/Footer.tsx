@@ -6,7 +6,10 @@ const projectLinks = [
   { label: 'SORA', to: '/case-study/sora' },
   { label: 'Ocicat AI Studio', to: '/case-study/ocicat-ai-studio' },
   { label: 'CVER', to: '/case-study/cver' },
-  { label: 'Marbella Skin', to: '/case-study/vendify' },
+  { label: 'Vendify', to: '/case-study/vendify' },
+  { label: 'Budget Buddy', to: '/case-study/budget-buddy' },
+  { label: 'RelocateConnect', to: '/case-study/relocate-connect' },
+  { label: 'All work', to: '/work' },
 ]
 const contactLines = [
   'onammanwosu19@gmail.com',

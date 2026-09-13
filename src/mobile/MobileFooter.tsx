@@ -7,6 +7,8 @@ const projectLinks = [
   { label: 'CVER', to: '/case-study/cver' },
   { label: 'Vendify', to: '/case-study/vendify' },
   { label: 'Budget Buddy', to: '/case-study/budget-buddy' },
+  { label: 'RelocateConnect', to: '/case-study/relocate-connect' },
+  { label: 'All work', to: '/work' },
 ]
 
 export default function MobileFooter() {

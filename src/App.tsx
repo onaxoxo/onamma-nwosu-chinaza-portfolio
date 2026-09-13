@@ -10,8 +10,11 @@ import ocicat from './data/case-studies/ocicat'
 import cver from './data/case-studies/cver'
 import vendify from './data/case-studies/vendify'
 import budgetBuddy from './data/case-studies/budget-buddy'
+import relocateConnect from './data/case-studies/relocate-connect'
+import Work from './pages/Work'
+import MobileWork from './mobile/MobileWork'
 
-const caseStudies = [sora, ocicat, cver, vendify, budgetBuddy]
+const caseStudies = [sora, ocicat, cver, vendify, budgetBuddy, relocateConnect]
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -29,6 +32,7 @@ export default function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={isMobile ? <MobileHome /> : <Home />} />
+        <Route path="/work" element={isMobile ? <MobileWork /> : <Work />} />
         {caseStudies.map((study) => (
           <Route
             key={study.slug}

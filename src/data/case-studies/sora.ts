@@ -293,7 +293,7 @@ const sora: CaseStudy = {
     ],
   },
 
-  prev: { label: 'Budget Buddy', to: '/case-study/budget-buddy' },
+  prev: { label: 'RelocateConnect', to: '/case-study/relocate-connect' },
   next: { label: 'Ocicat AI Studio', to: '/case-study/ocicat-ai-studio' },
 }
 

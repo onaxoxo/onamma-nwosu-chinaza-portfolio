@@ -95,7 +95,7 @@ export default function Nav({ variant = 'home' }: NavProps) {
           <Link className="relative shrink-0" to="/">
             Home
           </Link>
-          <a className="relative shrink-0" href="/#projects">
+          <a className="relative shrink-0" href="/work">
             Projects
           </a>
           <a className="relative shrink-0" href="/#about">

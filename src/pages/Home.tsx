@@ -112,7 +112,7 @@ export default function Home() {
         >
           <ContactMeButton />
           <motion.a
-            href="#projects"
+            href="/work"
             className="relative flex w-[182px] shrink-0 items-center justify-center rounded-[34px] bg-[rgba(13,13,13,0.87)] px-[35px] py-[15px]"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
@@ -164,7 +164,7 @@ export default function Home() {
                 </p>
               </div>
               <motion.a
-                href="#projects"
+                href="/work"
                 className="group relative flex shrink-0 items-center gap-[10px] overflow-clip rounded-[34px] shadow-[inset_0_0_0_1.5px_rgba(13,13,13,0.8)] px-[32px] py-[18px] font-semibold leading-[normal] whitespace-nowrap text-[20px] text-[#0d0d0d]"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
@@ -453,7 +453,7 @@ export default function Home() {
                   <p className="relative shrink-0 text-[22px]">&#8599;</p>
                 </motion.a>
                 <motion.a
-                  href="#projects"
+                  href="/work"
                   className="relative flex shrink-0 items-center overflow-clip rounded-[34px] shadow-[inset_0_0_0_1.5px_rgba(255,255,255,0.35)] px-[35px] py-[15px]"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}

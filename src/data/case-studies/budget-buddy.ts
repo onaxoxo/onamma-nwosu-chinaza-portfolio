@@ -278,7 +278,7 @@ const budgetBuddy: CaseStudy = {
   },
 
   prev: { label: 'Vendify', to: '/case-study/vendify' },
-  next: { label: 'SORA', to: '/case-study/sora' },
+  next: { label: 'RelocateConnect', to: '/case-study/relocate-connect' },
 }
 
 export default budgetBuddy

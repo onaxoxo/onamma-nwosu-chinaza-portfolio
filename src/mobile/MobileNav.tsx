@@ -7,7 +7,7 @@ const easeOut = [0.22, 1, 0.36, 1] as const
 
 const links = [
   { label: 'Home', to: '/' },
-  { label: 'Projects', to: '/#projects' },
+  { label: 'Projects', to: '/work' },
   { label: 'About', to: '/#about' },
   { label: 'Contact', to: '/#contact' },
 ]

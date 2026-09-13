@@ -122,7 +122,7 @@ export default function MobileHome() {
           <a href={contactUrl} target="_blank" rel="noreferrer" className={primaryButton}>
             Contact Me &#8599;
           </a>
-          <a href="#projects" className={darkButton}>
+          <a href="/work" className={darkButton}>
             View Projects
           </a>
         </motion.div>
@@ -383,7 +383,7 @@ export default function MobileHome() {
                 Contact Me &#8599;
               </a>
               <a
-                href="#projects"
+                href="/work"
                 className="flex items-center justify-center rounded-full px-7 py-4 font-semibold text-[16px] text-white shadow-[inset_0_0_0_1.5px_rgba(255,255,255,0.35)]"
               >
                 View Projects
