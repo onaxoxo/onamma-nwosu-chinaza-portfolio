@@ -37,6 +37,19 @@ export function ContactMeButton({ className = '' }: { className?: string }) {
   )
 }
 
+/** ONC monogram, from the Figma "Logo / ONC" component. Sits at the left margin, centred on the nav pill. */
+export function Logo({ className = '' }: { className?: string }) {
+  return (
+    <Link
+      to="/"
+      aria-label="Home"
+      className={`flex size-[48px] shrink-0 items-center justify-center rounded-[14px] bg-[#0d0d0d] font-semibold tracking-[1.2px] text-[15px] leading-none text-white transition-transform duration-200 hover:scale-105 ${className}`}
+    >
+      ONC
+    </Link>
+  )
+}
+
 export function DownloadCvButton() {
   return (
     <motion.a
@@ -104,6 +117,7 @@ export default function Nav({ variant = 'home' }: NavProps) {
         </div>
         <ContactMeButton />
       </div>
+      <Logo className="absolute top-[40px] left-[120px]" />
       {isHome && <DownloadCvButton />}
     </motion.div>
   )
