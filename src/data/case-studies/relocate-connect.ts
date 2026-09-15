@@ -32,23 +32,23 @@ const relocateConnect: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Moving to a new city is easy to plan. Making friends there isn’t.',
+      title: 'Newcomers can’t find people and communities in a new city.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Tobi arrives in a new city with a job and a flat and no one to call. Apps handle the practical side of moving. Nothing handles the social side.',
+              text: 'Tobi moved for work. He has a job, a flat and no one to call, and he wants to meet people who share his interests without cold-messaging strangers.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'The usual places don’t work for a newcomer. Group chats are closed, event listings assume you know the area, and social media keeps showing the friends you left behind.',
+              text: 'The usual places don’t work for a newcomer. Group chats are closed, event listings assume you know the area, and social media keeps showing the friends he left behind.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'RelocateConnect gives newcomers people, communities and local help from day one.',
+              text: 'RelocateConnect shows him people, communities and local help near him, matched to his interests, from day one.',
               size: 18,
               color: '#0d0d0d',
             },

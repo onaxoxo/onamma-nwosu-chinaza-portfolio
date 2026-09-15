@@ -27,7 +27,7 @@ const cver: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Skilled immigrants apply for jobs and hear nothing back.',
+      title: 'Skilled immigrants can’t get recruiters to notice them.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -41,17 +41,17 @@ const cver: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'CVER’s users are engineers, nurses and project managers who moved to a new country with years of experience. They send applications and get zero replies.',
+              text: 'Engineers, nurses and project managers move to a new country with years of experience and want a job that matches it. They apply everywhere and hear nothing back.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Their experience doesn’t translate. They can’t show what they can do. The jobs they’re shown don’t fit. They aren’t underqualified; the filters just can’t read them.',
+              text: 'Their experience doesn’t translate to the new market, they have no way to show what they can do, and the jobs they’re shown don’t fit. They aren’t underqualified; the filters can’t read them.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'The old site led with features and never said any of this. The redesign had to say it in the first five seconds.',
+              text: 'CVER matches them to the right jobs and gives recruiters a verified profile to find them by. I redesigned the site so it says that in the first five seconds.',
               size: 18,
               color: '#0d0d0d',
             },

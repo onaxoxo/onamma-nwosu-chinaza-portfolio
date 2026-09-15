@@ -45,23 +45,23 @@ const ocicat: CaseStudy = {
   sections: [
     {
       label: '02 · THE BRIEF',
-      title: 'AI video tools all look the same, and they take the edit away from you.',
+      title: 'Creators can’t edit what AI video tools make for them.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Higgsfield and the rest of the category share one look: prompt box, purple gradient. A new tool with the same shape would disappear.',
+              text: 'A creator wants a finished video fast, but still wants to fix the shot that’s wrong. Today’s AI tools give them the video and no way in: type an idea, get a result, take it or leave it.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'They also share one way of working. You type an idea, you get a video, and you can’t change anything when the result is almost right. Creators lose control of their own edit.',
+              text: 'So they re-prompt and hope. Every tool in the category works this way and looks this way, prompt box and purple gradient, so a new one with the same shape gets ignored.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'Ocicat had to look different and give the edit back.',
+              text: 'Ocicat is a real editor with the AI beside it. The creator keeps the scenes, the timeline and the final say.',
               size: 18,
               color: '#0d0d0d',
             },
