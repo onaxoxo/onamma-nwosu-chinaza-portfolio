@@ -29,6 +29,9 @@ const vendify: CaseStudy = {
     'Find a vendor, check them out, message them. One app. A redesign of my own Behance project.',
   tags: ['Mobile Design', 'E-commerce', 'Visual Design'],
   linkLabel: 'View case study',
+  heroCover: problemCover,
+  heroCoverHeight: 849,
+  heroCoverFit: 'cover',
   glance: {
     rows: [
       { label: 'Role', value: 'Product Designer' },
@@ -44,15 +47,7 @@ const vendify: CaseStudy = {
     {
       label: '02 · THE PROBLEM',
       title: 'Customers can’t find reliable vendors near them.',
-      blocksBeforeHead: 1,
       blocks: [
-        {
-          kind: 'cover',
-          src: problemCover,
-          alt: 'Vendify app screens',
-          height: 849,
-          fit: 'cover',
-        },
         {
           kind: 'paragraphs',
           items: [

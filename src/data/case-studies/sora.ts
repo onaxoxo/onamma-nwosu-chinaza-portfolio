@@ -248,16 +248,19 @@ const sora: CaseStudy = {
       label: 'RENEWALS',
       caption: 'Renewals: the warning, days before the money leaves.',
       image: screenRenewals,
+      size: { width: 1001, height: 650 },
     },
     {
       label: 'SPENDING & INSIGHT',
       caption: 'Spending: what it all costs per month and per year.',
       image: screenSpending,
+      size: { width: 1001, height: 650 },
     },
     {
       label: 'ALTERNATIVES',
       caption: 'Alternatives: is this one still worth keeping?',
       image: screenAlternatives,
+      size: { width: 1001, height: 650 },
     },
   ],
 
