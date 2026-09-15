@@ -27,7 +27,7 @@ const cver: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'The product was not speaking to the people using it.',
+      title: 'The product wasn’t speaking to the people using it.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -41,12 +41,12 @@ const cver: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Three things kept coming up. Their experience did not translate into the new market. It was hard to show what they could do. And they kept seeing jobs that did not fit them.',
+              text: 'Three things kept coming up. Their experience didn’t translate into the new market. It was hard to show what they could do. And they kept seeing jobs that didn’t fit them.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Applications went out and nothing came back. These people were not underqualified. The systems doing the filtering could not read them.',
+              text: 'Applications went out and nothing came back. These people weren’t underqualified. The systems doing the filtering couldn’t read them.',
               size: 18,
               color: '#6b6b6b',
             },
@@ -68,14 +68,14 @@ const cver: CaseStudy = {
           items: [
             {
               title: 'What I knew',
-              body: 'They had real experience from somewhere else, and the market they moved into was not reading it.',
+              body: 'They had real experience from somewhere else, and the market they moved into wasn’t reading it.',
             },
             {
-              title: 'What I did not have',
+              title: 'What I didn’t have',
               body: 'No named persona, no transcripts, no segmentation. I worked from the product, the team and the complaints coming in.',
             },
             {
-              title: 'So I am not inventing one',
+              title: 'So I’m not inventing one',
               body: 'Writing a detailed persona now would be making up a person to fit the story. The decisions below stand on the product problem.',
             },
           ],
@@ -84,7 +84,7 @@ const cver: CaseStudy = {
     },
     {
       label: '04 · THE CONSTRAINTS',
-      title: 'I was not designing on a blank page.',
+      title: 'I wasn’t designing on a blank page.',
       blocks: [
         {
           kind: 'constraints',
@@ -96,7 +96,7 @@ const cver: CaseStudy = {
               solution:
                 '→ I started from what was there and changed what I could argue for.',
               tradeoff:
-                'Trade-off: some things I would change were out of reach for a redesign.',
+                'Trade-off: some things I’d change were out of reach for a redesign.',
             },
             {
               label: 'THE TEAM',
@@ -104,7 +104,7 @@ const cver: CaseStudy = {
               body: 'Founder, PM, engineer and marketer. Design was one input, not the decision.',
               solution:
                 '→ Every change was weighed against what could actually ship.',
-              tradeoff: 'Trade-off: the strongest interface is not always the one that can ship.',
+              tradeoff: 'Trade-off: the strongest interface isn’t always the one that can ship.',
             },
             {
               label: 'USER COMPLAINTS',
@@ -112,7 +112,7 @@ const cver: CaseStudy = {
               body: 'Genuine complaints from users shaped what I prioritised.',
               solution: '→ I used them to decide what mattered most.',
               tradeoff:
-                'Trade-off: I cannot quote any of it here.',
+                'Trade-off: I can’t quote any of it here.',
             },
           ],
         },
@@ -120,7 +120,7 @@ const cver: CaseStudy = {
     },
     {
       label: '05 · THE PATH',
-      title: 'A redesign is not a blank page.',
+      title: 'A redesign isn’t a blank page.',
       blocks: [
         {
           kind: 'flow',
@@ -178,11 +178,11 @@ const cver: CaseStudy = {
             },
             {
               title: 'The landing page carries the first impression',
-              body: 'If someone does not recognise their situation on the first screen, nothing below it gets read. So the problem leads.',
+              body: 'If someone doesn’t recognise their situation on the first screen, nothing below it gets read. So the problem leads.',
             },
             {
-              title: 'What I will not claim',
-              body: 'I was one voice in a team of five. I cannot point to a specific idea of mine that was cut, so I will not invent one.',
+              title: 'What I won’t claim',
+              body: 'I was one voice in a team of five. I can’t point to a specific idea of mine that was cut, so I won’t invent one.',
             },
           ],
         },
@@ -257,12 +257,12 @@ const cver: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I would do differently.',
+    title: 'What I’d do differently.',
     headline: 'Good product design has to work beyond the interface.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'Pricing. The plans do not tell themselves apart clearly enough. I would simplify the structure and give the recommended option real hierarchy.',
+        body: 'Pricing. The plans don’t tell themselves apart clearly enough. I’d simplify the structure and give the recommended option real hierarchy.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',

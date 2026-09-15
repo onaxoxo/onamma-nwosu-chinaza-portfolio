@@ -45,7 +45,7 @@ const ocicat: CaseStudy = {
   sections: [
     {
       label: '02 · THE BRIEF',
-      title: 'Build an AI video tool that does not look like every other one.',
+      title: 'Build an AI video tool that doesn’t look like every other one.',
       blocks: [
         {
           kind: 'paragraphs',
@@ -81,11 +81,11 @@ const ocicat: CaseStudy = {
               body: 'A client who needed something to present internally. It had to survive a room of people seeing it for the first time.',
             },
             {
-              title: 'Who it is for',
+              title: 'Who it’s for',
               body: 'Creators making short-form video who want AI help without handing over the whole edit.',
             },
             {
-              title: 'What I did not have',
+              title: 'What I didn’t have',
               body: 'No persona, no research and no access to end users. The decisions here come from the brief and the category.',
             },
           ],
@@ -165,7 +165,7 @@ const ocicat: CaseStudy = {
             },
             {
               title: 'Placeholders',
-              body: 'Team Workspaces, Billing, Help and Brand Kit show how the wider product would be structured. They were not designed.',
+              body: 'Team Workspaces, Billing, Help and Brand Kit show how the wider product would be structured. They weren’t designed.',
             },
           ],
         },
@@ -180,7 +180,7 @@ const ocicat: CaseStudy = {
           items: [
             {
               title: 'I started in the wrong place',
-              body: 'The first pass chased a look that would stand apart from Higgsfield. That is where most of the early effort went.',
+              body: 'The first pass chased a look that would stand apart from Higgsfield. That’s where most of the early effort went.',
             },
             {
               title: 'The difference was structural',
@@ -224,7 +224,7 @@ const ocicat: CaseStudy = {
     },
     {
       label: 'template',
-      caption: 'Templates: a starting point for creators who do not want to begin from a prompt.',
+      caption: 'Templates: a starting point for creators who don’t want to begin from a prompt.',
       image: screenTemplate,
     },
     {
@@ -262,12 +262,12 @@ const ocicat: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I would do differently.',
+    title: 'What I’d do differently.',
     headline: 'Standing out was never just visual.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'The waiting. Generation takes time and I designed the editing more than the wait. A clear progress or queue state would tell people what is happening.',
+        body: 'The waiting. Generation takes time and I designed the editing more than the wait. A clear progress or queue state would tell people what’s happening.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',

@@ -37,7 +37,7 @@ const vendify: CaseStudy = {
       { label: 'Team', value: 'Solo' },
     ],
     contribution:
-      'Everything here is mine: the flow from discovery to chat, the vendor profile, checkout and the in-app chat. No new research was done, so the persona comes from the behaviour the product had to serve.',
+      'Everything here’s mine: the flow from discovery to chat, the vendor profile, checkout and the in-app chat. No new research was done, so the persona comes from the behaviour the product had to serve.',
   },
 
   sections: [
@@ -62,7 +62,7 @@ const vendify: CaseStudy = {
               color: '#0d0d0d',
             },
             {
-              text: 'Nothing connects those steps. The profile was never a storefront, the DMs are not tied to what she was looking at, and nothing answers the obvious questions first.',
+              text: 'Nothing connects those steps. The profile was never a storefront, the DMs aren’t tied to what she was looking at, and nothing answers the obvious questions first.',
               size: 18,
               color: '#6b6b6b',
             },
@@ -87,7 +87,7 @@ const vendify: CaseStudy = {
               body: 'A young customer in Lagos who finds small vendors through Instagram and WhatsApp.',
             },
             {
-              title: 'What she is doing',
+              title: 'What she’s doing',
               body: 'Working out whether a vendor is worth buying from: what they sell, where they are, and whether she can get a straight answer.',
             },
             {
@@ -113,11 +113,11 @@ const vendify: CaseStudy = {
             {
               label: 'TRUST',
               title: 'Nothing proves a vendor is real',
-              body: 'A new marketplace has no history behind its vendors, and reviews need volume it does not have yet.',
+              body: 'A new marketplace has no history behind its vendors, and reviews need volume it doesn’t have yet.',
               solution:
                 '→ I leaned on what the product can show: a real profile, what they sell, where they are, and direct contact.',
               tradeoff:
-                'Trade-off: ratings appear, but the deeper review and dispute system is not built.',
+                'Trade-off: ratings appear, but the deeper review and dispute system isn’t built.',
             },
             {
               label: 'REAL CONTENT',
@@ -250,7 +250,7 @@ const vendify: CaseStudy = {
             title: 'Visual direction',
             paragraphs: [
               'Product photography leads and the interface stays out of its way.',
-              'Generous cards, calm neutrals and one accent colour for actions, so it is obvious what is tappable.',
+              'Generous cards, calm neutrals and one accent colour for actions, so it’s obvious what’s tappable.',
             ],
           },
           {
@@ -267,12 +267,12 @@ const vendify: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I would do differently.',
+    title: 'What I’d do differently.',
     headline: 'I started by redesigning the screens. I ended up redesigning the flow.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'The chat. Message history, order context and a clear path for disputes or support. I would also take the vendor side further.',
+        body: 'The chat. Message history, order context and a clear path for disputes or support. I’d also take the vendor side further.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',

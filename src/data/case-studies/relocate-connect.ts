@@ -32,7 +32,7 @@ const relocateConnect: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Moving somewhere new is easy. Belonging there is not.',
+      title: 'Moving somewhere new is easy. Belonging there isn’t.',
       blocks: [
         {
           kind: 'paragraphs',
@@ -209,7 +209,7 @@ const relocateConnect: CaseStudy = {
     },
     {
       label: 'Search results',
-      caption: 'Search results for something specific, filtered by what is nearby.',
+      caption: 'Search results for something specific, filtered by what’s nearby.',
       image: screenSearch,
     },
     {
@@ -230,7 +230,7 @@ const relocateConnect: CaseStudy = {
             title: 'Visual direction',
             paragraphs: [
               'The visual direction is calm, warm and approachable, with a single blue for actions and illustration carrying the welcome.',
-              'It is designed to make newcomers feel comfortable and confident, not overwhelmed by another busy feed.',
+              'It’s designed to make newcomers feel comfortable and confident, not overwhelmed by another busy feed.',
             ],
           },
           {
@@ -247,7 +247,7 @@ const relocateConnect: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I would do differently.',
+    title: 'What I’d do differently.',
     headline: 'Community is the product. The feed is just where it lives.',
     beats: [
       {

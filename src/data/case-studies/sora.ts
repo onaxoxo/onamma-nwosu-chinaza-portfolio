@@ -55,12 +55,12 @@ const sora: CaseStudy = {
               color: '#0d0d0d',
             },
             {
-              text: 'She only finds out what they cost when several charges land at once. A ₦25,000 debit shows up and she cannot say which services made it up.',
+              text: 'She only finds out what they cost when several charges land at once. A ₦25,000 debit shows up and she can’t say which services made it up.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'SORA moves that moment forward. You see the charge coming, in the currency you budget in, and decide whether it is still worth paying for.',
+              text: 'SORA moves that moment forward. You see the charge coming, in the currency you budget in, and decide whether it’s still worth paying for.',
               size: 18,
               color: '#0d0d0d',
             },
@@ -93,7 +93,7 @@ const sora: CaseStudy = {
     },
     {
       label: '04 · THE CONSTRAINTS',
-      title: 'Three things SORA could not do.',
+      title: 'Three things SORA couldn’t do.',
       blocks: [
         {
           kind: 'constraints',
@@ -117,11 +117,11 @@ const sora: CaseStudy = {
             {
               label: 'CANCELLATION',
               title: 'Only the provider can cancel',
-              body: 'SORA cannot end a subscription for you.',
+              body: 'SORA can’t end a subscription for you.',
               solution:
                 '→  SORA shows the renewal date and the details, then hands you to the provider.',
               tradeoff:
-                'Trade-off: SORA helps you decide, but does not control the outcome.',
+                'Trade-off: SORA helps you decide, but doesn’t control the outcome.',
             },
           ],
         },
@@ -135,7 +135,7 @@ const sora: CaseStudy = {
           kind: 'flow',
           steps: [
             { title: 'Add subscription', body: 'Service, price, currency, cycle', width: 211 },
-            { title: 'View subscription', body: 'What is happening now, not a list', width: 235 },
+            { title: 'View subscription', body: 'What’s happening now, not a list', width: 235 },
             { title: 'See upcoming renewal', body: 'Before the money leaves', flex: true },
             { title: 'Understand the cost', body: 'Per month, per year, in one currency', width: 236 },
             { title: 'Decide whether to keep it', body: 'Cancelling happens at the provider', flex: true },
@@ -161,7 +161,7 @@ const sora: CaseStudy = {
             {
               badge: 'A',
               title: 'Show the USD price only',
-              body: 'Accurate to the bill, but Chinaza still does the conversion in her head. That is the part she needed help with.',
+              body: 'Accurate to the bill, but Chinaza still does the conversion in her head. That’s the part she needed help with.',
             },
             {
               badge: 'B',
@@ -171,7 +171,7 @@ const sora: CaseStudy = {
             {
               badge: 'C',
               title: 'Convert, and keep the dollar price one tap away',
-              body: 'SORA leads with the currency you budget in. The price you are actually billed in stays there for when you need it.',
+              body: 'SORA leads with the currency you budget in. The price you’re actually billed in stays there for when you need it.',
               selected: true,
             },
           ],
@@ -187,11 +187,11 @@ const sora: CaseStudy = {
           items: [
             {
               title: 'Do the one thing it can actually own',
-              body: 'SORA cannot pull bank data, cancel anything or promise a rate. What it can do is show you what is coming before it arrives. Every screen was judged against that.',
+              body: 'SORA can’t pull bank data, cancel anything or promise a rate. What it can do is show you what’s coming before it arrives. Every screen was judged against that.',
             },
             {
               title: 'Answer the question people open the app with',
-              body: 'The dashboard leads with what is happening now, not the full list. A list is easier to build, but nobody opens the app to read one.',
+              body: 'The dashboard leads with what’s happening now, not the full list. A list is easier to build, but nobody opens the app to read one.',
             },
             {
               title: 'Put the friction where people expect it',
@@ -272,7 +272,7 @@ const sora: CaseStudy = {
             title: 'Visual direction',
             paragraphs: [
               'Clean and functional, with the emphasis on being easy to read.',
-              'It feels calm on purpose, so you can see what is happening to your money without hunting.',
+              'It feels calm on purpose, so you can see what’s happening to your money without hunting.',
             ],
           },
           {
@@ -289,12 +289,12 @@ const sora: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I would do differently.',
-    headline: 'The first-run experience works, but it is too passive.',
+    title: 'What I’d do differently.',
+    headline: 'The first-run experience works, but it’s too passive.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'An empty dashboard and an “Add your first subscription” button put all the work on you before SORA has shown any value. I would rethink how you get to your first useful moment.',
+        body: 'An empty dashboard and an “Add your first subscription” button put all the work on you before SORA has shown any value. I’d rethink how you get to your first useful moment.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',

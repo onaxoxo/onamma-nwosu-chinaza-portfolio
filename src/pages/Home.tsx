@@ -219,12 +219,12 @@ export default function Home() {
                   {'Product designer, 2 years in UI/UX  designing and shipping real products across AI, fintech and e-commerce.'}
                 </p>
                 <p className="relative w-[620px] shrink-0 font-normal leading-[32px] text-[20px] text-[#0d0d0d]">
-                  I am Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I have
+                  I’m Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I’ve
                   shipped work across AI, fintech, e-commerce and career tech, taking products
                   from a messy first brief to an interface people can actually use.
                 </p>
                 <p className="relative w-[620px] shrink-0 font-normal leading-[32px] text-[20px] text-[#626262]">
-                  {'I design and I build. I ship with Figma, Framer and Claude AI, which means my work does not stop at a static mockup. It goes out as a live, responsive product in days rather than weeks. That is the difference between a team debating an idea and a team watching real users try it.'}
+                  {'I design and I build. I ship with Figma, Framer and Claude AI, which means my work doesn’t stop at a static mockup. It goes out as a live, responsive product in days rather than weeks. That’s the difference between a team debating an idea and a team watching real users try it.'}
                 </p>
                 <div className="relative flex shrink-0 items-center overflow-clip pt-[14px]">
                   {stats.map((stat, index) => (
@@ -350,7 +350,7 @@ export default function Home() {
             <div className="flex flex-col items-start gap-[16px] overflow-clip">
               <Eyebrow>CLIENT REVIEWS</Eyebrow>
               <p className="relative shrink-0 font-normal leading-[normal] whitespace-nowrap text-[56px] text-[#0d0d0d]">
-                What it is like to work with me
+                What it’s like to work with me
               </p>
               <p className="relative w-[700px] shrink-0 font-normal leading-[32px] text-[20px] text-[#626262]">
                 Placeholder quotes. Swap in real words from a client, teammate or lecturer before
@@ -437,7 +437,7 @@ export default function Home() {
                 Have a project in mind?
               </p>
               <p className="relative w-[700px] shrink-0 text-center font-normal leading-[34px] text-[22px] text-[rgba(255,255,255,0.72)]">
-                Tell me what is not working and who it is not working for. I will tell you honestly
+                Tell me what isn’t working and who it isn’t working for. I will tell you honestly
                 whether design is the fix.
               </p>
               <div className="relative flex shrink-0 items-start gap-[17px] overflow-clip pt-[18px]">

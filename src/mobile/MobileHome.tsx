@@ -242,14 +242,14 @@ export default function MobileHome() {
               fintech and e-commerce.
             </p>
             <p className="text-[16px] leading-[26px] text-[#0d0d0d]">
-              I am Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I have
+              I’m Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I’ve
               shipped work across AI, fintech, e-commerce and career tech, taking products from a
               messy first brief to an interface people can actually use.
             </p>
             <p className="text-[16px] leading-[26px] text-[#626262]">
               I design and I build. I ship with Figma, Framer and Claude AI, which means my work
-              does not stop at a static mockup. It goes out as a live, responsive product in days
-              rather than weeks. That is the difference between a team debating an idea and a
+              doesn’t stop at a static mockup. It goes out as a live, responsive product in days
+              rather than weeks. That’s the difference between a team debating an idea and a
               team watching real users try it.
             </p>
             <div className="mt-2 grid grid-cols-2 gap-4">
@@ -331,7 +331,7 @@ export default function MobileHome() {
         <Reveal>
           <div className="flex flex-col gap-3">
             <Eyebrow>CLIENT REVIEWS</Eyebrow>
-            <SectionTitle>What it is like to work with me</SectionTitle>
+            <SectionTitle>What it’s like to work with me</SectionTitle>
           </div>
         </Reveal>
         <div className="flex flex-col gap-3">
@@ -375,7 +375,7 @@ export default function MobileHome() {
             </div>
             <p className="font-normal leading-[1.1] text-[34px] text-white">Have a project in mind?</p>
             <p className="text-[16px] leading-[26px] text-[rgba(255,255,255,0.72)]">
-              Tell me what is not working and who it is not working for. I will tell you honestly
+              Tell me what isn’t working and who it isn’t working for. I will tell you honestly
               whether design is the fix.
             </p>
             <div className="mt-2 flex w-full flex-col gap-3">

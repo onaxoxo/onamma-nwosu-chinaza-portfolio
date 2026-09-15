@@ -19,7 +19,7 @@ export const processSteps = [
   {
     number: '04',
     title: 'Ship',
-    body: 'Specs, tokens and a build-ready handoff. I stay through development, because that is where designs quietly break.',
+    body: 'Specs, tokens and a build-ready handoff. I stay through development, because that’s where designs quietly break.',
   },
 ]
 
@@ -35,7 +35,7 @@ export const tools = [
 export const reviews = [
   {
     quote:
-      '“She asked the questions nobody else on the project was asking. What came back was not just prettier. It was a version of the product that actually made sense to use.”',
+      '“She asked the questions nobody else on the project was asking. What came back wasn’t just prettier. It was a version of the product that actually made sense to use.”',
     initials: 'AB',
     avatar: avatar1,
     name: 'John Frank',
@@ -43,7 +43,7 @@ export const reviews = [
   },
   {
     quote:
-      '“Handover was the easiest part of the build. Every state was there, the spacing was consistent, and I did not have to go back and ask what happens on error.”',
+      '“Handover was the easiest part of the build. Every state was there, the spacing was consistent, and I didn’t have to go back and ask what happens on error.”',
     initials: 'CD',
     name: 'Anu kaka',
     role: 'Founder · Zoe Verse',

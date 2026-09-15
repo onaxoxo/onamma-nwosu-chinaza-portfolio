@@ -57,7 +57,7 @@ const budgetBuddy: CaseStudy = {
               color: '#0d0d0d',
             },
             {
-              text: 'But once she withdraws to her bank or spends cash, the app has no idea what happened. A tracker that loses the money at the moment it is spent is not a tracker.',
+              text: 'But once she withdraws to her bank or spends cash, the app has no idea what happened. A tracker that loses the money at the moment it’s spent isn’t a tracker.',
               size: 18,
               color: '#6b6b6b',
             },
@@ -86,7 +86,7 @@ const budgetBuddy: CaseStudy = {
               body: 'How much she has used and what on, as categories and percentages, not one balance.',
             },
             {
-              title: 'What she will not do',
+              title: 'What she won’t do',
               body: 'Keep a spreadsheet or reconcile her week. Any tracking has to happen in the moment.',
             },
           ],
@@ -102,8 +102,8 @@ const budgetBuddy: CaseStudy = {
           items: [
             {
               label: 'VISIBILITY',
-              title: 'The app cannot follow the money',
-              body: 'Once money goes to a bank or becomes cash, Budget Buddy cannot see what it became.',
+              title: 'The app can’t follow the money',
+              body: 'Once money goes to a bank or becomes cash, Budget Buddy can’t see what it became.',
               solution:
                 '→ The withdraw flow asks what the money is for before it leaves the wallet.',
               tradeoff: 'Trade-off: withdrawing takes one step longer than it strictly needs to.',
@@ -181,7 +181,7 @@ const budgetBuddy: CaseStudy = {
           items: [
             {
               title: 'Find the moment money disappears',
-              body: 'Budget Buddy loses the money at the moment it is spent. Everything followed from picking a point to capture that.',
+              body: 'Budget Buddy loses the money at the moment it’s spent. Everything followed from picking a point to capture that.',
             },
             {
               title: 'Before, not after',
@@ -199,7 +199,7 @@ const budgetBuddy: CaseStudy = {
           screens: [
             {
               label: 'Onboarding',
-              caption: 'Home shows what is left to spend this month, before anything else.',
+              caption: 'Home shows what’s left to spend this month, before anything else.',
               image: wfOnboarding,
             },
             { label: 'Home', caption: 'Home - Budget Buddy', image: wfHome },
@@ -225,7 +225,7 @@ const budgetBuddy: CaseStudy = {
   screens: [
     {
       label: 'Dashboard',
-      caption: 'Home shows what is left to spend this month, before anything else.',
+      caption: 'Home shows what’s left to spend this month, before anything else.',
       image: screenDashboard,
     },
     {
@@ -262,7 +262,7 @@ const budgetBuddy: CaseStudy = {
           {
             title: 'Outcome',
             paragraphs: [
-              'You know what is left to spend at a glance.',
+              'You know what’s left to spend at a glance.',
               'Budgets, transactions and a wallet sit in one app, so tracking money and moving it are no longer two chores.',
             ],
           },
@@ -273,8 +273,8 @@ const budgetBuddy: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I would do differently.',
-    headline: 'More screens did not make the product stronger.',
+    title: 'What I’d do differently.',
+    headline: 'More screens didn’t make the product stronger.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
@@ -282,7 +282,7 @@ const budgetBuddy: CaseStudy = {
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',
-        body: 'I thought covering more of the fintech experience would make it feel complete. More features do not make a product stronger, so I got more deliberate about the main goal: showing where the money goes.',
+        body: 'I thought covering more of the fintech experience would make it feel complete. More features don’t make a product stronger, so I got more deliberate about the main goal: showing where the money goes.',
       },
     ],
   },
