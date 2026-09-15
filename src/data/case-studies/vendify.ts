@@ -43,7 +43,7 @@ const vendify: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Buying one dress takes four apps.',
+      title: 'Small vendors sell on Instagram. Buying from them is a mess.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -57,17 +57,17 @@ const vendify: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Instagram to find it. The profile to guess what else they sell. WhatsApp to ask. Maps to find them.',
+              text: 'Amaka sees a dress in an Instagram post. To buy it she opens the vendor’s profile, messages them on WhatsApp, then checks Maps for where they are. Four apps for one dress.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'None of it connects. The chat doesn’t know which dress. Price, size and delivery get asked one message at a time.',
+              text: 'None of those apps talk to each other. The chat doesn’t know which dress she means. Price, size and delivery get asked one message at a time.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'Vendify puts finding, checking and asking in one place.',
+              text: 'Vendify puts finding a vendor, checking them out and messaging them in one app.',
               size: 18,
               color: '#0d0d0d',
             },
