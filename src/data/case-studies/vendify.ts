@@ -43,7 +43,7 @@ const vendify: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Small vendors sell on Instagram. Buying from them is a mess.',
+      title: 'Buying from Instagram vendors takes four apps.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -57,17 +57,17 @@ const vendify: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Amaka sees a dress in an Instagram post. To buy it she opens the vendor’s profile, messages them on WhatsApp, then checks Maps for where they are. Four apps for one dress.',
+              text: 'Small vendors in Lagos sell through Instagram posts. To buy one dress, Amaka opens the vendor’s profile, messages them on WhatsApp and checks Maps for where they are.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'None of those apps talk to each other. The chat doesn’t know which dress she means. Price, size and delivery get asked one message at a time.',
+              text: 'None of those apps talk to each other. The chat doesn’t know which dress she means, so price, size and delivery get asked one message at a time.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'Vendify puts finding a vendor, checking them out and messaging them in one app.',
+              text: 'Vendify puts the vendor, their products and the chat in one app.',
               size: 18,
               color: '#0d0d0d',
             },
