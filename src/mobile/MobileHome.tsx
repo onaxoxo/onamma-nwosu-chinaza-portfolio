@@ -265,7 +265,7 @@ export default function MobileHome() {
       </section>
 
       {/* Process */}
-      <section className="flex flex-col gap-6 px-5 pt-16">
+      <section id="process" className="flex flex-col gap-6 px-5 pt-16">
         <Reveal>
           <div className="flex flex-col gap-3">
             <Eyebrow>PROCESS</Eyebrow>
@@ -322,7 +322,7 @@ export default function MobileHome() {
       </section>
 
       {/* Reviews */}
-      <section className="flex flex-col gap-6 px-5 pt-16">
+      <section id="reviews" className="flex flex-col gap-6 px-5 pt-16">
         <Reveal>
           <div className="flex flex-col gap-3">
             <Eyebrow>CLIENT REVIEWS</Eyebrow>

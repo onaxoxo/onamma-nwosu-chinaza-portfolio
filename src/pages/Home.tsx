@@ -264,6 +264,7 @@ export default function Home() {
 
         {/* Process */}
         <div
+          id="process"
           className="relative flex w-full shrink-0 flex-col items-start gap-[56px] overflow-clip px-[120px] pt-[150px]"
           data-node-id="176:1582"
         >
@@ -341,6 +342,7 @@ export default function Home() {
 
         {/* Client reviews */}
         <div
+          id="reviews"
           className="relative flex w-full shrink-0 flex-col items-start gap-[56px] overflow-clip px-[120px] pt-[136px]"
           data-node-id="176:1626"
         >
@@ -349,10 +351,6 @@ export default function Home() {
               <Eyebrow>CLIENT REVIEWS</Eyebrow>
               <p className="relative shrink-0 font-normal leading-[normal] whitespace-nowrap text-[56px] text-[#0d0d0d]">
                 What it’s like to work with me
-              </p>
-              <p className="relative w-[700px] shrink-0 font-normal leading-[32px] text-[20px] text-[#626262]">
-                Placeholder quotes. Swap in real words from a client, teammate or lecturer before
-                this page goes live.
               </p>
             </div>
           </Reveal>
@@ -442,7 +440,7 @@ export default function Home() {
                 <motion.a
                   href={contactUrl}
                   target="_blank" rel="noreferrer"
-                  className="relative flex shrink-0 items-center gap-[2px] overflow-clip rounded-[34px] bg-[#f97316] px-[35px] py-[15px] font-semibold leading-[normal] whitespace-nowrap text-white"
+                  className="relative flex shrink-0 items-center gap-[6px] overflow-clip rounded-[34px] bg-[#f97316] px-[35px] py-[15px] font-semibold leading-[normal] whitespace-nowrap text-white"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 28 }}

@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom'
 import { socials } from '../data/links'
 
-const navigateLinks = ['Home', 'Live projects', 'About', 'Process', 'Reviews', 'Contact']
+const navigateLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Live projects', href: '/#projects' },
+  { label: 'About', href: '/#about' },
+  { label: 'Process', href: '/#process' },
+  { label: 'Reviews', href: '/#reviews' },
+  { label: 'Contact', href: '/#contact' },
+]
 const projectLinks = [
   { label: 'SORA', to: '/case-study/sora' },
   { label: 'Ocicat AI Studio', to: '/case-study/ocicat-ai-studio' },
@@ -9,7 +16,6 @@ const projectLinks = [
   { label: 'Vendify', to: '/case-study/vendify' },
   { label: 'Budget Buddy', to: '/case-study/budget-buddy' },
   { label: 'RelocateConnect', to: '/case-study/relocate-connect' },
-  { label: 'All work', to: '/work' },
 ]
 const contactLines = [
   'onammanwosu19@gmail.com',
@@ -62,9 +68,9 @@ export default function Footer() {
         </div>
 
         <Column title="Navigate">
-          {navigateLinks.map((label) => (
-            <a key={label} href="/" className={linkClass}>
-              {label}
+          {navigateLinks.map((link) => (
+            <a key={link.label} href={link.href} className={linkClass}>
+              {link.label}
             </a>
           ))}
         </Column>
