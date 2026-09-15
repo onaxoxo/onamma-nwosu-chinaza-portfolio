@@ -50,17 +50,17 @@ const sora: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Chinaza pays for about six subscriptions. Most are billed in dollars, but she budgets in naira.',
+              text: 'Chinaza pays for about six subscriptions, most of them billed in dollars. She budgets in naira, so every price on every receipt needs converting before it means anything to her.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'She only finds out what they cost when several charges land at once. A ₦25,000 debit shows up and she can’t say which services made it up.',
+              text: 'The charges only become real when they hit her bank, often several at once. A ₦25,000 debit lands, she knows it was “subscriptions”, and she can’t say which services made it up or whether she still uses them.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'SORA moves that moment forward. You see the charge coming, in the currency you budget in, and decide whether it’s still worth paying for.',
+              text: 'The problem isn’t tracking. It’s timing. She finds out what things cost after the money has gone, in a currency she doesn’t budget in. SORA had to move that moment forward, and show it in naira.',
               size: 18,
               color: '#0d0d0d',
             },

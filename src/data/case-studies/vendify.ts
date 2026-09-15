@@ -43,7 +43,7 @@ const vendify: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Buying from a small vendor takes four apps.',
+      title: 'Buying one dress from a small vendor takes four apps.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -57,17 +57,17 @@ const vendify: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Amaka finds a vendor through a post, opens their profile to work out what they sell, asks questions in DMs, then tries to find out where they are.',
+              text: 'Amaka buys from small vendors she finds on Instagram. To buy one dress she uses four apps: the post where she saw it, the vendor’s profile to guess what else they sell, WhatsApp to ask a question, and Maps to find out where they are.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Nothing connects those steps. The profile was never a storefront, the DMs aren’t tied to what she was looking at, and nothing answers the obvious questions first.',
+              text: 'Nothing connects those steps. The profile was never built to be a storefront, the chat has no link to the product she was asking about, and the obvious questions (price, size, delivery) get asked one message at a time.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'Vendify puts discovery, checking a vendor out and the conversation in one place, built for commerce from the start.',
+              text: 'Vendify had to put discovery, checking a vendor out and the conversation in one place, built for buying from the start.',
               size: 18,
               color: '#0d0d0d',
             },

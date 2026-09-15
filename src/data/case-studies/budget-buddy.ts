@@ -52,17 +52,17 @@ const budgetBuddy: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Adaeze gets money from home and side hustles, moves it into her Budget Buddy wallet and saves inside the app.',
+              text: 'Adaeze is a university student. Money arrives from home and from side hustles, irregularly and in different amounts. She moves it into her Budget Buddy wallet and saves inside the app.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'But once she withdraws to her bank or spends cash, the app has no idea what happened. A tracker that loses the money at the moment it’s spent isn’t a tracker.',
+              text: 'The moment she withdraws to her bank or spends cash, the app loses sight of it. A tracker that stops tracking at the exact moment money is spent isn’t a tracker.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'What she wants to know is how much she has used and on what, not just what her balance is.',
+              text: 'What she actually wants to know is how much she’s used and on what, not just what’s left. Budget Buddy had to capture that before the money disappeared.',
               size: 18,
               color: '#0d0d0d',
             },

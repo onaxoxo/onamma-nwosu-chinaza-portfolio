@@ -38,17 +38,17 @@ const relocateConnect: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Someone arrives in a new city with a job, a flat and no one to call. A dozen apps solve the practical parts of moving. The social part is left to chance.',
+              text: 'Someone arrives in a new city with a job, a flat and no one to call. A dozen apps solve the practical side of moving. The social side is left to chance.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Existing platforms assume you already have a network. Group chats are closed, event listings assume local knowledge, and social media keeps showing friends from the place you just left.',
+              text: 'Existing platforms assume you already have a network. Group chats are closed, event listings assume you know the neighbourhoods, and social media keeps showing friends from the place you just left. Three weeks in, most newcomers still only know their colleagues and their landlord.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'RelocateConnect shortens the gap between arriving and feeling at home, with people, communities and local resources in one place from day one.',
+              text: 'RelocateConnect had to shorten the gap between arriving and belonging: people, communities and local resources in one place, from day one, for someone who knows nobody yet.',
               size: 18,
               color: '#0d0d0d',
             },
