@@ -82,11 +82,13 @@ export default function MobileHome() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.15, ease: easeOut }}
         >
-          <img
-            alt="Onamma Nwosu"
-            className="pointer-events-none absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
-            src={portrait}
-          />
+          <div className="pointer-events-none absolute inset-[3px] overflow-hidden rounded-[23px]">
+            <img
+              alt="Onamma Nwosu"
+              className="absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
+              src={portrait}
+            />
+          </div>
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 rounded-[26px] border-[12px] border-white"

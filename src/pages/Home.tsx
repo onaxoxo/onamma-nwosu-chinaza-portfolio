@@ -70,11 +70,13 @@ export default function Home() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15, ease: easeOut }}
         >
-          <img
-            alt="Onamma Nwosu"
-            className="pointer-events-none absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
-            src={portrait}
-          />
+          <div className="pointer-events-none absolute inset-[4px] overflow-hidden rounded-[30px]">
+            <img
+              alt="Onamma Nwosu"
+              className="absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
+              src={portrait}
+            />
+          </div>
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 rounded-[34px] border-[21px] border-solid border-white"
