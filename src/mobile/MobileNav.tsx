@@ -24,11 +24,10 @@ export default function MobileNav() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: easeOut }}
       >
-        <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link to="/" aria-label="Home" className="flex items-center" onClick={() => setOpen(false)}>
           <span className="flex size-10 items-center justify-center rounded-[12px] bg-[#0d0d0d] font-semibold tracking-[1px] text-[13px] leading-none text-white">
             ONC
           </span>
-          <span className="font-semibold text-[16px] text-[#0d0d0d]">Onamma Nwosu</span>
         </Link>
         <button
           type="button"
