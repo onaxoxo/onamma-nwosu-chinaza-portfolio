@@ -24,7 +24,7 @@ const sora: CaseStudy = {
   title: 'SORA',
   subtitle: 'Subscription Management System',
   intro:
-    'Every subscription in one place. What renews, what it costs in your currency, what to cancel.',
+    'A subscription tracker. It remembers what you signed up for, warns you before it renews, and helps you cancel what you forgot.',
   tags: ['Product Design', 'Mobile App', 'End-to-end'],
   linkLabel: 'View live site',
   heroCover,
@@ -38,29 +38,29 @@ const sora: CaseStudy = {
       { label: 'Timeline', value: '6 weeks, solo' },
     ],
     contribution:
-      'I designed the whole product: flows, dashboard, currency logic. The hard part was showing a dollar price to someone who budgets in naira.',
+      'I designed the whole product: the flows, the dashboard and the renewal reminders. The hard part was catching people before a forgotten subscription charges them again.',
   },
 
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'People don’t know what their subscriptions cost them in naira.',
+      title: 'People forget they’re paying for subscriptions.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Chinaza wants to know what she’s paying for each month and what it adds up to. Her subscriptions bill in dollars, she budgets in naira, and nothing shows her the total in her own currency.',
+              text: 'Chinaza signs up for a free trial, a tool for one project, a streaming app for one show. Months later she’s still paying for all of them and can’t remember signing up.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'So she finds out from the bank. ₦25,000 leaves her account, she knows it was “subscriptions”, and she can’t tell which services it was or whether she still uses them.',
+              text: 'She only finds out from the bank. ₦25,000 leaves her account, she knows it was “subscriptions”, and she can’t tell which ones, or which she still uses.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'SORA lists every subscription in naira, shows what renews next, and tells her before the money leaves.',
+              text: 'SORA keeps every subscription in one place, warns her before each renewal, and helps her cancel the ones she forgot.',
               size: 18,
               color: '#0d0d0d',
             },
@@ -77,11 +77,11 @@ const sora: CaseStudy = {
           items: [
             {
               title: 'Who she is',
-              body: 'Earns about ₦450,000 a month. Pays for Spotify, Netflix, Canva, Google One, a design tool and ChatGPT.',
+              body: 'Pays for Spotify, Netflix, Canva, Google One, a design tool and ChatGPT. Some of them she hasn’t opened in months.',
             },
             {
               title: 'What she needs',
-              body: 'What she pays for. When the next payment lands. What it costs in naira.',
+              body: 'A reminder before anything renews, and one place that shows what she’s still paying for.',
             },
             {
               title: 'How she finds out today',
@@ -109,7 +109,7 @@ const sora: CaseStudy = {
             {
               label: 'CURRENCY',
               title: 'Conversions are never exact',
-              body: 'Rates move. A naira figure never matches the bank to the kobo.',
+              body: 'Most subscriptions bill in dollars. Rates move, so a naira figure is always an estimate.',
               solution:
                 '→  Rates refresh daily. You pick the currency you budget in.',
               tradeoff: 'Trade-off: good enough to budget with, not a prediction.',
@@ -119,7 +119,7 @@ const sora: CaseStudy = {
               title: 'Only the provider can cancel',
               body: 'SORA can’t end a subscription for you.',
               solution:
-                '→  SORA shows the renewal date, then hands you to the provider.',
+                '→  SORA reminds you before renewal, then hands you to the provider.',
               tradeoff:
                 'Trade-off: SORA helps you decide. It doesn’t control the outcome.',
             },
@@ -129,16 +129,16 @@ const sora: CaseStudy = {
     },
     {
       label: '05 · THE FLOW',
-      title: 'Add it. See it coming. Decide.',
+      title: 'Add it. Get warned. Decide.',
       blocks: [
         {
           kind: 'flow',
           steps: [
             { title: 'Add subscription', body: 'Service, price, currency, cycle', width: 211 },
-            { title: 'View subscription', body: 'What’s happening now, not a list', width: 235 },
-            { title: 'See upcoming renewal', body: 'Before the money leaves', flex: true },
-            { title: 'Understand the cost', body: 'Per month, per year, in one currency', width: 236 },
-            { title: 'Decide whether to keep it', body: 'Cancelling happens at the provider', flex: true },
+            { title: 'See what you’re paying for', body: 'Every subscription, including the forgotten ones', width: 235 },
+            { title: 'Get warned before renewal', body: 'Days before the money leaves', flex: true },
+            { title: 'See what it all costs', body: 'Per month, per year, in one currency', width: 236 },
+            { title: 'Keep it or cancel it', body: 'Cancelling happens at the provider', flex: true },
           ],
         },
         {
@@ -152,7 +152,7 @@ const sora: CaseStudy = {
     },
     {
       label: '06 · THE DECISION',
-      title: 'Billed in dollars, budgeted in naira. Which do you show?',
+      title: 'A list of subscriptions, or a warning before they charge?',
       blocks: [
         {
           kind: 'decisions',
@@ -160,18 +160,18 @@ const sora: CaseStudy = {
           items: [
             {
               badge: 'A',
-              title: 'Dollars only',
-              body: 'True to the bill. But Chinaza still converts in her head, which is the part she needed help with.',
+              title: 'A list',
+              body: 'Everything you pay for on one screen. Useful, but you still have to remember to open it.',
             },
             {
               badge: 'B',
-              title: 'Naira only',
-              body: 'Clean. But it hides the real price and makes an estimate look certain.',
+              title: 'An alert on the day',
+              body: 'Tells you the moment you’re charged. By then the money has gone.',
             },
             {
               badge: 'C',
-              title: 'Naira first, dollars one tap away',
-              body: 'Lead with the currency she budgets in. Keep the billed price within reach.',
+              title: 'A warning days before, with keep or cancel',
+              body: 'SORA leads with what renews next and asks the question while there’s still time to act.',
               selected: true,
             },
           ],
@@ -187,11 +187,11 @@ const sora: CaseStudy = {
           items: [
             {
               title: 'Own the one thing it can do',
-              body: 'No bank data, no cancelling, no promised rates. What SORA can do is show you what’s coming. Every screen was judged on that.',
+              body: 'No bank data, no cancelling, no promised rates. What SORA can do is remind you before you’re charged. Every screen was judged on that.',
             },
             {
               title: 'Answer the question people open the app with',
-              body: 'The dashboard leads with what’s happening now, not a list. Nobody opens the app to read a list.',
+              body: 'The dashboard leads with what renews next, not a list. Nobody opens the app to read a list.',
             },
             {
               title: 'Put friction where it’s expected',
@@ -246,12 +246,12 @@ const sora: CaseStudy = {
     },
     {
       label: 'RENEWALS',
-      caption: 'Renewals, shown before the money leaves.',
+      caption: 'Renewals: the warning, days before the money leaves.',
       image: screenRenewals,
     },
     {
       label: 'SPENDING & INSIGHT',
-      caption: 'Spending: what subscriptions cost per month and per year.',
+      caption: 'Spending: what it all costs per month and per year.',
       image: screenSpending,
     },
     {
@@ -278,8 +278,8 @@ const sora: CaseStudy = {
           {
             title: 'Outcome',
             paragraphs: [
-              'Receipts and reminders become one view.',
-              'What renews next, what it costs in naira, and cancel in two taps.',
+              'Every subscription, including the forgotten ones, in one view.',
+              'A warning before each renewal, and cancel in two taps.',
             ],
           },
         ],

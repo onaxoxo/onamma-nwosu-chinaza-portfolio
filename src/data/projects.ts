@@ -29,7 +29,7 @@ export const landingProjects: LandingProject[] = [
     title: 'SORA',
     subtitle: 'Subscription Management System',
     description:
-      'Subscriptions billed in dollars, budgeted in naira. I designed the whole product.',
+      'People forget what they subscribed to and keep paying. I designed the whole product.',
     tags: ['Product Design', 'Mobile App', 'End-to-end'],
     linkLabel: 'View case study',
     to: '/case-study/sora',
