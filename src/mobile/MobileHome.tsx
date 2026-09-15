@@ -77,18 +77,20 @@ export default function MobileHome() {
         </motion.div>
 
         <motion.div
-          className="relative mt-6 size-[164px] rounded-[26px] border-[12px] border-white"
+          className="relative mt-6 size-[164px] overflow-hidden rounded-[26px]"
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.15, ease: easeOut }}
         >
-          <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[18px]">
-            <img
-              alt="Onamma Nwosu"
-              className="absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
-              src={portrait}
-            />
-          </div>
+          <img
+            alt="Onamma Nwosu"
+            className="pointer-events-none absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
+            src={portrait}
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 rounded-[26px] border-[12px] border-white"
+          />
         </motion.div>
 
         <motion.div

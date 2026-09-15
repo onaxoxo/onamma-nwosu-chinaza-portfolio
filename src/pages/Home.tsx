@@ -64,19 +64,21 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="absolute top-[255px] left-[calc(50%+0.5px)] h-[247px] w-[253px] -translate-x-1/2 rounded-[34px] border-[21px] border-solid border-white"
+          className="absolute top-[255px] left-[calc(50%+0.5px)] h-[247px] w-[253px] -translate-x-1/2 overflow-hidden rounded-[34px]"
           data-node-id="176:1442"
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.15, ease: easeOut }}
         >
-          <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[34px]">
-            <img
-              alt="Onamma Nwosu"
-              className="absolute top-[-20.66%] left-0 h-[140.11%] w-[99.99%] max-w-none"
-              src={portrait}
-            />
-          </div>
+          <img
+            alt="Onamma Nwosu"
+            className="pointer-events-none absolute top-[-20.66%] left-0 h-[140.11%] w-full max-w-none"
+            src={portrait}
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 rounded-[34px] border-[21px] border-solid border-white"
+          />
         </motion.div>
 
         <motion.div
