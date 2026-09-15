@@ -43,7 +43,7 @@ const vendify: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Buying from Instagram vendors takes four apps.',
+      title: 'Customers can’t find reliable vendors near them.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -57,17 +57,17 @@ const vendify: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Small vendors in Lagos sell through Instagram posts. To buy one dress, Amaka opens the vendor’s profile, messages them on WhatsApp and checks Maps for where they are.',
+              text: 'Amaka wants a vendor she can trust, close enough to deliver or pick up from. Instagram shows her thousands of vendors and tells her nothing about where they are or whether they’re real.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'None of those apps talk to each other. The chat doesn’t know which dress she means, so price, size and delivery get asked one message at a time.',
+              text: 'So she guesses. She scrolls posts, checks profiles, sends DMs and asks around, and still can’t tell a reliable vendor from a scam until money has changed hands.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'Vendify puts the vendor, their products and the chat in one app.',
+              text: 'Vendify shows her verified vendors nearby, what they sell, and a direct line to ask before she pays.',
               size: 18,
               color: '#0d0d0d',
             },
