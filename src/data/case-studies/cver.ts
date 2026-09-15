@@ -9,7 +9,7 @@ const cver: CaseStudy = {
   title: 'CVERAI',
   subtitle: 'Career Platform for Skilled Immigrants',
   intro:
-    'A career platform for skilled immigrants. I redesigned the landing page and the core flows so the site says, in the first few seconds, that it understands their problem.',
+    'A career platform for skilled immigrants. I redesigned the landing page and core flows so the site says, in seconds, that it gets their problem.',
   tags: ['Product Design', 'Web Platform', 'Landing Page'],
   linkLabel: 'View live site',
   liveUrl: 'https://cverai.com/',
@@ -21,7 +21,7 @@ const cver: CaseStudy = {
       { label: 'Team', value: 'Founder, PM, engineer, marketer' },
     ],
     contribution:
-      'I owned the landing page redesign, the job matching flow, the verified profile and the directory, and paired with the developers through handoff. The growth numbers below belong to the whole team.',
+      'I owned the landing page, job matching, the verified profile and the directory, and stayed with the developers through handoff. The numbers below belong to the whole team.',
   },
 
   sections: [
@@ -68,15 +68,15 @@ const cver: CaseStudy = {
           items: [
             {
               title: 'What I knew',
-              body: 'They had real experience from somewhere else, and the market they moved into wasn’t reading it.',
+              body: 'Real experience from somewhere else. A new market that couldn’t read it.',
             },
             {
               title: 'What I didn’t have',
-              body: 'No named persona, no transcripts, no segmentation. I worked from the product, the team and the complaints coming in.',
+              body: 'No persona, no transcripts, no segments. I worked from the product, the team and the complaints.',
             },
             {
               title: 'So I’m not inventing one',
-              body: 'Writing a detailed persona now would be making up a person to fit the story. The decisions below stand on the product problem.',
+              body: 'A made-up persona would be a made-up person. The decisions below stand on the product problem.',
             },
           ],
         },
@@ -84,7 +84,7 @@ const cver: CaseStudy = {
     },
     {
       label: '04 · THE CONSTRAINTS',
-      title: 'I wasn’t designing on a blank page.',
+      title: 'This wasn’t a blank page.',
       blocks: [
         {
           kind: 'constraints',
@@ -94,23 +94,23 @@ const cver: CaseStudy = {
               title: 'It was already live',
               body: 'CVER had users and a shipped structure.',
               solution:
-                '→ I started from what was there and changed what I could argue for.',
+                '→ I kept what worked and changed what I could argue for.',
               tradeoff:
-                'Trade-off: some things I’d change were out of reach for a redesign.',
+                'Trade-off: some changes were out of reach for a redesign.',
             },
             {
               label: 'THE TEAM',
               title: 'Four other people had a say',
-              body: 'Founder, PM, engineer and marketer. Design was one input, not the decision.',
+              body: 'Founder, PM, engineer, marketer. Design was one input, not the decision.',
               solution:
-                '→ Every change was weighed against what could actually ship.',
-              tradeoff: 'Trade-off: the strongest interface isn’t always the one that can ship.',
+                '→ Every change was weighed against what could ship.',
+              tradeoff: 'Trade-off: the strongest interface isn’t always the one that ships.',
             },
             {
               label: 'USER COMPLAINTS',
-              title: 'Real, but not written down',
-              body: 'Genuine complaints from users shaped what I prioritised.',
-              solution: '→ I used them to decide what mattered most.',
+              title: 'Real complaints, not written down',
+              body: 'User complaints shaped what I prioritised.',
+              solution: '→ I used them to pick what mattered most.',
               tradeoff:
                 'Trade-off: I can’t quote any of it here.',
             },
@@ -144,7 +144,7 @@ const cver: CaseStudy = {
     },
     {
       label: '06 · THE DECISION',
-      title: 'Lead with the product, or with the problem?',
+      title: 'Lead with the product, or the problem?',
       blocks: [
         {
           kind: 'decisions',
@@ -152,13 +152,13 @@ const cver: CaseStudy = {
           items: [
             {
               badge: 'A',
-              title: 'Features first, like most SaaS',
-              body: 'Open with what the product does. Easy to write, but it leaves visitors working out whether any of it applies to them.',
+              title: 'Features first',
+              body: 'What most SaaS sites do. Easy to write. Leaves visitors guessing whether it’s for them.',
             },
             {
               badge: 'B',
               title: 'Problem first',
-              body: 'Open with the three things they already feel. People recognise their own situation before they meet the solution.',
+              body: 'Open with the three things they already feel. They see themselves before they see the product.',
               selected: true,
             },
           ],
@@ -173,16 +173,16 @@ const cver: CaseStudy = {
           kind: 'cards',
           items: [
             {
-              title: 'Start with what can actually move',
-              body: 'The product was live. The first job was working out what I could change without breaking what people relied on.',
+              title: 'Start with what can move',
+              body: 'The product was live. First job: find what I could change without breaking what people relied on.',
             },
             {
-              title: 'The landing page carries the first impression',
-              body: 'If someone doesn’t recognise their situation on the first screen, nothing below it gets read. So the problem leads.',
+              title: 'The first screen decides everything',
+              body: 'If they don’t recognise their situation on the first screen, nothing below gets read. So the problem leads.',
             },
             {
               title: 'What I won’t claim',
-              body: 'I was one voice in a team of five. I can’t point to a specific idea of mine that was cut, so I won’t invent one.',
+              body: 'I was one voice in five. I can’t point to an idea of mine that was cut, so I won’t invent one.',
             },
           ],
         },
@@ -205,17 +205,17 @@ const cver: CaseStudy = {
   screens: [
     {
       label: 'Landing',
-      caption: 'The landing page: the problem first, then the product.',
+      caption: 'The landing page: problem first, then product.',
       image: screenLanding,
     },
     {
       label: 'Pricing',
-      caption: 'Pricing, with the recommended plan given the stronger hierarchy.',
+      caption: 'Pricing, with the recommended plan given more weight.',
       image: screenPricing,
     },
     {
       label: 'Testimonials',
-      caption: 'What members are saying: social proof from people who already made the move.',
+      caption: 'Member stories from people who already made the move.',
       image: screenTestimonials,
     },
   ],
@@ -239,15 +239,15 @@ const cver: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'Warm and credible. Plain language and generous type do most of the work.',
-              'Verification signals are built into the layout, so trust reads without the interface shouting.',
+              'Warm and credible. Plain words, generous type.',
+              'Verification is built into the layout, so trust reads without shouting.',
             ],
           },
           {
             title: 'My part in it',
             paragraphs: [
-              'I owned the landing page, the job matching flow, the verified profile and the directory, and stayed with the developers through handoff.',
-              'Over that period the platform grew from just over 1,000 users to 2,000. Skilled immigrants are now found through a profile recruiters can search, instead of applications that go unanswered.',
+              'I owned the landing page, job matching, the verified profile and the directory, through handoff.',
+              'The platform grew from 1,000 users to 2,000. Recruiters now find people through a searchable profile, not unanswered applications.',
             ],
           },
         ],
@@ -258,15 +258,15 @@ const cver: CaseStudy = {
   reflection: {
     label: '10 · REFLECTION',
     title: 'What I’d do differently.',
-    headline: 'Good product design has to work beyond the interface.',
+    headline: 'Good design has to work beyond the interface.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'Pricing. The plans don’t tell themselves apart clearly enough. I’d simplify the structure and give the recommended option real hierarchy.',
+        body: 'Pricing. The plans don’t tell themselves apart. I’d simplify them and give the recommended one real weight.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',
-        body: 'I went in looking for what was wrong with the interface. Working inside a real team made me think about the existing product, the tech and the business before the pixels.',
+        body: 'I went in looking for interface problems. A real team taught me to think about the product, the tech and the business first.',
       },
     ],
   },

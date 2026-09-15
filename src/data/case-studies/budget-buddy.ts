@@ -25,7 +25,7 @@ const budgetBuddy: CaseStudy = {
   title: 'Budget Buddy',
   subtitle: 'Student Budget Tracker',
   intro:
-    'A budgeting app for students that tracks spending, sets budgets and holds money in a wallet. Designed from scratch.',
+    'A student budgeting app with a wallet. Track spending, set budgets, hold money. Built from scratch.',
   tags: ['Mobile Design', 'Fintech', 'Visual Design'],
   linkLabel: 'View case study',
   liveUrl: 'https://www.behance.net/gallery/248083805/Budget-Buddy-Smart-Student-Budgeting-with-Wallet',
@@ -40,7 +40,7 @@ const budgetBuddy: CaseStudy = {
       { label: 'Team', value: 'Solo' },
     ],
     contribution:
-      'I designed the whole product: the wallet, budgets, the summary and the withdraw flow. The key decision was where in the flow to ask what the money is for.',
+      'I designed all of it: wallet, budgets, summary, withdraw flow. The key call was where to ask what the money is for.',
   },
 
   sections: [
@@ -72,22 +72,22 @@ const budgetBuddy: CaseStudy = {
     },
     {
       label: '03 · WHO I DESIGNED FOR',
-      title: 'Adaeze, a university student in Nigeria.',
+      title: 'Adaeze, university student, Nigeria.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
-              title: 'Where her money comes from',
-              body: 'Money from home plus side hustles. It arrives irregularly and in different amounts.',
+              title: 'Where the money comes from',
+              body: 'Home and side hustles. Irregular, in different amounts.',
             },
             {
               title: 'What she wants to know',
-              body: 'How much she has used and what on, as categories and percentages, not one balance.',
+              body: 'How much she used and on what. Categories and percentages, not one balance.',
             },
             {
               title: 'What she won’t do',
-              body: 'Keep a spreadsheet or reconcile her week. Any tracking has to happen in the moment.',
+              body: 'Spreadsheets. Weekly reconciling. Tracking has to happen in the moment.',
             },
           ],
         },
@@ -95,7 +95,7 @@ const budgetBuddy: CaseStudy = {
     },
     {
       label: '04 · THE CONSTRAINTS',
-      title: 'Two limits that shaped the whole product.',
+      title: 'Two limits that shaped the product.',
       blocks: [
         {
           kind: 'constraints',
@@ -103,17 +103,17 @@ const budgetBuddy: CaseStudy = {
             {
               label: 'VISIBILITY',
               title: 'The app can’t follow the money',
-              body: 'Once money goes to a bank or becomes cash, Budget Buddy can’t see what it became.',
+              body: 'Once it’s in a bank or in cash, Budget Buddy can’t see it.',
               solution:
-                '→ The withdraw flow asks what the money is for before it leaves the wallet.',
-              tradeoff: 'Trade-off: withdrawing takes one step longer than it strictly needs to.',
+                '→ The withdraw flow asks what the money is for before it leaves.',
+              tradeoff: 'Trade-off: withdrawing takes one extra step.',
             },
             {
               label: 'MANUAL TRACKING',
               title: 'It only works if she uses it',
-              body: 'The whole picture depends on her actually recording what she spends.',
+              body: 'The whole picture depends on her recording what she spends.',
               solution:
-                '→ I kept the category step short enough that it feels like part of withdrawing, not admin.',
+                '→ The category step is short enough to feel like part of withdrawing, not admin.',
               tradeoff: 'Trade-off: the data is only as complete as her habit.',
             },
           ],
@@ -160,12 +160,12 @@ const budgetBuddy: CaseStudy = {
             {
               badge: 'A',
               title: 'Withdraw first, categorise later',
-              body: 'Faster, and it respects her time. But it relies on her coming back after the money has gone, which is exactly when people forget.',
+              body: 'Faster. But it relies on her coming back after the money is gone, which is when people forget.',
             },
             {
               badge: 'B',
               title: 'Categorise before withdrawing',
-              body: 'One extra step, but it protects the one thing the product exists to do. Spending stays visible after the money leaves.',
+              body: 'One extra step. It protects the one thing the product exists to do.',
               selected: true,
             },
           ],
@@ -174,22 +174,22 @@ const budgetBuddy: CaseStudy = {
     },
     {
       label: '07 · EXPLORATION',
-      title: 'Where the tracking actually breaks.',
+      title: 'Where tracking actually breaks.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
               title: 'Find the moment money disappears',
-              body: 'Budget Buddy loses the money at the moment it’s spent. Everything followed from picking a point to capture that.',
+              body: 'It’s the moment of spending. Everything followed from catching that.',
             },
             {
               title: 'Before, not after',
-              body: 'Asking afterwards depends on her doing admin. Asking before is the only version where the data stays complete.',
+              body: 'Asking after depends on her doing admin. Asking before keeps the data complete.',
             },
             {
               title: 'Where the scope ran away',
-              body: 'I kept adding surface: alerts, summaries, security, settings. The core needed depth more than the product needed breadth.',
+              body: 'I kept adding: alerts, summaries, security, settings. The core needed depth, not breadth.',
             },
           ],
         },
@@ -199,7 +199,7 @@ const budgetBuddy: CaseStudy = {
           screens: [
             {
               label: 'Onboarding',
-              caption: 'Home shows what’s left to spend this month, before anything else.',
+              caption: 'Home: what’s left to spend this month, first.',
               image: wfOnboarding,
             },
             { label: 'Home', caption: 'Home - Budget Buddy', image: wfHome },
@@ -225,17 +225,17 @@ const budgetBuddy: CaseStudy = {
   screens: [
     {
       label: 'Dashboard',
-      caption: 'Home shows what’s left to spend this month, before anything else.',
+      caption: 'Home: what’s left to spend this month, first.',
       image: screenDashboard,
     },
     {
       label: 'Dashboard and summary',
-      caption: 'The dashboard and the monthly summary side by side.',
+      caption: 'Dashboard and monthly summary, side by side.',
       image: screenDouble,
     },
     {
       label: 'Wallet',
-      caption: 'The wallet: balance, linked bank account and recent transactions.',
+      caption: 'Wallet: balance, linked bank, recent transactions.',
       image: screenWallet,
     },
     {
@@ -255,15 +255,15 @@ const budgetBuddy: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'Friendly and high contrast, with big numbers carrying the hierarchy.',
-              'Playful without tipping into childish. It handles real money and needs to be trusted with it.',
+              'Friendly, high contrast, big numbers.',
+              'Playful, not childish. It handles real money.',
             ],
           },
           {
             title: 'Outcome',
             paragraphs: [
-              'You know what’s left to spend at a glance.',
-              'Budgets, transactions and a wallet sit in one app, so tracking money and moving it are no longer two chores.',
+              'What’s left to spend, at a glance.',
+              'Budgets, transactions and a wallet in one app. Tracking and moving money stop being two chores.',
             ],
           },
         ],
@@ -274,15 +274,15 @@ const budgetBuddy: CaseStudy = {
   reflection: {
     label: '10 · REFLECTION',
     title: 'What I’d do differently.',
-    headline: 'More screens didn’t make the product stronger.',
+    headline: 'More screens didn’t make it stronger.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'The breadth. I explored a lot of screens when the core budgeting, wallet and spending flows could have gone further.',
+        body: 'The breadth. Too many screens, when budgets, wallet and spending could have gone deeper.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',
-        body: 'I thought covering more of the fintech experience would make it feel complete. More features don’t make a product stronger, so I got more deliberate about the main goal: showing where the money goes.',
+        body: 'I thought more features meant more complete. They don’t. The job is showing where the money goes.',
       },
     ],
   },

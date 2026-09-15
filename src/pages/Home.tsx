@@ -219,12 +219,10 @@ export default function Home() {
                   {'Product designer, 2 years in UI/UX  designing and shipping real products across AI, fintech and e-commerce.'}
                 </p>
                 <p className="relative w-[620px] shrink-0 font-normal leading-[32px] text-[20px] text-[#0d0d0d]">
-                  I’m Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I’ve
-                  shipped work across AI, fintech, e-commerce and career tech, taking products
-                  from a messy first brief to an interface people can actually use.
+                  I’m Onamma Nwosu, a product designer. Two years in UI/UX across AI, fintech, e-commerce and career tech. I take products from a messy brief to something people can use.
                 </p>
                 <p className="relative w-[620px] shrink-0 font-normal leading-[32px] text-[20px] text-[#626262]">
-                  {'I design and I build. I ship with Figma, Framer and Claude AI, which means my work doesn’t stop at a static mockup. It goes out as a live, responsive product in days rather than weeks. That’s the difference between a team debating an idea and a team watching real users try it.'}
+                  {'I design and I build. Figma, Framer and Claude AI, so my work ships as a live product in days, not weeks. Real users try it while other teams are still debating.'}
                 </p>
                 <div className="relative flex shrink-0 items-center overflow-clip pt-[14px]">
                   {stats.map((stat, index) => (

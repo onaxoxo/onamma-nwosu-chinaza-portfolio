@@ -26,7 +26,7 @@ const vendify: CaseStudy = {
   title: 'Vendify',
   subtitle: 'E-commerce marketplace platform',
   intro:
-    'A marketplace that puts finding a vendor, checking them out and messaging them in one app. A redesign of a project I first published on Behance.',
+    'Find a vendor, check them out, message them. One app. A redesign of my own Behance project.',
   tags: ['Mobile Design', 'E-commerce', 'Visual Design'],
   linkLabel: 'View case study',
   glance: {
@@ -37,7 +37,7 @@ const vendify: CaseStudy = {
       { label: 'Team', value: 'Solo' },
     ],
     contribution:
-      'Everything here’s mine: the flow from discovery to chat, the vendor profile, checkout and the in-app chat. No new research was done, so the persona comes from the behaviour the product had to serve.',
+      'All of it is mine: the flow from discovery to chat, the vendor profile, checkout, the in-app chat. No new research, so the persona comes from how the product had to work.',
   },
 
   sections: [
@@ -84,22 +84,22 @@ const vendify: CaseStudy = {
           items: [
             {
               title: 'Who she is',
-              body: 'A young customer in Lagos who finds small vendors through Instagram and WhatsApp.',
+              body: 'Young, in Lagos, finds small vendors on Instagram and WhatsApp.',
             },
             {
               title: 'What she’s doing',
-              body: 'Working out whether a vendor is worth buying from: what they sell, where they are, and whether she can get a straight answer.',
+              body: 'Deciding if a vendor is worth it: what they sell, where they are, will they answer.',
             },
             {
-              title: 'Why the customer side comes first',
-              body: 'A marketplace with no buyers is a directory. The discovery journey has to work before the vendor side is worth designing.',
+              title: 'Why the buyer comes first',
+              body: 'No buyers, no marketplace. Discovery has to work before the vendor side matters.',
             },
           ],
         },
         {
           kind: 'note',
           label: 'Note',
-          body: 'This is a redesign of a project I had already published on Behance, not a new product. No new research was done. The persona is written from the behaviour the product had to serve.',
+          body: 'A redesign of a project I’d already published on Behance. No new research. The persona comes from how the product had to work.',
         },
       ],
     },
@@ -113,20 +113,20 @@ const vendify: CaseStudy = {
             {
               label: 'TRUST',
               title: 'Nothing proves a vendor is real',
-              body: 'A new marketplace has no history behind its vendors, and reviews need volume it doesn’t have yet.',
+              body: 'New marketplace, no history. Reviews need volume it doesn’t have.',
               solution:
-                '→ I leaned on what the product can show: a real profile, what they sell, where they are, and direct contact.',
+                '→ Show what we can: a real profile, what they sell, where they are, direct contact.',
               tradeoff:
-                'Trade-off: ratings appear, but the deeper review and dispute system isn’t built.',
+                'Trade-off: ratings exist, but no review or dispute system yet.',
             },
             {
               label: 'REAL CONTENT',
-              title: 'Not every vendor is well presented',
-              body: 'Designing for a perfectly curated storefront would break on contact with real sellers.',
+              title: 'Not every vendor looks good',
+              body: 'Design for a perfect storefront and it breaks on real sellers.',
               solution:
-                '→ I designed around realistic vendor content, so a thin profile still reads as usable.',
+                '→ I designed for thin, messy profiles so they still read as usable.',
               tradeoff:
-                'Trade-off: some polish given up to stay honest about what vendors upload.',
+                'Trade-off: less polish, more honesty.',
             },
           ],
         },
@@ -134,7 +134,7 @@ const vendify: CaseStudy = {
     },
     {
       label: '05 · THE JOURNEY',
-      title: 'Discover, check them out, connect.',
+      title: 'Find. Check. Connect.',
       blocks: [
         {
           kind: 'flow',
@@ -166,12 +166,12 @@ const vendify: CaseStudy = {
             {
               badge: 'A',
               title: 'Hand off to WhatsApp',
-              body: 'Familiar, and already a habit. But the conversation leaves the product and loses the vendor she was looking at.',
+              body: 'Familiar. But the chat leaves the app and forgets the vendor she was looking at.',
             },
             {
               badge: 'B',
-              title: 'Keep the chat inside Vendify',
-              body: 'Discovery, checking out and talking stay connected. Without it the app is a directory that sends people elsewhere for the part that matters.',
+              title: 'Keep the chat in Vendify',
+              body: 'Finding, checking and talking stay connected. Otherwise it’s a directory that sends people elsewhere.',
               selected: true,
             },
           ],
@@ -219,22 +219,22 @@ const vendify: CaseStudy = {
     {
       label: 'image 10',
       caption:
-        'Home puts search, categories and vendor listings in one place, with the vendor named and badged on every product card.',
+        'Home: search, categories and vendors in one place. Every product card names its vendor.',
       image: screen1,
     },
     {
       label: 'image 11',
-      caption: 'The vendor profile: what they sell, where they are, and how to reach them.',
+      caption: 'Vendor profile: what they sell, where they are, how to reach them.',
       image: screen2,
     },
     {
       label: 'image 12',
-      caption: 'Products and services, laid out so a sparse profile still reads as usable.',
+      caption: 'Products and services, readable even when a profile is thin.',
       image: screen3,
     },
     {
       label: 'image 13',
-      caption: 'Location and direct contact, the last step before a conversation starts.',
+      caption: 'Location and contact, the last step before the chat.',
       image: screen4,
     },
   ],
@@ -249,15 +249,15 @@ const vendify: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'Product photography leads and the interface stays out of its way.',
-              'Generous cards, calm neutrals and one accent colour for actions, so it’s obvious what’s tappable.',
+              'Photos lead. The interface stays out of the way.',
+              'Big cards, calm neutrals, one accent colour for actions.',
             ],
           },
           {
             title: 'Outcome',
             paragraphs: [
-              'Shoppers get from browsing to checkout in noticeably fewer taps.',
-              'Vendors get a storefront that reads as trustworthy on its own, and buyers get a marketplace that feels curated, not crowded.',
+              'Browse to checkout in fewer taps.',
+              'Vendors get a storefront that looks trustworthy. Buyers get a marketplace that feels curated.',
             ],
           },
         ],
@@ -268,15 +268,15 @@ const vendify: CaseStudy = {
   reflection: {
     label: '10 · REFLECTION',
     title: 'What I’d do differently.',
-    headline: 'I started by redesigning the screens. I ended up redesigning the flow.',
+    headline: 'I set out to redesign screens. I ended up redesigning the flow.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'The chat. Message history, order context and a clear path for disputes or support. I’d also take the vendor side further.',
+        body: 'The chat. Message history, order context, a path for disputes. And the vendor side.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',
-        body: 'I opened the old file thinking it was a visual redesign. Screen by screen, the real opportunity was the journey from finding a vendor to talking to them.',
+        body: 'I thought this was a visual redesign. The real fix was the journey from finding a vendor to talking to them.',
       },
     ],
   },

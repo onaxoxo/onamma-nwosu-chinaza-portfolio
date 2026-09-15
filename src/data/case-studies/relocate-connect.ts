@@ -12,7 +12,7 @@ const relocateConnect: CaseStudy = {
   title: 'RelocateConnect',
   subtitle: 'Community app for newcomers',
   intro:
-    'RelocateConnect helps newcomers settle into unfamiliar places by connecting them with communities, people and local resources, so relocation feels less lonely and more welcoming.',
+    'A community app for newcomers. People, communities and local help in one place, so a new city feels less lonely.',
   tags: ['Product Design', 'Mobile App', 'Community'],
   linkLabel: 'View case study',
   heroCover,
@@ -26,7 +26,7 @@ const relocateConnect: CaseStudy = {
       { label: 'Team', value: 'Solo' },
     ],
     contribution:
-      'I designed the whole product: onboarding, discovery, search and the empty state. The key decision was starting with communities instead of one-to-one matching.',
+      'I designed all of it: onboarding, discovery, search, the empty state. The key call was communities first, not one-to-one matching.',
   },
 
   sections: [
@@ -65,15 +65,15 @@ const relocateConnect: CaseStudy = {
           items: [
             {
               title: 'Who he is',
-              body: 'A software engineer who moved for work. He knows his colleagues and his landlord, and nobody else.',
+              body: 'A software engineer who moved for work. Knows his colleagues and his landlord. That’s it.',
             },
             {
               title: 'What he needs',
-              body: 'A low-pressure way to find people who share his interests, and communities he can join without needing an introduction.',
+              body: 'A low-pressure way to find people like him, and groups he can join without an introduction.',
             },
             {
               title: 'What gets in the way',
-              body: 'Cold-messaging strangers feels awkward, and the events he finds online assume he already knows the neighbourhoods.',
+              body: 'Cold-messaging strangers feels awkward. Event listings assume he knows the area.',
             },
           ],
         },
@@ -81,7 +81,7 @@ const relocateConnect: CaseStudy = {
     },
     {
       label: '04 · THE CONSTRAINTS',
-      title: 'Two limits that shaped the whole product.',
+      title: 'Two limits that shaped the product.',
       blocks: [
         {
           kind: 'constraints',
@@ -89,17 +89,17 @@ const relocateConnect: CaseStudy = {
             {
               label: 'COLD START',
               title: 'No network on day one',
-              body: 'A newcomer has no friends, no history and no recommendations for the app to work from.',
+              body: 'No friends, no history, nothing for the app to work from.',
               solution:
-                '→  Onboarding asks about interests and needs first, so the first screen is already personal.',
-              tradeoff: 'Trade-off: onboarding is longer than a bare sign-up form.',
+                '→  Onboarding asks about interests first, so the first screen is already personal.',
+              tradeoff: 'Trade-off: onboarding is longer than a plain sign-up.',
             },
             {
               label: 'TRUST',
               title: 'Strangers are still strangers',
-              body: 'Connecting people who have never met carries real safety concerns, especially for someone new to a place.',
+              body: 'Meeting people you’ve never met is a safety risk, more so somewhere new.',
               solution:
-                '→  Communities and events come before one-to-one chat, so people meet in groups first.',
+                '→  Communities and events come before one-to-one chat. People meet in groups first.',
               tradeoff: 'Trade-off: a direct connection takes one extra step.',
             },
           ],
@@ -108,7 +108,7 @@ const relocateConnect: CaseStudy = {
     },
     {
       label: '05 · THE FLOW',
-      title: 'From first launch to a first connection.',
+      title: 'First launch to first connection.',
       blocks: [
         {
           kind: 'flow',
@@ -141,13 +141,13 @@ const relocateConnect: CaseStudy = {
           items: [
             {
               badge: 'A',
-              title: 'Match individuals directly',
-              body: 'Fast and familiar from dating apps. But it asks a newcomer to trust a stranger immediately, and it gives the app nothing to work with on day one.',
+              title: 'Match individuals',
+              body: 'Fast and familiar from dating apps. But it asks a newcomer to trust a stranger on day one, with nothing to go on.',
             },
             {
               badge: 'B',
-              title: 'Communities first, people second',
-              body: 'Interest-based communities give newcomers a reason to show up and a group to meet in. One-to-one connection grows out of that, when both people are ready.',
+              title: 'Communities first',
+              body: 'Interest groups give newcomers a reason to show up and a room to meet in. One-to-one grows from there.',
               selected: true,
             },
           ],
@@ -163,15 +163,15 @@ const relocateConnect: CaseStudy = {
           items: [
             {
               title: 'Ask before you show',
-              body: 'The first version dropped people straight into a feed. Without knowing their interests it was generic, like every other social network. Moving the questions up front fixed it.',
+              body: 'V1 dropped people into a feed. With no interests, it was generic. Asking first fixed it.',
             },
             {
-              title: 'Design the empty state as a feature',
-              body: 'In a new city a search often returns nothing. Instead of a dead end, the empty state suggests interests and invites people to start the community themselves.',
+              title: 'Make the empty state useful',
+              body: 'In a new city, search often finds nothing. The empty state suggests interests and lets people start the community themselves.',
             },
             {
               title: 'Warm, not loud',
-              body: 'Newcomers are already overwhelmed. The interface stays calm, with illustration doing the welcoming instead of bold colour or motion.',
+              body: 'Newcomers are already overwhelmed. Calm UI, illustration does the welcoming.',
             },
           ],
         },
@@ -194,27 +194,27 @@ const relocateConnect: CaseStudy = {
   screens: [
     {
       label: 'Splash',
-      caption: 'First launch, before an account exists. The app opens on the mark, not a form.',
+      caption: 'First launch. The mark, not a form.',
       image: screenSplash,
     },
     {
       label: 'Welcome',
-      caption: 'Welcome: sign up or log in, with the illustration doing the greeting.',
+      caption: 'Welcome: sign up or log in.',
       image: screenWelcome,
     },
     {
       label: 'Discover',
-      caption: 'Discover: communities and people matched to the interests picked at onboarding.',
+      caption: 'Discover: communities and people matched to your interests.',
       image: screenDiscover,
     },
     {
       label: 'Search results',
-      caption: 'Search results for something specific, filtered by what’s nearby.',
+      caption: 'Search results, filtered by what’s nearby.',
       image: screenSearch,
     },
     {
       label: 'No results',
-      caption: 'No results: the empty state that suggests interests and keeps people moving.',
+      caption: 'No results: suggest interests, keep people moving.',
       image: screenEmpty,
     },
   ],
@@ -229,15 +229,15 @@ const relocateConnect: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'The visual direction is calm, warm and approachable, with a single blue for actions and illustration carrying the welcome.',
-              'It’s designed to make newcomers feel comfortable and confident, not overwhelmed by another busy feed.',
+              'Calm, warm, approachable. One blue for actions. Illustration does the welcoming.',
+              'Built to make newcomers feel comfortable, not overwhelmed by another busy feed.',
             ],
           },
           {
             title: 'Outcome',
             paragraphs: [
-              'The final design makes onboarding feel less like admin and more like the start of belonging somewhere.',
-              'People get a clear path from arriving to discovering communities and meeting people they can actually connect with.',
+              'Onboarding feels less like admin and more like the start of belonging.',
+              'A clear path from arriving to finding communities and meeting people.',
             ],
           },
         ],
@@ -248,15 +248,15 @@ const relocateConnect: CaseStudy = {
   reflection: {
     label: '10 · REFLECTION',
     title: 'What I’d do differently.',
-    headline: 'Community is the product. The feed is just where it lives.',
+    headline: 'Community is the product. The feed is where it lives.',
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'Safety and moderation. Communities lower the risk of meeting strangers, but the concept still leans on people behaving well. Reporting, verification and guidelines deserve real screens.',
+        body: 'Safety. Communities lower the risk, but reporting, verification and guidelines still need real screens.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',
-        body: 'I started with a feed and worked backwards to why anyone would open it. Once the onboarding questions became the centre, every other screen had something to be personal about.',
+        body: 'I started with a feed and worked backwards. Once onboarding became the centre, every screen had something personal to show.',
       },
     ],
   },

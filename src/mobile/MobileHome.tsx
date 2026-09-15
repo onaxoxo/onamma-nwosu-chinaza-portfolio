@@ -242,15 +242,10 @@ export default function MobileHome() {
               fintech and e-commerce.
             </p>
             <p className="text-[16px] leading-[26px] text-[#0d0d0d]">
-              I’m Onamma Nwosu, a product designer with 2 years of experience in UI/UX. I’ve
-              shipped work across AI, fintech, e-commerce and career tech, taking products from a
-              messy first brief to an interface people can actually use.
+              I’m Onamma Nwosu, a product designer. Two years in UI/UX across AI, fintech, e-commerce and career tech. I take products from a messy brief to something people can use.
             </p>
             <p className="text-[16px] leading-[26px] text-[#626262]">
-              I design and I build. I ship with Figma, Framer and Claude AI, which means my work
-              doesn’t stop at a static mockup. It goes out as a live, responsive product in days
-              rather than weeks. That’s the difference between a team debating an idea and a
-              team watching real users try it.
+              I design and I build. Figma, Framer and Claude AI, so my work ships as a live product in days, not weeks. Real users try it while other teams are still debating.
             </p>
             <div className="mt-2 grid grid-cols-2 gap-4">
               {stats.map((stat) => (

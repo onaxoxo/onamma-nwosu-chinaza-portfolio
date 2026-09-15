@@ -4,22 +4,22 @@ export const processSteps = [
   {
     number: '01',
     title: 'Discover',
-    body: 'Interviews, competitor teardowns and whatever data exists. I want the messy version of the problem before anyone talks about screens.',
+    body: 'Interviews, competitor teardowns, whatever data exists. I want the messy version of the problem first.',
   },
   {
     number: '02',
     title: 'Define',
-    body: 'Turn the mess into a decision: who this is for, what it has to do, and what we are deliberately not building this round.',
+    body: 'Turn the mess into a decision. Who it’s for, what it must do, what we’re not building yet.',
   },
   {
     number: '03',
     title: 'Design',
-    body: 'Flows, wireframes, then interface. Tested against real content and edge cases, not just the happy path.',
+    body: 'Flows, wireframes, then interface. Tested on real content and edge cases.',
   },
   {
     number: '04',
     title: 'Ship',
-    body: 'Specs, tokens and a build-ready handoff. I stay through development, because that’s where designs quietly break.',
+    body: 'Specs, tokens, build-ready handoff. I stay through development, where designs quietly break.',
   },
 ]
 

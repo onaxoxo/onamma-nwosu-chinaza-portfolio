@@ -24,7 +24,7 @@ const ocicat: CaseStudy = {
   title: 'Ocicat AI Studio',
   subtitle: 'AI Video Creation Platform',
   intro:
-    'An AI video studio that takes a written idea to a finished video, with script, visuals, captions and export in one place.',
+    'An AI video studio. Idea in, finished video out: script, visuals, captions, export.',
   tags: ['UI/UX', 'Web App', 'AI Product'],
   linkLabel: 'View live site',
   liveUrl: 'https://ocicataistudio.framer.website/',
@@ -39,7 +39,7 @@ const ocicat: CaseStudy = {
       { label: 'Team', value: 'Client and their engineers' },
     ],
     contribution:
-      'I designed the dashboard, the video creation flow, the editor and the templates. The core call was how much of the interface the AI takes over, and how much stays a real editor.',
+      'I designed the dashboard, the creation flow, the editor and templates. The big call: how much the AI takes over, and how much stays a real editor.',
   },
 
   sections: [
@@ -78,15 +78,15 @@ const ocicat: CaseStudy = {
           items: [
             {
               title: 'Who saw it first',
-              body: 'A client who needed something to present internally. It had to survive a room of people seeing it for the first time.',
+              body: 'A client presenting it internally. It had to land with a room seeing it for the first time.',
             },
             {
               title: 'Who it’s for',
-              body: 'Creators making short-form video who want AI help without handing over the whole edit.',
+              body: 'Short-form creators who want AI help but won’t hand over the whole edit.',
             },
             {
               title: 'What I didn’t have',
-              body: 'No persona, no research and no access to end users. The decisions here come from the brief and the category.',
+              body: 'No persona, no research, no end users. Decisions came from the brief and the category.',
             },
           ],
         },
@@ -94,7 +94,7 @@ const ocicat: CaseStudy = {
     },
     {
       label: '04 · THE DECISION',
-      title: 'A magic prompt box, or a real editor?',
+      title: 'Magic prompt box, or real editor?',
       height: 1127,
       blocks: [],
       placed: [
@@ -106,13 +106,13 @@ const ocicat: CaseStudy = {
             items: [
               {
                 badge: 'A',
-                title: 'Prompt first, AI as the product',
-                body: 'Where most of the category sits. Type an idea, receive a video. It demos well, and leaves you nothing to adjust when the result is nearly right.',
+                title: 'Prompt first',
+                body: 'Where the category sits. Type, receive, done. Demos well. Leaves nothing to adjust when the result is nearly right.',
               },
               {
                 badge: 'B',
-                title: 'AI assisted, editor as the product',
-                body: 'Scenes, a timeline and separate video, audio and voice-over tracks stay on screen. The AI works alongside the edit, and you still own the result.',
+                title: 'Editor first, AI alongside',
+                body: 'Scenes, timeline and separate tracks stay on screen. The AI helps. You still own the result.',
                 selected: true,
               },
             ],
@@ -131,7 +131,7 @@ const ocicat: CaseStudy = {
     },
     {
       label: '05 · THE FLOW',
-      title: 'From an idea to an exported video.',
+      title: 'Idea to export.',
       blocks: [
         {
           kind: 'flow',
@@ -154,18 +154,18 @@ const ocicat: CaseStudy = {
     },
     {
       label: '06 · SCOPE',
-      title: 'Not every screen in the sidebar was designed.',
+      title: 'Not every sidebar item was designed.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
               title: 'Designed in depth',
-              body: 'The dashboard, video creation, the editor, templates and projects. This is where the work went.',
+              body: 'Dashboard, creation, editor, templates, projects. That’s where the work went.',
             },
             {
               title: 'Placeholders',
-              body: 'Team Workspaces, Billing, Help and Brand Kit show how the wider product would be structured. They weren’t designed.',
+              body: 'Team Workspaces, Billing, Help, Brand Kit. They show the shape of the product. Not designed.',
             },
           ],
         },
@@ -180,15 +180,15 @@ const ocicat: CaseStudy = {
           items: [
             {
               title: 'I started in the wrong place',
-              body: 'The first pass chased a look that would stand apart from Higgsfield. That’s where most of the early effort went.',
+              body: 'The first pass chased a look. Most of the early effort went there.',
             },
             {
               title: 'The difference was structural',
-              body: 'Keeping scenes, the timeline and the tracks on screen is what makes the AI an assistant instead of the whole product.',
+              body: 'Scenes, timeline and tracks on screen make the AI an assistant, not the product.',
             },
             {
               title: 'Let the footage carry the colour',
-              body: 'The interface stays dark and quiet so thumbnails and generated frames are the brightest thing on screen.',
+              body: 'The UI stays dark and quiet. Generated frames are the brightest thing on screen.',
             },
           ],
         },
@@ -219,17 +219,17 @@ const ocicat: CaseStudy = {
     {
       label: 'dashboard',
       caption:
-        'The editor: scenes, the timeline with separate video, audio and voice-over tracks, and the AI chat panel alongside it.',
+        'The editor: scenes, timeline, tracks, and the AI panel alongside.',
       image: screenDashboard,
     },
     {
       label: 'template',
-      caption: 'Templates: a starting point for creators who don’t want to begin from a prompt.',
+      caption: 'Templates: a starting point that isn’t a prompt.',
       image: screenTemplate,
     },
     {
       label: 'editor',
-      caption: 'The editor, with the AI panel working alongside the edit rather than replacing it.',
+      caption: 'The AI panel works with the edit, not instead of it.',
       image: screenEditor,
     },
   ],
@@ -244,15 +244,15 @@ const ocicat: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'Dark and studio-like, so generated frames stay the brightest thing on screen.',
-              'Controls sit back on purpose. The creator’s footage is the only thing competing for attention.',
+              'Dark and studio-like. Generated frames are the brightest thing on screen.',
+              'Controls sit back. The footage gets the attention.',
             ],
           },
           {
             title: 'Outcome',
             paragraphs: [
-              'Creators go from a written idea to an exported video without leaving the product.',
-              'What used to take a script tool, an editor, a captioning service and an export step now happens in one place.',
+              'Idea to exported video without leaving the product.',
+              'Script tool, editor, captions and export, now in one place.',
             ],
           },
         ],
@@ -267,11 +267,11 @@ const ocicat: CaseStudy = {
     beats: [
       {
         label: 'WHAT I WOULD REVISIT',
-        body: 'The waiting. Generation takes time and I designed the editing more than the wait. A clear progress or queue state would tell people what’s happening.',
+        body: 'The wait. Generation takes time and I designed the editing, not the waiting. A clear progress state would fix that.',
       },
       {
         label: 'WHAT CHANGED IN MY THINKING',
-        body: 'I thought standing out meant a different visual identity. The stronger difference was the experience: an editor where AI works alongside you instead of taking over.',
+        body: 'I thought standing out meant a new look. It meant a different experience: AI beside you, not in charge.',
       },
     ],
   },
