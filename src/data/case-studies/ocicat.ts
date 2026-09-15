@@ -45,23 +45,23 @@ const ocicat: CaseStudy = {
   sections: [
     {
       label: '02 · THE BRIEF',
-      title: 'Build an AI video tool that doesn’t look, or work, like every other one.',
+      title: 'Every AI video tool looks and works the same.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Ocicat is an AI video tool entering a crowded category. Higgsfield and others had already claimed the prompt-first, purple-gradient look, so a new product with the same shape would disappear.',
+              text: 'Higgsfield and the rest own the prompt-first look. Same shape, same purple gradient.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'The bigger problem is what prompt-first tools do to creators. Type an idea, get a video, and then have nothing to adjust when the result is almost right. Creators lose control of the thing they’re supposed to own.',
+              text: 'They also work the same way: type an idea, get a video, change nothing. Creators lose control of their own edit.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'So the brief had two halves. Look different enough to be noticed, and work differently enough that creators still own the edit.',
+              text: 'Ocicat had to look different and give the edit back.',
               size: 18,
               color: '#0d0d0d',
             },

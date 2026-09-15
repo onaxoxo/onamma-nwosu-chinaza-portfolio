@@ -27,7 +27,7 @@ const cver: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Skilled people were applying for jobs and hearing nothing back.',
+      title: 'Skilled immigrants apply for jobs and hear nothing.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -41,17 +41,17 @@ const cver: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'CVER’s users are skilled immigrants: engineers, nurses, project managers who moved to Canada, the UK or the US with years of experience. They apply for jobs and hear nothing.',
+              text: 'Engineers, nurses, project managers. Years of experience. Zero replies.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Three things kept coming up. Their experience didn’t translate into the new market. They had no way to show what they could do. And the jobs they were shown didn’t fit them. They weren’t underqualified. The systems filtering them couldn’t read them.',
+              text: 'Their experience doesn’t translate. They can’t show what they can do. The jobs they see don’t fit. They aren’t underqualified. The filters can’t read them.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'The old site didn’t say any of this. It led with features, so visitors had to work out for themselves whether CVER was for them. The redesign had to make someone recognise their own situation in the first few seconds.',
+              text: 'The old site led with features and never said this. The redesign had to say it in the first five seconds.',
               size: 18,
               color: '#0d0d0d',
             },

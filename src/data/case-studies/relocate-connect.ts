@@ -32,23 +32,23 @@ const relocateConnect: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Moving somewhere new is easy. Belonging there isn’t.',
+      title: 'New city, new job, no one to call.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Someone arrives in a new city with a job, a flat and no one to call. A dozen apps solve the practical side of moving. The social side is left to chance.',
+              text: 'Apps solve the practical side of moving. Nobody solves the social side.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Existing platforms assume you already have a network. Group chats are closed, event listings assume you know the neighbourhoods, and social media keeps showing friends from the place you just left. Three weeks in, most newcomers still only know their colleagues and their landlord.',
+              text: 'Group chats are closed. Events assume you know the area. Social media shows the friends you left behind.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'RelocateConnect had to shorten the gap between arriving and belonging: people, communities and local resources in one place, from day one, for someone who knows nobody yet.',
+              text: 'RelocateConnect gives newcomers people, communities and local help from day one.',
               size: 18,
               color: '#0d0d0d',
             },
