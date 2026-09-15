@@ -373,24 +373,7 @@ export default function Home() {
                 </p>
                 <div className="relative h-px w-full shrink-0 bg-[#e5e5e5]" />
                 <div className="relative flex shrink-0 items-center gap-[14px] overflow-clip">
-                  <div
-                    className={`relative flex size-[48px] shrink-0 items-center justify-center overflow-clip rounded-[34px] ${
-                      review.avatar ? '' : 'bg-[#f2f2f2]'
-                    }`}
-                  >
-                    {review.avatar && (
-                      <div
-                        aria-hidden
-                        className="pointer-events-none absolute inset-0 rounded-[34px]"
-                      >
-                        <div className="absolute inset-0 rounded-[34px] bg-[#f2f2f2]" />
-                        <img
-                          alt=""
-                          className="absolute size-full max-w-none rounded-[34px] object-cover"
-                          src={review.avatar}
-                        />
-                      </div>
-                    )}
+                  <div className="relative flex size-[48px] shrink-0 items-center justify-center overflow-clip rounded-[34px] bg-[#f2f2f2]">
                     <p className="relative shrink-0 font-semibold leading-[normal] whitespace-nowrap text-[16px] text-[#626262]">
                       {review.initials}
                     </p>

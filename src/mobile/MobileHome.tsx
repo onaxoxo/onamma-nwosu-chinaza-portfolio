@@ -344,11 +344,7 @@ export default function MobileHome() {
               <div className="h-px w-full bg-[#e5e5e5]" />
               <div className="flex items-center gap-3">
                 <div className="relative flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#f2f2f2]">
-                  {review.avatar ? (
-                    <img alt="" className="absolute inset-0 size-full object-cover" src={review.avatar} />
-                  ) : (
-                    <p className="font-semibold text-[14px] text-[#626262]">{review.initials}</p>
-                  )}
+                  <p className="font-semibold text-[14px] text-[#626262]">{review.initials}</p>
                 </div>
                 <div className="flex flex-col gap-0.5">
                   <p className="font-medium text-[15px] text-[#0d0d0d]">{review.name}</p>

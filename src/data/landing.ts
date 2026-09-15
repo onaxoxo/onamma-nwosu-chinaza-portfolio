@@ -1,5 +1,3 @@
-import avatar1 from '../assets/landing/avatar-1.png'
-
 export const processSteps = [
   {
     number: '01',
@@ -36,22 +34,21 @@ export const reviews = [
   {
     quote:
       '“She asked the questions nobody else on the project was asking. What came back wasn’t just prettier. It was a version of the product that actually made sense to use.”',
-    initials: 'AB',
-    avatar: avatar1,
-    name: 'John Frank',
+    initials: 'W',
+    name: 'Walter',
     role: 'Founder · Makeda',
   },
   {
     quote:
       '“Handover was the easiest part of the build. Every state was there, the spacing was consistent, and I didn’t have to go back and ask what happens on error.”',
-    initials: 'CD',
+    initials: 'AK',
     name: 'Anu kaka',
     role: 'Founder · Zoe Verse',
   },
   {
     quote:
       '“Fast, clear and genuinely easy to work with. She pushed back on a couple of my ideas and she was right to. The end result was much stronger for it.”',
-    initials: 'EF',
+    initials: 'MO',
     name: 'Michael Odaefe',
     role: 'Founder  · CverAI',
   },
