@@ -46,23 +46,23 @@ const budgetBuddy: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Money leaves the app and disappears.',
+      title: 'Student budgeting apps lose track of money the moment it’s spent.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Adaeze gets money from home and side hustles. It goes into her Budget Buddy wallet.',
+              text: 'Adaeze gets money from home and side hustles and keeps it in her Budget Buddy wallet. The app knows exactly what she has.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'She withdraws or spends cash, and the app loses it. A tracker that stops at the moment of spending isn’t a tracker.',
+              text: 'Then she withdraws to her bank or spends cash, and the app loses sight of it. A tracker that stops at the moment of spending isn’t a tracker.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'She wants to know how much she used and on what. Budget Buddy had to catch that before the money left.',
+              text: 'Budget Buddy had to record what the money was for before it left.',
               size: 18,
               color: '#0d0d0d',
             },

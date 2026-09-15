@@ -44,23 +44,23 @@ const sora: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Billed in dollars. Budgeting in naira.',
+      title: 'Subscriptions are billed in dollars. Nigerians budget in naira.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Chinaza pays for six subscriptions. Most bill in dollars. She budgets in naira.',
+              text: 'Chinaza pays for six subscriptions. Most of them bill in dollars, but she budgets in naira, so no price on any receipt means anything to her until she converts it.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'She only sees the cost when the bank debits her. ₦25,000 goes out and she can’t tell which services it was.',
+              text: 'She only sees the real cost when the bank debits her, often several charges at once. ₦25,000 goes out and she can’t tell which services it was.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'She finds out too late, in the wrong currency. SORA fixes both.',
+              text: 'SORA shows every subscription in naira, before the money leaves.',
               size: 18,
               color: '#0d0d0d',
             },

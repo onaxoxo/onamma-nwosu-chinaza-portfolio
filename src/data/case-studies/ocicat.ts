@@ -45,18 +45,18 @@ const ocicat: CaseStudy = {
   sections: [
     {
       label: '02 · THE BRIEF',
-      title: 'Every AI video tool looks and works the same.',
+      title: 'AI video tools all look the same, and they take the edit away from you.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Higgsfield and the rest own the prompt-first look. Same shape, same purple gradient.',
+              text: 'Higgsfield and the rest of the category share one look: prompt box, purple gradient. A new tool with the same shape would disappear.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'They also work the same way: type an idea, get a video, change nothing. Creators lose control of their own edit.',
+              text: 'They also share one way of working. You type an idea, you get a video, and you can’t change anything when the result is almost right. Creators lose control of their own edit.',
               size: 18,
               color: '#6b6b6b',
             },

@@ -32,18 +32,18 @@ const relocateConnect: CaseStudy = {
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'New city, new job, no one to call.',
+      title: 'Moving to a new city is easy to plan. Making friends there isn’t.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Apps solve the practical side of moving. Nobody solves the social side.',
+              text: 'Tobi arrives in a new city with a job and a flat and no one to call. Apps handle the practical side of moving. Nothing handles the social side.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Group chats are closed. Events assume you know the area. Social media shows the friends you left behind.',
+              text: 'The usual places don’t work for a newcomer. Group chats are closed, event listings assume you know the area, and social media keeps showing the friends you left behind.',
               size: 18,
               color: '#6b6b6b',
             },
