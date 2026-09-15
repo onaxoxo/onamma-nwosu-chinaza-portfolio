@@ -78,6 +78,8 @@ export type Block =
       items: { badge: string; title: string; body: string; selected?: boolean }[]
     }
   | { kind: 'resultCards'; items: { title: string; paragraphs: string[] }[] }
+  /** A row of headline numbers, e.g. the CVER growth figures. */
+  | { kind: 'stats'; items: { value: string; label: string }[] }
   /** A composed Figma frame exported as a single image (e.g. an embedded product mockup). */
   | { kind: 'nodeImage'; src: string; alt: string; background?: string }
   | { kind: 'note'; label: string; body: string }
@@ -299,8 +301,8 @@ function Decisions({ block }: { block: Extract<Block, { kind: 'decisions' }> }) 
               </p>
             </div>
             {item.selected && (
-              <p className="relative min-w-px flex-[1_0_0] font-semibold leading-[1.45] text-[18px] text-[#f97316]">
-                &#10003;
+              <p className="relative shrink-0 rounded-[8px] bg-[#fff1e8] px-[10px] py-[5px] font-medium leading-[normal] tracking-[0.6px] text-[11px] text-[#f97316]">
+                DIRECTION I CHOSE
               </p>
             )}
           </div>
@@ -343,6 +345,30 @@ function ResultCards({ block }: { block: Extract<Block, { kind: 'resultCards' }>
               {paragraph}
             </p>
           ))}
+        </motion.div>
+      ))}
+    </div>
+  )
+}
+
+function Stats({ block }: { block: Extract<Block, { kind: 'stats' }> }) {
+  return (
+    <div className="relative flex w-full shrink-0 items-start gap-[24px] overflow-clip">
+      {block.items.map((item, index) => (
+        <motion.div
+          key={item.label}
+          className="relative flex min-w-px flex-[1_0_0] flex-col items-start gap-[8px] self-stretch overflow-clip rounded-[20px] bg-[#0d0d0d] p-[28px]"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.55, delay: index * 0.08, ease: easeOut }}
+        >
+          <p className="relative shrink-0 font-semibold leading-[1.1] whitespace-nowrap text-[40px] text-white">
+            {item.value}
+          </p>
+          <p className="relative w-full shrink-0 font-normal leading-[1.45] text-[15px] text-[#a8a8a8]">
+            {item.label}
+          </p>
         </motion.div>
       ))}
     </div>
@@ -454,6 +480,8 @@ export function BlockRenderer({ block }: { block: Block }) {
       return <Decisions block={block} />
     case 'resultCards':
       return <ResultCards block={block} />
+    case 'stats':
+      return <Stats block={block} />
     case 'nodeImage':
       return <NodeImage block={block} />
     case 'note':

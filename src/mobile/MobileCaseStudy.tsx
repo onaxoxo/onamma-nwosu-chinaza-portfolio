@@ -267,11 +267,27 @@ function MobileBlock({ block, placement }: { block: Block; placement?: Placement
                 >
                   {item.badge}
                 </div>
-                {item.selected && <p className="font-semibold text-[16px] text-[#f97316]">&#10003;</p>}
+                {item.selected && (
+                  <p className="rounded-[7px] bg-[#fff1e8] px-2 py-1 font-medium tracking-[0.5px] text-[10px] text-[#f97316]">
+                    DIRECTION I CHOSE
+                  </p>
+                )}
               </div>
               <p className="font-semibold leading-[1.35] text-[17px] text-[#0d0d0d]">{item.title}</p>
               <p className="text-[15px] leading-[1.5] text-[#6b6b6b]">{item.body}</p>
             </motion.div>
+          ))}
+        </div>
+      )
+
+    case 'stats':
+      return (
+        <div className="grid grid-cols-2 gap-3">
+          {block.items.map((item) => (
+            <div key={item.label} className="flex flex-col gap-1 rounded-[18px] bg-[#0d0d0d] p-5">
+              <p className="font-semibold leading-[1.1] text-[28px] text-white">{item.value}</p>
+              <p className="text-[13px] leading-[1.4] text-[#a8a8a8]">{item.label}</p>
+            </div>
           ))}
         </div>
       )
@@ -451,6 +467,28 @@ export default function MobileCaseStudy({ study }: { study: CaseStudy }) {
           </motion.div>
         )}
       </motion.section>
+
+      {/* At a glance */}
+      <section className="flex flex-col gap-5 px-5 pt-12">
+        <Reveal>
+          <SectionHead label="01 · AT A GLANCE" title="What this project was, and what I did on it." />
+        </Reveal>
+        <div className="flex flex-col rounded-[18px] bg-white px-5 py-2 shadow-[inset_0_0_0_1px_#ececec]">
+          {study.glance.rows.map((row, index) => (
+            <div
+              key={row.label}
+              className={`flex items-start justify-between gap-4 py-3 ${index > 0 ? 'border-t border-[#ececec]' : ''}`}
+            >
+              <p className="shrink-0 text-[13px] text-[#6b6b6b]">{row.label}</p>
+              <p className="text-right font-medium text-[15px] text-[#0d0d0d]">{row.value}</p>
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col gap-2 rounded-[18px] bg-white p-5 shadow-[inset_0_0_0_1px_#ececec]">
+          <p className="font-semibold text-[18px] text-[#0d0d0d]">My contribution</p>
+          <p className="text-[15px] leading-[1.55] text-[#6b6b6b]">{study.glance.contribution}</p>
+        </div>
+      </section>
 
       {study.sections.map((section) => (
         <MobileSection key={section.label} section={section} />

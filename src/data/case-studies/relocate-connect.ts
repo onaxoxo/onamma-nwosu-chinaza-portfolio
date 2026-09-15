@@ -18,6 +18,16 @@ const relocateConnect: CaseStudy = {
   heroCover,
   heroCoverHeight: 819,
   heroCoverFit: 'cover',
+  glance: {
+    rows: [
+      { label: 'Role', value: 'Product Designer' },
+      { label: 'Type', value: 'Concept, built from scratch' },
+      { label: 'Platform', value: 'Mobile' },
+      { label: 'Team', value: 'Solo' },
+    ],
+    contribution:
+      'I designed the whole product: onboarding, discovery, search and the empty state. The key decision was starting with communities instead of one-to-one matching.',
+  },
 
   sections: [
     {
@@ -28,17 +38,17 @@ const relocateConnect: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Someone arrives in a new city with a job, a flat and no one to call. The practical parts of relocating are solved by a dozen apps. The social part is left to chance.',
+              text: 'Someone arrives in a new city with a job, a flat and no one to call. A dozen apps solve the practical parts of moving. The social part is left to chance.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Existing platforms are built for people who already have a network. Group chats are closed, event listings assume local knowledge, and social media keeps surfacing friends from the place they just left.',
+              text: 'Existing platforms assume you already have a network. Group chats are closed, event listings assume local knowledge, and social media keeps showing friends from the place you just left.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'RelocateConnect exists to shorten the gap between arriving and feeling at home, by putting people, communities and local resources in one place from day one.',
+              text: 'RelocateConnect shortens the gap between arriving and feeling at home, with people, communities and local resources in one place from day one.',
               size: 18,
               color: '#0d0d0d',
             },
@@ -146,22 +156,22 @@ const relocateConnect: CaseStudy = {
     },
     {
       label: '07 · EXPLORATION',
-      title: 'The judgements that shaped the product.',
+      title: 'Three calls that shaped the product.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
               title: 'Ask before you show',
-              body: 'The first version dropped users straight into a feed. Without knowing their interests, the feed was generic and the app felt like every other social network. Moving the questions up front fixed the feed.',
+              body: 'The first version dropped people straight into a feed. Without knowing their interests it was generic, like every other social network. Moving the questions up front fixed it.',
             },
             {
               title: 'Design the empty state as a feature',
-              body: 'In a new city a search often returns nothing. Rather than a dead end, the empty state suggests interests and invites people to start the community themselves.',
+              body: 'In a new city a search often returns nothing. Instead of a dead end, the empty state suggests interests and invites people to start the community themselves.',
             },
             {
               title: 'Warm, not loud',
-              body: 'Newcomers are already overwhelmed. The interface stays calm and friendly, with illustration doing the welcoming instead of bold colour or motion.',
+              body: 'Newcomers are already overwhelmed. The interface stays calm, with illustration doing the welcoming instead of bold colour or motion.',
             },
           ],
         },
@@ -237,16 +247,16 @@ const relocateConnect: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I changed.',
+    title: 'What I would do differently.',
     headline: 'Community is the product. The feed is just where it lives.',
     beats: [
       {
-        label: 'WHAT I REVISITED',
-        body: 'I would revisit safety and moderation. Communities lower the risk of meeting strangers, but the concept still leans on people behaving well. Reporting, verification and community guidelines deserve real screens, not a settings link.',
+        label: 'WHAT I WOULD REVISIT',
+        body: 'Safety and moderation. Communities lower the risk of meeting strangers, but the concept still leans on people behaving well. Reporting, verification and guidelines deserve real screens.',
       },
       {
-        label: 'WHAT I IMPROVED ALONG THE WAY',
-        body: 'I started by designing a feed and worked backwards to why anyone would open it. Once I made the onboarding questions the centre of the product, every other screen had something to be personal about.',
+        label: 'WHAT CHANGED IN MY THINKING',
+        body: 'I started with a feed and worked backwards to why anyone would open it. Once the onboarding questions became the centre, every other screen had something to be personal about.',
       },
     ],
   },

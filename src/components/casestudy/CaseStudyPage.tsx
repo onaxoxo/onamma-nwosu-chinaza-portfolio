@@ -25,6 +25,11 @@ export type CaseStudy = {
   /** When the cover fills its frame rather than being cropped by percentage offsets. */
   heroCoverFit?: 'cover'
   heroCoverHeight?: number
+  /** "01 · At a glance": role, type, platform, team, plus what was actually mine. */
+  glance: {
+    rows: { label: string; value: string }[]
+    contribution: string
+  }
   sections: CaseSection[]
   screens: CarouselScreen[]
   carousel: CarouselGeometry
@@ -115,6 +120,50 @@ export default function CaseStudyPage({ study }: { study: CaseStudy }) {
           </div>
         </motion.div>
         )}
+      </div>
+
+      {/* At a glance */}
+      <div className="relative flex w-full shrink-0 flex-col items-start gap-[24px] overflow-clip px-[120px] pt-[100px]">
+        <div className="relative flex w-full shrink-0 flex-col items-start gap-[14px] overflow-clip whitespace-nowrap">
+          <p className="relative shrink-0 font-medium leading-[normal] tracking-[0.96px] text-[12px] text-[#f97316]">
+            01 · AT A GLANCE
+          </p>
+          <p className="relative shrink-0 font-semibold leading-[1.15] text-[34px] text-[#0d0d0d]">
+            What this project was, and what I did on it.
+          </p>
+        </div>
+        <Reveal className="w-full shrink-0">
+          <div className="relative flex w-full items-stretch gap-[24px] overflow-clip">
+            <div className="relative flex min-w-px flex-[1_0_0] flex-col items-start overflow-clip rounded-[20px] bg-white p-[32px] shadow-[inset_0_0_0_1px_#ececec]">
+              {study.glance.rows.map((row, index) => (
+                <div key={row.label} className="contents">
+                  {index > 0 && <div className="relative h-px w-full shrink-0 bg-[#ececec]" />}
+                  <div
+                    className={`relative flex w-full shrink-0 items-center gap-[16px] overflow-clip ${
+                      index === 0 ? 'pb-[16px]' : 'py-[16px]'
+                    }`}
+                  >
+                    <p className="relative shrink-0 font-normal leading-[normal] whitespace-nowrap text-[14px] text-[#6b6b6b]">
+                      {row.label}
+                    </p>
+                    <div className="relative h-px min-w-px flex-[1_0_0]" />
+                    <p className="relative shrink-0 text-right font-medium leading-[normal] text-[17px] text-[#0d0d0d]">
+                      {row.value}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="relative flex min-w-px flex-[1_0_0] flex-col items-start gap-[14px] overflow-clip rounded-[20px] bg-white p-[32px] shadow-[inset_0_0_0_1px_#ececec]">
+              <p className="relative shrink-0 font-semibold leading-[normal] whitespace-nowrap text-[22px] text-[#0d0d0d]">
+                My contribution
+              </p>
+              <p className="relative w-full shrink-0 font-normal leading-[27px] text-[16px] text-[#6b6b6b]">
+                {study.glance.contribution}
+              </p>
+            </div>
+          </div>
+        </Reveal>
       </div>
 
       {/* Narrative sections */}

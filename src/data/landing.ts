@@ -4,7 +4,7 @@ export const processSteps = [
   {
     number: '01',
     title: 'Discover',
-    body: 'Interviews, competitor teardowns and whatever data exists. I want the messy version of the problem before anyone starts talking about screens.',
+    body: 'Interviews, competitor teardowns and whatever data exists. I want the messy version of the problem before anyone talks about screens.',
   },
   {
     number: '02',
@@ -14,12 +14,12 @@ export const processSteps = [
   {
     number: '03',
     title: 'Design',
-    body: 'Flows, wireframes, then interface. Tested against real content and real edge cases, not the happy path only.',
+    body: 'Flows, wireframes, then interface. Tested against real content and edge cases, not just the happy path.',
   },
   {
     number: '04',
     title: 'Ship',
-    body: 'Specs, tokens and a build-ready handoff. I stay in it through development, because that is where designs quietly get broken.',
+    body: 'Specs, tokens and a build-ready handoff. I stay through development, because that is where designs quietly break.',
   },
 ]
 

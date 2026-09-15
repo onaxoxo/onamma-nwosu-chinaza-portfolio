@@ -25,34 +25,44 @@ const budgetBuddy: CaseStudy = {
   title: 'Budget Buddy',
   subtitle: 'Student Budget Tracker',
   intro:
-    'A personal finance app for students that tracks spending, manages budgets and helps them save, with a built-in wallet for moving funds securely.',
+    'A budgeting app for students that tracks spending, sets budgets and holds money in a wallet. Designed from scratch.',
   tags: ['Mobile Design', 'Fintech', 'Visual Design'],
   linkLabel: 'View case study',
   liveUrl: 'https://www.behance.net/gallery/248083805/Budget-Buddy-Smart-Student-Budgeting-with-Wallet',
   heroCover,
   heroCoverHeight: 819,
   heroCoverFit: 'cover',
+  glance: {
+    rows: [
+      { label: 'Role', value: 'Product Designer' },
+      { label: 'Type', value: 'Concept, built from scratch' },
+      { label: 'Platform', value: 'Mobile' },
+      { label: 'Team', value: 'Solo' },
+    ],
+    contribution:
+      'I designed the whole product: the wallet, budgets, the summary and the withdraw flow. The key decision was where in the flow to ask what the money is for.',
+  },
 
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'The moment money leaves the app, it becomes invisible.',
+      title: 'The moment money leaves the app, it goes invisible.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Adaeze receives money from home and may also earn some from side hustles. She can move it into her Budget Buddy wallet and save inside the app.',
+              text: 'Adaeze gets money from home and side hustles, moves it into her Budget Buddy wallet and saves inside the app.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'But once she withdraws to her bank or spends cash, the app has no idea what happened to it. A tracker that loses sight of money at the exact moment it gets spent is not a tracker.',
+              text: 'But once she withdraws to her bank or spends cash, the app has no idea what happened. A tracker that loses the money at the moment it is spent is not a tracker.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'The moment that matters is when she wants to know how much of her money she has actually used, and what she used it for, not just what her balance is.',
+              text: 'What she wants to know is how much she has used and on what, not just what her balance is.',
               size: 18,
               color: '#0d0d0d',
             },
@@ -62,22 +72,22 @@ const budgetBuddy: CaseStudy = {
     },
     {
       label: '03 · WHO I DESIGNED FOR',
-      title: 'Adaeze, a Nigerian university student.',
+      title: 'Adaeze, a university student in Nigeria.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
               title: 'Where her money comes from',
-              body: 'Money sent from home, plus whatever she earns from side hustles. It arrives irregularly and in different amounts.',
+              body: 'Money from home plus side hustles. It arrives irregularly and in different amounts.',
             },
             {
               title: 'What she wants to know',
-              body: 'How much of it she has used, and what she used it for, shown as categories and percentages rather than a single balance.',
+              body: 'How much she has used and what on, as categories and percentages, not one balance.',
             },
             {
               title: 'What she will not do',
-              body: 'Keep a spreadsheet, or reconcile her spending at the end of the week. Any tracking the design asks for has to happen in the moment.',
+              body: 'Keep a spreadsheet or reconcile her week. Any tracking has to happen in the moment.',
             },
           ],
         },
@@ -93,18 +103,18 @@ const budgetBuddy: CaseStudy = {
             {
               label: 'VISIBILITY',
               title: 'The app cannot follow the money',
-              body: 'Once a student withdraws to their bank or spends cash, Budget Buddy has no way of knowing what that money became.',
+              body: 'Once money goes to a bank or becomes cash, Budget Buddy cannot see what it became.',
               solution:
-                '→ Made the withdrawal flow ask what the money is for, and why, before it leaves the wallet.',
+                '→ The withdraw flow asks what the money is for before it leaves the wallet.',
               tradeoff: 'Trade-off: withdrawing takes one step longer than it strictly needs to.',
             },
             {
               label: 'MANUAL TRACKING',
               title: 'It only works if she uses it',
-              body: 'The whole picture depends on the student actually recording and categorising what she spends.',
+              body: 'The whole picture depends on her actually recording what she spends.',
               solution:
-                '→ Kept the categorisation step short enough that it reads as part of withdrawing, not as admin afterwards.',
-              tradeoff: 'Trade-off: the data is only ever as complete as the user’s habit.',
+                '→ I kept the category step short enough that it feels like part of withdrawing, not admin.',
+              tradeoff: 'Trade-off: the data is only as complete as her habit.',
             },
           ],
         },
@@ -149,13 +159,13 @@ const budgetBuddy: CaseStudy = {
           items: [
             {
               badge: 'A',
-              title: 'Withdraw freely, categorise later',
-              body: 'Faster in the moment, and it respects the user’s time. But it relies on her coming back to record something after the money has already gone, which is exactly when people forget.',
+              title: 'Withdraw first, categorise later',
+              body: 'Faster, and it respects her time. But it relies on her coming back after the money has gone, which is exactly when people forget.',
             },
             {
               badge: 'B',
               title: 'Categorise before withdrawing',
-              body: 'The step is justified because it protects the one thing the product exists to do. Spending stays visible after the money leaves the wallet, and the categories stay complete enough to be worth showing.',
+              body: 'One extra step, but it protects the one thing the product exists to do. Spending stays visible after the money leaves.',
               selected: true,
             },
           ],
@@ -171,15 +181,15 @@ const budgetBuddy: CaseStudy = {
           items: [
             {
               title: 'Find the moment money disappears',
-              body: 'Budget Buddy loses sight of money at the exact moment it gets spent. Everything else followed from choosing a point to capture that, and there was really only one honest option.',
+              body: 'Budget Buddy loses the money at the moment it is spent. Everything followed from picking a point to capture that.',
             },
             {
               title: 'Before, not after',
-              body: 'Asking the student to categorise afterwards depends on her coming back to do admin. Asking before the withdrawal is the only version where the data stays complete enough to be worth showing her.',
+              body: 'Asking afterwards depends on her doing admin. Asking before is the only version where the data stays complete.',
             },
             {
               title: 'Where the scope ran away',
-              body: 'I kept adding surface: alerts, summaries, security, settings. Looking at it now, the core needed depth far more than the product needed breadth.',
+              body: 'I kept adding surface: alerts, summaries, security, settings. The core needed depth more than the product needed breadth.',
             },
           ],
         },
@@ -245,15 +255,15 @@ const budgetBuddy: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'The visual direction is friendly and high contrast, with big numbers carrying the hierarchy.',
-              'It stays playful without tipping into childish, because the app handles real money and needs to be trusted with it.',
+              'Friendly and high contrast, with big numbers carrying the hierarchy.',
+              'Playful without tipping into childish. It handles real money and needs to be trusted with it.',
             ],
           },
           {
             title: 'Outcome',
             paragraphs: [
-              'The final design lets students know what is left to spend at a glance.',
-              'Budgets, transactions and a secure wallet sit in one app, so tracking money and moving it are no longer two separate chores.',
+              'You know what is left to spend at a glance.',
+              'Budgets, transactions and a wallet sit in one app, so tracking money and moving it are no longer two chores.',
             ],
           },
         ],
@@ -263,16 +273,16 @@ const budgetBuddy: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I changed.',
-    headline: 'More screens didn’t make the product stronger.',
+    title: 'What I would do differently.',
+    headline: 'More screens did not make the product stronger.',
     beats: [
       {
-        label: 'WHAT I REVISITED',
-        body: 'I’d revisit the breadth of the product. I explored a lot of screens and features, but the core budgeting, wallet, and spending experiences could have been pushed further instead of trying to cover so much.',
+        label: 'WHAT I WOULD REVISIT',
+        body: 'The breadth. I explored a lot of screens when the core budgeting, wallet and spending flows could have gone further.',
       },
       {
-        label: 'WHAT I IMPROVED ALONG THE WAY',
-        body: 'I initially thought covering more parts of the fintech experience would make Budget Buddy feel more complete. I realised that more features don’t automatically make a product stronger, so I became more deliberate about prioritising the core experience and the product’s main goal: helping users understand where their money goes.',
+        label: 'WHAT CHANGED IN MY THINKING',
+        body: 'I thought covering more of the fintech experience would make it feel complete. More features do not make a product stronger, so I got more deliberate about the main goal: showing where the money goes.',
       },
     ],
   },

@@ -9,15 +9,25 @@ const cver: CaseStudy = {
   title: 'CVERAI',
   subtitle: 'Career Platform for Skilled Immigrants',
   intro:
-    'Built for skilled immigrants who refuse to start over. Job matching, local connections and a verified directory that puts them in front of recruiters instead of into an application void.',
+    'A career platform for skilled immigrants. I redesigned the landing page and the core flows so the site says, in the first few seconds, that it understands their problem.',
   tags: ['Product Design', 'Web Platform', 'Landing Page'],
   linkLabel: 'View live site',
   liveUrl: 'https://cverai.com/',
+  glance: {
+    rows: [
+      { label: 'Role', value: 'Product Designer' },
+      { label: 'Type', value: 'Redesign of a live product, plus new features' },
+      { label: 'Platform', value: 'Web' },
+      { label: 'Team', value: 'Founder, PM, engineer, marketer' },
+    ],
+    contribution:
+      'I owned the landing page redesign, the job matching flow, the verified profile and the directory, and paired with the developers through handoff. The growth numbers below belong to the whole team.',
+  },
 
   sections: [
     {
       label: '02 · THE PROBLEM',
-      title: 'Experience that the market cannot read.',
+      title: 'The product was not speaking to the people using it.',
       blocksBeforeHead: 1,
       blocks: [
         {
@@ -31,17 +41,17 @@ const cver: CaseStudy = {
           kind: 'paragraphs',
           items: [
             {
-              text: 'Three things kept coming up: professional experience that does not translate into the new market, low professional visibility, and job matches that ignore what someone has actually done.',
+              text: 'Three things kept coming up. Their experience did not translate into the new market. It was hard to show what they could do. And they kept seeing jobs that did not fit them.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'Applications go out and nothing comes back. The candidate is not underqualified. They are unreadable to the systems doing the filtering.',
+              text: 'Applications went out and nothing came back. These people were not underqualified. The systems doing the filtering could not read them.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'The redesign had to make that recognisable in the first few seconds, then show how the product answers it.',
+              text: 'The redesign had to make that recognisable in the first few seconds, then show how CVER answers it.',
               size: 18,
               color: '#0d0d0d',
             },
@@ -57,16 +67,16 @@ const cver: CaseStudy = {
           kind: 'cards',
           items: [
             {
-              title: 'What I knew about them',
-              body: 'They had professional experience from somewhere else, and the market they had moved into was not reading it correctly.',
+              title: 'What I knew',
+              body: 'They had real experience from somewhere else, and the market they moved into was not reading it.',
             },
             {
               title: 'What I did not have',
-              body: 'A named persona, interview transcripts or segmentation. I worked from the product, the team’s knowledge and the complaints that came in.',
+              body: 'No named persona, no transcripts, no segmentation. I worked from the product, the team and the complaints coming in.',
             },
             {
-              title: 'So I am not claiming one',
-              body: 'Writing a detailed persona now would be inventing a person to fit the case study. The design decisions below stand on the product problem instead.',
+              title: 'So I am not inventing one',
+              body: 'Writing a detailed persona now would be making up a person to fit the story. The decisions below stand on the product problem.',
             },
           ],
         },
@@ -74,35 +84,35 @@ const cver: CaseStudy = {
     },
     {
       label: '04 · THE CONSTRAINTS',
-      title: 'I was not designing in isolation.',
+      title: 'I was not designing on a blank page.',
       blocks: [
         {
           kind: 'constraints',
           items: [
             {
               label: 'EXISTING PRODUCT',
-              title: 'It was already running',
-              body: 'CverAI had users and a shipped structure. There was no blank page to design against.',
+              title: 'It was already live',
+              body: 'CVER had users and a shipped structure.',
               solution:
-                '→ Started from what was there and changed what I could argue for, rather than proposing a rebuild.',
+                '→ I started from what was there and changed what I could argue for.',
               tradeoff:
-                'Trade-off: some of what I would change sat outside what a redesign could touch.',
+                'Trade-off: some things I would change were out of reach for a redesign.',
             },
             {
               label: 'THE TEAM',
               title: 'Four other people had a say',
-              body: 'Founder, PM, engineer and marketer. Design was one input into the decision, not the decision.',
+              body: 'Founder, PM, engineer and marketer. Design was one input, not the decision.',
               solution:
-                '→ Weighed each improvement against what was technically and practically possible.',
+                '→ Every change was weighed against what could actually ship.',
               tradeoff: 'Trade-off: the strongest interface is not always the one that can ship.',
             },
             {
               label: 'USER COMPLAINTS',
               title: 'Real, but not written down',
-              body: 'Genuine complaints from users shaped some of the improvements in the redesign.',
-              solution: '→ Used them to decide what to prioritise in the redesign.',
+              body: 'Genuine complaints from users shaped what I prioritised.',
+              solution: '→ I used them to decide what mattered most.',
               tradeoff:
-                'Trade-off: I cannot reproduce the specific feedback, so I do not quote any of it here.',
+                'Trade-off: I cannot quote any of it here.',
             },
           ],
         },
@@ -134,7 +144,7 @@ const cver: CaseStudy = {
     },
     {
       label: '06 · THE DECISION',
-      title: 'Lead with the product, or lead with the problem?',
+      title: 'Lead with the product, or with the problem?',
       blocks: [
         {
           kind: 'decisions',
@@ -142,13 +152,13 @@ const cver: CaseStudy = {
           items: [
             {
               badge: 'A',
-              title: 'Feature-first, like most SaaS',
-              body: 'Open with what the product does. Familiar and easy to write, but it asks the visitor to work out for themselves whether any of it applies to them.',
+              title: 'Features first, like most SaaS',
+              body: 'Open with what the product does. Easy to write, but it leaves visitors working out whether any of it applies to them.',
             },
             {
               badge: 'B',
-              title: 'Problem-first',
-              body: 'Open with poor market translation, low professional visibility and job matches that ignore real experience. The visitor recognises their situation before being introduced to the solution.',
+              title: 'Problem first',
+              body: 'Open with the three things they already feel. People recognise their own situation before they meet the solution.',
               selected: true,
             },
           ],
@@ -157,22 +167,22 @@ const cver: CaseStudy = {
     },
     {
       label: '07 · EXPLORATION',
-      title: 'How I worked inside someone else’s product.',
+      title: 'Working inside someone else’s product.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
               title: 'Start with what can actually move',
-              body: 'The product was live and had users. The first pass was working out which parts of the experience I could change without breaking what people already relied on, and which arguments were worth having with the team.',
+              body: 'The product was live. The first job was working out what I could change without breaking what people relied on.',
             },
             {
               title: 'The landing page carries the first impression',
-              body: 'If an immigrant does not recognise their own situation in the first screen, nothing further down the page gets read. That is why the problem leads and the product follows.',
+              body: 'If someone does not recognise their situation on the first screen, nothing below it gets read. So the problem leads.',
             },
             {
               title: 'What I will not claim',
-              body: 'I cannot point to a specific thing I proposed and had cut. I was one voice in a team of five and I do not remember one, so I am not going to invent it to make the story neater.',
+              body: 'I was one voice in a team of five. I cannot point to a specific idea of mine that was cut, so I will not invent one.',
             },
           ],
         },
@@ -195,7 +205,7 @@ const cver: CaseStudy = {
   screens: [
     {
       label: 'Landing',
-      caption: 'Job matches, ranked, with the reason each role fits shown up front.',
+      caption: 'The landing page: the problem first, then the product.',
       image: screenLanding,
     },
     {
@@ -212,23 +222,32 @@ const cver: CaseStudy = {
 
   results: {
     label: '09 · OUTCOME',
-    title: 'What the product became.',
+    title: 'The result.',
     blocks: [
+      {
+        kind: 'stats',
+        items: [
+          { value: '2,000+', label: 'registered users' },
+          { value: '+207.7%', label: 'weekly sign-ups' },
+          { value: '85', label: 'CVs created' },
+          { value: '217', label: 'applications submitted' },
+        ],
+      },
       {
         kind: 'resultCards',
         items: [
           {
             title: 'Visual direction',
             paragraphs: [
-              'The visual direction is warm and credible, with plain language and generous type doing most of the work.',
-              'Verification signals are built into the layout rather than bolted on, so trust reads immediately without the interface shouting about it.',
+              'Warm and credible. Plain language and generous type do most of the work.',
+              'Verification signals are built into the layout, so trust reads without the interface shouting.',
             ],
           },
           {
-            title: 'Outcome',
+            title: 'My part in it',
             paragraphs: [
-              'I worked as part of the product team on CVER, owning the job matching flow, the verified profile and the directory, and pairing with the developers through handoff so what shipped matched what was designed.',
-              'Over that period the platform grew from just over 1,000 users to 2,000. Skilled immigrants are now found through a verified profile recruiters can search, instead of applications that go unanswered.',
+              'I owned the landing page, the job matching flow, the verified profile and the directory, and stayed with the developers through handoff.',
+              'Over that period the platform grew from just over 1,000 users to 2,000. Skilled immigrants are now found through a profile recruiters can search, instead of applications that go unanswered.',
             ],
           },
         ],
@@ -238,16 +257,16 @@ const cver: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I changed.',
-    headline: 'The redesign taught me that good product design has to work beyond the interface.',
+    title: 'What I would do differently.',
+    headline: 'Good product design has to work beyond the interface.',
     beats: [
       {
-        label: 'WHAT I REVISITED',
-        body: 'The pricing section is the weakest part of the final design. The plans don’t differentiate themselves clearly enough, so I’d simplify the structure, make the differences easier to scan, and give the recommended option stronger hierarchy.',
+        label: 'WHAT I WOULD REVISIT',
+        body: 'Pricing. The plans do not tell themselves apart clearly enough. I would simplify the structure and give the recommended option real hierarchy.',
       },
       {
-        label: 'WHAT I IMPROVED ALONG THE WAY',
-        body: 'I initially focused on identifying what wasn’t working in the interface and making it better. Working within a real product and team made me more conscious of the existing product, technical limitations, business requirements, and how design decisions need to work within those constraints.',
+        label: 'WHAT CHANGED IN MY THINKING',
+        body: 'I went in looking for what was wrong with the interface. Working inside a real team made me think about the existing product, the tech and the business before the pixels.',
       },
     ],
   },

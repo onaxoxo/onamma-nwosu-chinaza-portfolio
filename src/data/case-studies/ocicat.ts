@@ -24,34 +24,44 @@ const ocicat: CaseStudy = {
   title: 'Ocicat AI Studio',
   subtitle: 'AI Video Creation Platform',
   intro:
-    'An all-in-one studio that turns a written idea into a finished video, with script, visuals, auto captions and export handled in a single flow.',
+    'An AI video studio that takes a written idea to a finished video, with script, visuals, captions and export in one place.',
   tags: ['UI/UX', 'Web App', 'AI Product'],
   linkLabel: 'View live site',
   liveUrl: 'https://ocicataistudio.framer.website/',
   heroCover,
   heroCoverHeight: 849,
   heroCoverStyle: { height: '167.61%', top: '0.05%', width: '100%', left: '0.03%' },
+  glance: {
+    rows: [
+      { label: 'Role', value: 'Product Designer' },
+      { label: 'Type', value: 'Built from scratch, for a client' },
+      { label: 'Platform', value: 'Web app' },
+      { label: 'Team', value: 'Client and their engineers' },
+    ],
+    contribution:
+      'I designed the dashboard, the video creation flow, the editor and the templates. The core call was how much of the interface the AI takes over, and how much stays a real editor.',
+  },
 
   sections: [
     {
       label: '02 · THE BRIEF',
-      title: 'Build an AI video tool that does not look like the others.',
+      title: 'Build an AI video tool that does not look like every other one.',
       blocks: [
         {
           kind: 'paragraphs',
           items: [
             {
-              text: 'The brief was to make Ocicat stand out against tools like Higgsfield, products that had already claimed the prompt-first, purple-gradient look of AI video.',
+              text: 'The brief: make Ocicat stand out from tools like Higgsfield, which had already claimed the prompt-first, purple-gradient look.',
               size: 20,
               color: '#0d0d0d',
             },
             {
-              text: 'I read that as a visual problem at first: make it more distinctive, make it more appealing. Most of the early work went into the surface.',
+              text: 'I read that as a visual problem at first. Most of the early work went into the surface.',
               size: 18,
               color: '#6b6b6b',
             },
             {
-              text: 'What actually separated Ocicat turned out to be structural: how much of the interface the AI is allowed to take over, and how much stays a real editor.',
+              text: 'What actually set Ocicat apart was structural: how much the AI is allowed to take over, and how much stays a real editor.',
               size: 18,
               color: '#0d0d0d',
             },
@@ -67,16 +77,16 @@ const ocicat: CaseStudy = {
           kind: 'cards',
           items: [
             {
-              title: 'The immediate audience',
-              body: 'A client who needed something to present internally. The design had to survive a room of people seeing the product for the first time.',
+              title: 'Who saw it first',
+              body: 'A client who needed something to present internally. It had to survive a room of people seeing it for the first time.',
             },
             {
-              title: 'The intended users',
-              body: 'Creators making short-form video who want AI help without handing over the whole edit. The brief named the market, not a specific user.',
+              title: 'Who it is for',
+              body: 'Creators making short-form video who want AI help without handing over the whole edit.',
             },
             {
               title: 'What I did not have',
-              body: 'No persona, no research, and no access to the end users. The design decisions here come from the product category and the brief, not from users.',
+              body: 'No persona, no research and no access to end users. The decisions here come from the brief and the category.',
             },
           ],
         },
@@ -96,13 +106,13 @@ const ocicat: CaseStudy = {
             items: [
               {
                 badge: 'A',
-                title: 'Prompt-first, AI as the product',
-                body: 'Where most of the category sits: type an idea, receive a video. It demos beautifully, and it leaves the creator with nothing to adjust when the result is nearly right.',
+                title: 'Prompt first, AI as the product',
+                body: 'Where most of the category sits. Type an idea, receive a video. It demos well, and leaves you nothing to adjust when the result is nearly right.',
               },
               {
                 badge: 'B',
-                title: 'AI-assisted, editor as the product',
-                body: 'Scenes, a timeline and separate video, audio and voice-over tracks stay on screen. The AI panel works alongside the edit. The user can see what it changed and still owns the result.',
+                title: 'AI assisted, editor as the product',
+                body: 'Scenes, a timeline and separate video, audio and voice-over tracks stay on screen. The AI works alongside the edit, and you still own the result.',
                 selected: true,
               },
             ],
@@ -144,18 +154,18 @@ const ocicat: CaseStudy = {
     },
     {
       label: '06 · SCOPE',
-      title: 'Not every screen in the sidebar is a designed screen.',
+      title: 'Not every screen in the sidebar was designed.',
       blocks: [
         {
           kind: 'cards',
           items: [
             {
               title: 'Designed in depth',
-              body: 'The dashboard, the video creation and editor experience, templates, and the project screens. This is where the actual design work went.',
+              body: 'The dashboard, video creation, the editor, templates and projects. This is where the work went.',
             },
             {
-              title: 'Navigation placeholders',
-              body: 'Team Workspaces, Billing, Help & Support and Brand Kit. They are there to show how the wider SaaS product would be structured, not because they were designed.',
+              title: 'Placeholders',
+              body: 'Team Workspaces, Billing, Help and Brand Kit show how the wider product would be structured. They were not designed.',
             },
           ],
         },
@@ -169,16 +179,16 @@ const ocicat: CaseStudy = {
           kind: 'cards',
           items: [
             {
-              title: 'The brief read as a visual problem',
-              body: 'The first pass chased a look that would stand apart from Higgsfield and the rest of the category. That is where most of the early effort went, and it was the wrong place.',
+              title: 'I started in the wrong place',
+              body: 'The first pass chased a look that would stand apart from Higgsfield. That is where most of the early effort went.',
             },
             {
               title: 'The difference was structural',
-              body: 'Keeping scenes, the timeline and the separate tracks on screen is what makes the AI an assistant instead of the whole product. That is a structural decision, not a styling one.',
+              body: 'Keeping scenes, the timeline and the tracks on screen is what makes the AI an assistant instead of the whole product.',
             },
             {
               title: 'Let the footage carry the colour',
-              body: 'The interface stays restrained on purpose, so thumbnails and generated frames are the brightest thing on screen rather than competing with the UI around them.',
+              body: 'The interface stays dark and quiet so thumbnails and generated frames are the brightest thing on screen.',
             },
           ],
         },
@@ -226,7 +236,7 @@ const ocicat: CaseStudy = {
 
   results: {
     label: '09 · OUTCOME',
-    title: 'What the product became.',
+    title: 'What Ocicat became.',
     blocks: [
       {
         kind: 'resultCards',
@@ -234,15 +244,15 @@ const ocicat: CaseStudy = {
           {
             title: 'Visual direction',
             paragraphs: [
-              'The visual direction is dark and studio-like, so generated frames and previews stay the brightest thing on screen.',
-              'Typography and controls sit back deliberately; the creator’s footage is the only thing competing for attention.',
+              'Dark and studio-like, so generated frames stay the brightest thing on screen.',
+              'Controls sit back on purpose. The creator’s footage is the only thing competing for attention.',
             ],
           },
           {
             title: 'Outcome',
             paragraphs: [
-              'The final design takes creators from a written idea to an exported video without ever leaving the product.',
-              'What used to mean juggling a script tool, an editor, a captioning service and an export pipeline now happens in one place.',
+              'Creators go from a written idea to an exported video without leaving the product.',
+              'What used to take a script tool, an editor, a captioning service and an export step now happens in one place.',
             ],
           },
         ],
@@ -252,16 +262,16 @@ const ocicat: CaseStudy = {
 
   reflection: {
     label: '10 · REFLECTION',
-    title: 'What I changed.',
-    headline: 'Differentiation wasn’t just visual.',
+    title: 'What I would do differently.',
+    headline: 'Standing out was never just visual.',
     beats: [
       {
-        label: 'WHAT I REVISITED',
-        body: 'I’d revisit the waiting experience. Video generation takes time, but I focused more on the final editing experience than what happens while the video is being generated. I’d design a clearer progress or queue state so users know what’s happening while they wait.',
+        label: 'WHAT I WOULD REVISIT',
+        body: 'The waiting. Generation takes time and I designed the editing more than the wait. A clear progress or queue state would tell people what is happening.',
       },
       {
-        label: 'WHAT I IMPROVED ALONG THE WAY',
-        body: 'I initially thought standing out from other AI video tools was mainly about creating a different visual identity. As I worked through the product, I realised the stronger differentiation was in the experience itself: making Ocicat an AI-assisted video editor where AI works alongside the user rather than taking control.',
+        label: 'WHAT CHANGED IN MY THINKING',
+        body: 'I thought standing out meant a different visual identity. The stronger difference was the experience: an editor where AI works alongside you instead of taking over.',
       },
     ],
   },

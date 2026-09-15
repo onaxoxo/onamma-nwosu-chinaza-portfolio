@@ -29,7 +29,7 @@ export const landingProjects: LandingProject[] = [
     title: 'SORA',
     subtitle: 'Subscription Management System',
     description:
-      'A subscription manager that pulls every recurring charge into one place, so people can see what they are actually paying for and cancel what they forgot about.',
+      'SORA bills in dollars, but many of its users budget in naira. I designed the whole product, including how the real cost shows up.',
     tags: ['Product Design', 'Mobile App', 'End-to-end'],
     linkLabel: 'View case study',
     to: '/case-study/sora',
@@ -43,7 +43,7 @@ export const landingProjects: LandingProject[] = [
     title: 'Ocicat AI Studio',
     subtitle: 'AI Video Creation Platform',
     description:
-      'An all-in-one studio that turns a written idea into a finished video script, visuals, auto captions and export handled in a single flow for 2,000+ creators.',
+      'An AI video studio for creators. I designed it as a real editor with AI alongside, not a magic prompt box.',
     tags: ['UI/UX', 'Web App', 'AI Product'],
     linkLabel: 'View live site',
     to: '/case-study/ocicat-ai-studio',
@@ -58,7 +58,7 @@ export const landingProjects: LandingProject[] = [
     title: 'CVER',
     subtitle: 'Career Platform for Skilled Immigrants',
     description:
-      'Built for skilled immigrants who refuse to start over. Job matching, local connections and a verified directory that puts them in front of recruiters instead of into an application void.',
+      'A live career platform for skilled immigrants. I redesigned the landing page and core flows so it speaks to the people using it.',
     tags: ['Product Design', 'Web Platform', 'Landing Page'],
     linkLabel: 'View live site',
     to: '/case-study/cver',
@@ -73,7 +73,7 @@ export const landingProjects: LandingProject[] = [
     title: 'Vendify',
     subtitle: 'E-commerce marketplace platform',
     description:
-      'Vendify is an e-commerce marketplace that connects buyers with vendors, making it easy to discover, browse, and purchase products online.',
+      'Buying from a small vendor took four apps. I redesigned my own earlier version into one flow, from discovery to chat.',
     tags: ['Mobile Design', 'E-commerce', 'Visual Design'],
     linkLabel: 'View case study',
     to: '/case-study/vendify',
@@ -87,7 +87,7 @@ export const landingProjects: LandingProject[] = [
     title: 'Budget Buddy',
     subtitle: 'Budget Tracker',
     description:
-      'Student Budget Tracker is a personal finance app for students that helps them track spending, manage budgets, and save money, with an in-built wallet/bank system for managing funds securely.',
+      'A student budgeting app with a wallet, built from scratch around one question: what happens to the money once it leaves the app?',
     tags: ['Mobile Design', 'Fintech', 'Visual Design'],
     linkLabel: 'View case study',
     to: '/case-study/budget-buddy',
